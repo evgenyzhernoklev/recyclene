@@ -1,21 +1,43 @@
-// logos
-.logoWrapper {
+.iconWrapper {
+  text-align: center;
+}
+
+.iconWrapper__icon {
 
 }
 
-.logoWrapper__logo {
+.iconWrapper__logo {
 
+}
+
+
+
+// logos
+.logo {
+  vertical-align: middle;
+}
+
+.logo--pjat {
+  @include logo(pjatorochka, 150px, 28px);
+}
+
+.logo--perek {
+  @include logo(perekrestok, 146px, 29px);
+}
+
+.logo--cola {
+  @include logo(coca-cola, 115px, 38px);
+}
+
+.logo--pepsi {
+  @include logo(pepsi, 123px, 47px);
 }
 
 
 
 // icons
-.iconWrapper {
-
-}
-
 .icon {
-
+  vertical-align: middle;
 }
 
 .icon--market {
@@ -31,15 +53,15 @@
 }
 
 .icon--logo {
-
+  @include icon(logo, 334px, 35px);
 }
 
 .icon--logoGray {
-  
+  @include icon(logo_gray, 148px, 15px);
 }
 
 .icon--bottleGreen {
-
+  @include icon(bottle_green, 33px, 63px);
 }
 
 .icon--bottleWhite {
@@ -47,7 +69,7 @@
 }
 
 .icon--boxPurple {
-
+  @include icon(box_purple, 53px, 53px);
 }
 
 .icon--boxWhite {

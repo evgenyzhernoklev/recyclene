@@ -13,6 +13,7 @@
 }
 
 .titleMainLp {
+  padding: 72px 0 36px;
   font-size: 32px;
   line-height: 38px;
   font-family: $circe-light;
@@ -38,23 +39,45 @@
 
 /*************** menu ***************/
 .contentLpMenu {
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
 }
 
 .menuLp {
-
+  padding: 48px 0 30px;
+  @include clearfix;
 }
 
 .menuLpItem {
-
+  display: inline-block;
+  padding-top: 7px;
+  margin-right: 77px;
+  float: left;
 }
 
 .menuLpItem--auth {
-
+  float: right;
+  margin-right: 0;
+  padding-top: 0;
 }
 
 .menuLpItem__link {
+  font: 14px/24px $circe-regular;
+  color: $white;
+}
 
+.menuLpItem__link--auth {
+  display: inline-block;
+  width: 128px;
+  height: 38px;
+  border: 1px solid #FFFFFF;
+  border-radius: 100px;
+  font-size: 13px;
+  line-height: 38px;
+  text-align: center;
 }
 
 
@@ -65,21 +88,38 @@
 
 /*************** header ***************/
 .contentLpHeader {
+  padding: 178px 0 132px;
+  background-color: #4D636E;
+}
 
+.contentLpIn__headerIconWrapper {
+  margin-bottom: 32px;
 }
 
 .titleHeaderLp {
-
+  max-width: 680px;
+  margin: 0 auto 20px;
+  font-size: 34px;
+  line-height: 47px;
+  color: $white;
+  text-align: center;
 }
 
 .subtitleHeaderLp {
-
+  max-width: 600px;
+  margin: 0 auto 48px;
+  font: 16px/25px $circe-regular;
+  color: $white;
+  text-align: center;
 }
 
 
 
 .contentLpIn__headerButtonsLp {
 
+  .linkButton {
+    margin: 0 10px;
+  }
 }
 
 
@@ -126,7 +166,8 @@
 
 /*************** who buys ***************/
 .contentLpWhoBuys {
-
+  padding: 0 0 19px;
+  border-bottom: 1px solid $light-gray;
 }
 
 .whoBuysLp {
@@ -134,19 +175,31 @@
 }
 
 .whoBuysLpCol {
-
+  max-width: 260px;
+  margin: 0 auto 45px;
+  text-align: center;
 }
 
 .whoBuysLpCol__iconWrapper {
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  margin: 0 auto 41px;
+  background-color: rgba(117, 227, 95, .2);
+}
 
+.whoBuysLpCol__iconWrapper--purple {
+  background-color: rgba(229, 32, 129, .2);
 }
 
 .whoBuysLpCol__title {
-
+  margin-bottom: 12px;
+  font: 18px/25px $circe-bold;
 }
 
 .whoBuysLpCol__info {
-
+  line-height: 23px;
 }
 
 
@@ -189,7 +242,7 @@
 
 /*************** how it works ***************/
 .contentLpHow {
-
+  border-bottom: 1px solid $light-gray;
 }
 
 .tabsWrapperLp {
@@ -258,27 +311,39 @@
 
 /*************** partners ***************/
 .contentLpPartners {
+  border-bottom: 1px solid $light-gray;
 
+  .titleMainLp {
+    padding-bottom: 93px;
+  }
 }
 
 .partnersColsLp {
+  text-align: center;
 
+  .colFlex {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .partnersAboutColLp {
-
+  margin-bottom: 27px;
 }
 
 .partnersInfoColLp {
-
+  margin-bottom: 87px;
 }
 
 .partnersInfoColLp__name {
-
+  font-family: $circe-regular;
+  color: #80BA27;
 }
 
 .partnersInfoColLp__place {
-
+  font-size: 14px;
+  color: #969696;
 }
 
 
@@ -294,7 +359,13 @@
 }
 
 .logosWrapperPartnersLp__col {
+  height: 140px;
+  line-height: 140px;
+  border-left: 1px solid $light-gray;
 
+  &:last-child {
+    border-right: 1px solid $light-gray;
+  }
 }
 
 
@@ -305,16 +376,26 @@
 
 /*************** request ***************/
 .contentLpRequest {
+  padding: 68px 0 100px;
+  background-color: #F8F8F8;
+  text-align: center;
 
+  .titleMainLp {
+    padding-bottom: 23px;
+  }
 }
 
 .subtitleRequestLp {
-
+  max-width: 540px;
+  margin: 0 auto 45px;
 }
 
 
 .contentLpIn__requestButtonsLp {
 
+  .linkButton {
+    margin: 0 10px;
+  }
 }
 
 
@@ -332,21 +413,41 @@
 
 /*************** footer ***************/
 .footerLp {
-
+  height: 80px;
+  padding: 20px 0;
+  background-color: #F8F8F8;
+  text-align: center;
 }
 
 .footerLpIn {
-
+  position: relative;
+  padding-top: 7px;
 }
 
 .footerLpIn__iconWrapper {
-
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 40px;
 }
 
 .footerLpIn__link {
-
+  display: inline-block;
+  margin: 0 36px;
+  font-size: 13px;
+  color: #7D7D7D;
 }
 
 .footerLpIn__linkAuth {
-  
+  position: absolute;
+  top: 0;
+  right: 40px;
+  display: inline-block;
+  width: 128px;
+  height: 38px;
+  border: 1px solid #DFDFDF;
+  border-radius: 100px;
+  font: 13px/38px $circe-regular;
+  color: $black;
+  text-align: center;
 }

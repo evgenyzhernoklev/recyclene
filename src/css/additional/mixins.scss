@@ -30,11 +30,11 @@ mixins for:
   height: $height;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: image-url('icons/svg/#{$name}.svg');
+  background-image: url('../img/icons/svg/#{$name}.svg');
   background-size: $width $height;
 
   .no-svg & {
-    background-image: image-url('icons/png/#{$name}.png');
+    background-image: url('../img/icons/png/#{$name}.png');
   }
 }
 
@@ -44,12 +44,8 @@ mixins for:
   height: $height;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: image-url('logos/svg/#{$name}.svg');
+  background-image: url('../img/logos/#{$name}.png');
   background-size: $width $height;
-
-  .no-svg & {
-    background-image: image-url('logos/png/#{$name}.png');
-  }
 }
 
 @mixin maxTextLines($maxLinesNumber) {

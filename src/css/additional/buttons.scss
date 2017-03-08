@@ -1,5 +1,5 @@
 .buttonsWrapper {
-
+  text-align: center;
 }
 
 .buttonsWrapper__button {
@@ -9,17 +9,25 @@
 
 
 .linkButton {
-
+  display: inline-block;
+  width: 180px;
+  height: 50px;
+  border-radius: 100px;
+  font: 12px/50px $circe-bold-extra;
+  color: $white;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .linkButton--green {
-
+  background: $green;
 }
 
 .linkButton--greenTransparent {
-
+  color: $black;
+  border: 2px solid $green;
 }
 
 .linkButton--white {
-
+  border: 2px solid $white;
 }
