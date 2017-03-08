@@ -1,6 +1,6 @@
 /*************** common ***************/
 .contentLp {
-
+  @include clearfix();
 }
 
 .contentLpIn {
@@ -270,30 +270,49 @@
 // slider
 .howSliderLp {
 
+  .slick-list {
+    overflow: visible;
+  }
 }
 
 .howSlideLp {
 
 }
 
-.howSlideLpContent {
+.howSlideLpContentWrapper {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
 
+.howSlideLpContent {
+  max-width: 330px;
+  margin: 0 auto;
+  padding-top: 15%;
 }
 
 .howSlideLpContent__step {
-
+  margin-bottom: 20px;
+  font: 13px/18px $circe-regular;
+  color: #B8B8B8;
 }
 
 .howSlideLpContent__title {
-
+  margin-bottom: 30px;
+  font: 20px/24px $circe-regular;
 }
 
 .howSlideLpContent__info {
 
 }
 
-.howSlideLp__img {
+.howSlideLpImgWrapper {
+  float: left;
+  width: 50%;
+}
 
+.howSlideLpImgWrapper__img {
+  max-width: 795px;
 }
 
 
