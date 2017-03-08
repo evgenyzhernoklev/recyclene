@@ -1,7 +1,8 @@
 /*
 mixins for:
   clearfix
-
+  icon
+  logo
   max lines of text
 
   show animation
@@ -23,7 +24,33 @@ mixins for:
   }
 }
 
+@mixin icon($name, $width, $height) {
+  display: inline-block;
+  width: $width;
+  height: $height;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: image-url('icons/svg/#{$name}.svg');
+  background-size: $width $height;
 
+  .no-svg & {
+    background-image: image-url('icons/png/#{$name}.png');
+  }
+}
+
+@mixin logo($name, $width, $height) {
+  display: inline-block;
+  width: $width;
+  height: $height;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: image-url('logos/svg/#{$name}.svg');
+  background-size: $width $height;
+
+  .no-svg & {
+    background-image: image-url('logos/png/#{$name}.png');
+  }
+}
 
 @mixin maxTextLines($maxLinesNumber) {
   display: -webkit-box;

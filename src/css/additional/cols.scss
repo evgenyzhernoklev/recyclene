@@ -1,16 +1,5 @@
 .cols {
-    overflow: hidden;
-    zoom: 1;
-    
-    &:before,
-    &:after {
-        content: "";
-        display: table;
-    }
-    
-    &:after {
-        clear: both;
-    }
+    @include clearfix();
 }
 
 .col_2 {

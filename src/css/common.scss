@@ -1,10 +1,10 @@
 body {
-  font: 16px/24px $circe-regular;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: $circe-light;
   color: $black;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-
-
 }
 
 a {
