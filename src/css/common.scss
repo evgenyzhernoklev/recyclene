@@ -1,0 +1,59 @@
+body {
+  font: 16px/24px $circe-regular;
+  color: $black;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+
+
+}
+
+a {
+    transition: color $transition-normal, border-color $transition-normal, background-color $transition-normal;
+    cursor: pointer;
+}
+
+
+
+::-webkit-input-placeholder {}
+:-moz-placeholder {}
+::-moz-placeholder {}
+:-ms-input-placeholder {}
+
+.forDesctop {
+  display: block;
+}
+
+.forMobile {
+  display: none;
+}
+
+.contentIn {
+  position: relative;
+  max-width: 1164px;
+  min-width: 320px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 78px;
+}
+
+.titleMain {
+
+}
+
+
+
+@media (max-width: 992px) {
+
+}
+
+
+
+@media (max-width: 767px) {
+  .forDesctop {
+    display: none;
+  }
+
+  .forMobile {
+    display: block;
+  }
+}
