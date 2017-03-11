@@ -67,6 +67,17 @@ $(document).ready(function() {
 
 
 
+    /*************** slider who sells ***************/
+    $('.sliderSells').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      prevArrow: '<span class="icon icon--sliderLeft"></span>',
+      nextArrow: '<span class="icon icon--sliderRight"></span>'
+    });
+
+
+
+
     /*************** slider how it works ***************/
     $('.slide-arrow-prev').on('click', function(e) {
       e.preventDefault();

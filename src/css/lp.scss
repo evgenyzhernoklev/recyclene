@@ -166,27 +166,61 @@
 
 /*************** who sells ***************/
 .contentLpWhoSells {
+  padding: 0 0 95px;
+  background-color: $white-light;
 
+  .titleMainLp {
+    padding-bottom: 76px;
+  }
 }
 
 .sliderSells {
+  position: relative;
 
+  .slick-list {
+    overflow: visible;
+  }
+
+  .icon--sliderLeft,
+  .icon--sliderRight {
+    position: absolute;
+    right: 58px;
+    top: -115px;
+    width: 46px;
+    height: 46px;
+    border: 2px solid #80BA27;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .icon--sliderLeft {
+    right: 118px;
+  }
 }
 
 .sliderSellsSlide {
-
+  margin: 0 22px;
+  padding: 52px 35px 40px;
+  background: $white;
+  box-shadow: 15px 15px 25px 0px rgba(0,0,0,0.05);
+  border-radius: 10px;
 }
 
 .sliderSellsSlide__iconWrapper {
-
+  margin-bottom: 24px;
+  height: 60px;
+  line-height: 60px;
+  text-align: left;
 }
 
 .sliderSellsSlide__title {
-
+  margin-bottom: 11px;
+  font: 18px/24px $circe-regular;
 }
 
 .sliderSellsSlide__info {
-
+  font-size: 14px;
+  line-height: 21px;
 }
 
 
@@ -380,7 +414,7 @@
   font: 12px/50px $circe-bold-extra;
   color: $black;
   cursor: pointer;
-  background: #F8F8F8;
+  background: $white-light;
   border-top-left-radius: 75px;
   border-bottom-left-radius: 75px;
 
@@ -557,7 +591,7 @@
 /*************** request ***************/
 .contentLpRequest {
   padding: 68px 0 100px;
-  background-color: #F8F8F8;
+  background-color: $white-light;
   text-align: center;
 }
 
@@ -585,7 +619,7 @@
 .footerLp {
   height: 80px;
   padding: 20px 0;
-  background-color: #F8F8F8;
+  background-color: $white-light;
   text-align: center;
 }
 

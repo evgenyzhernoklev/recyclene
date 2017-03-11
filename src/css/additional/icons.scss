@@ -41,15 +41,15 @@
 }
 
 .icon--market {
-
+  @include icon(market_green, 44px, 42px);
 }
 
 .icon--factory {
-
+  @include icon(factory_green, 51px, 51px);
 }
 
 .icon--storehouse {
-
+  @include icon(storehouse_green, 52px, 51px);
 }
 
 .icon--logo {
