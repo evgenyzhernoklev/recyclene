@@ -45,15 +45,40 @@
 
 /*************** menu ***************/
 .contentLpMenu {
-  position: fixed;
-  top: 0;
+  position: absolute;
+  top: 32px;
   left: 0;
   right: 0;
   z-index: 99;
+  height: 70px;
+  background-color: transparent;
+  transition: none;
+
+  &.is-fixed {
+    position: fixed;
+    top: 0;
+    background: $white;
+    box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.10);
+    transition: background-color $transition-normal;
+
+    .menuLpItem__link {
+      color: #A1A1A1;
+      transition: color $transition-normal, border-color $transition-normal, background-color $transition-normal;
+
+      &.is-active {
+        color: $black;
+      }
+    }
+
+    .menuLpItem__link--auth {
+      color: $black;
+      border-color: #D0D0D0;
+    }
+  }
 }
 
 .menuLp {
-  padding: 48px 0 30px;
+  padding: 16px 0 0;
   @include clearfix;
 }
 
@@ -73,6 +98,7 @@
 .menuLpItem__link {
   font: 14px/24px $circe-regular;
   color: $white;
+  transition: none;
 }
 
 .menuLpItem__link--auth {
@@ -174,6 +200,10 @@
 .contentLpWhoBuys {
   padding: 0 0 19px;
   border-bottom: 1px solid $light-gray;
+
+  .titleMainLp {
+    padding-bottom: 60px;
+  }
 }
 
 .whoBuysLp {

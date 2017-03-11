@@ -10,27 +10,39 @@ $(document).ready(function() {
 
 
 
-    /*************** header scroll ***************/
-    // var $topMenu = $('.header_top'),
-    //     $bottomMenu = $('.header_bottom'),
-    //     topMenuHeight = $topMenu.height(),
-    //     scrollTop = 0;
-    //
-    // function headerScroll() {
-    //     if (scrollTop > topMenuHeight) {
-    //         $bottomMenu.addClass('is-fixed');
-    //         $body.addClass('menu-fixed');
-    //     } else {
-    //         $bottomMenu.removeClass('is-fixed');
-    //         $body.removeClass('menu-fixed');
-    //     }
-    // }
-    //
-    // $window.on('load scroll', function() {
-    //     topMenuHeight = $topMenu.height();
-    //     scrollTop = $window.scrollTop();
-    //     headerScroll();
-    // });
+    /*************** menu ***************/
+    var $topMenu = $('.header-scroll'),
+        topMenuHeight = $topMenu.height(),
+        topMenuPosition = $topMenu.offset().top,
+        scrollTop = 0;
+
+    $window.on('load scroll', function() {
+      scrollTop = $window.scrollTop();
+
+      if (scrollTop > topMenuPosition) {
+        $topMenu.addClass('is-fixed');
+      } else {
+        $topMenu.removeClass('is-fixed');
+      }
+    });
+
+
+
+    var $menuLinks = $('.link-scroll'),
+        $contentToScroll = $('.content-scroll');
+
+    $menuLinks.on('click', function (e) {
+      e.preventDefault();
+      var targetBlockIndex = +$(this).data('block'),
+          targetBlockTopPosition = $contentToScroll.eq(targetBlockIndex).offset().top;
+
+      $menuLinks.removeClass('is-active');
+      $(this).addClass('is-active');
+
+      $('html, body').animate({
+        scrollTop: targetBlockTopPosition - topMenuHeight
+      }, 1500);
+    });
 
 
 
