@@ -83,3 +83,7 @@
 .icon--sliderRight {
   @include icon(arrow_right_green, 28px, 20px);
 }
+
+.icon--editWhite {
+  @include icon(edit_white, 15px, 15px);
+}

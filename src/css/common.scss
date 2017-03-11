@@ -15,10 +15,10 @@ button {
 
 
 
-::-webkit-input-placeholder {}
-:-moz-placeholder {}
-::-moz-placeholder {}
-:-ms-input-placeholder {}
+::-webkit-input-placeholder {color: #CCCCCC;}
+:-moz-placeholder {color: #CCCCCC;}
+::-moz-placeholder {color: #CCCCCC;}
+:-ms-input-placeholder {color: #CCCCCC;}
 
 .forDesctop {
   display: block;
@@ -44,7 +44,7 @@ button {
 }
 
 .titleMain {
-  margin: 36px 0 7px;
+  margin: 36px 0 17px;
   font: 32px/38px $circe-light;
   color: $white;
   text-align: center;

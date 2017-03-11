@@ -13,20 +13,26 @@
   width: 180px;
   height: 50px;
   border-radius: 100px;
-  font: 12px/50px $circe-bold-extra;
+  font: 12px/52px $circe-bold-extra;
   color: $white;
   background-color: transparent;
   cursor: pointer;
   text-align: center;
+  transition: color $transition-normal, border-color $transition-normal, background-color $transition-normal;
 }
 
 .linkButton--green {
-  background: $green;
+  background-color: $green;
+
+  &:hover {
+    background-color: #99D256;
+  }
 }
 
 .linkButton--greenTransparent {
   color: $black;
   border: 2px solid $green;
+  line-height: 50px;
 
   &:hover {
     border-color: #99D256;
@@ -34,5 +40,6 @@
 }
 
 .linkButton--white {
+  line-height: 50px;
   border: 2px solid $white;
 }
