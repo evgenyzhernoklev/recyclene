@@ -1,6 +1,6 @@
 .formWrapper {
   width: 630px;
-  margin: 53px auto;
+  margin: 53px auto 75px;
   padding: 12px 0 0;
   border-radius: 10px;
   background-color: $white;
@@ -9,6 +9,21 @@
 
 .form {
 
+}
+
+.formSteps {
+  position: relative;
+  top: -12px;
+}
+
+.formSteps__step {
+  height: 11px;
+  background-color: transparent;
+  transition: background-color $transition-normal;
+
+  &.is-active {
+    background-color: #80BA27;
+  }
 }
 
 .formContent {
@@ -21,6 +36,15 @@
   font: 20px/28px $circe-light;
   color: #4F636F;
 }
+
+.form__sep {
+  display: block;
+  margin: 0 -70px;
+  height: 1px;
+  background-color: #EBEBEB;
+}
+
+
 
 
 
@@ -79,6 +103,62 @@
   }
 }
 
+.fieldWrapper--image {
+  margin-bottom: 39px;
+  height: auto;
+
+  .fieldWrapper__input {
+    display: none;
+  }
+
+  .fieldWrapper__label {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 180px;
+    height: 50px;
+    border-radius: 100px;
+    font: 12px/50px $circe-bold-extra;
+    color: $black;
+    background-color: transparent;
+    border: 2px solid $green;
+    cursor: pointer;
+    text-align: center;
+    transition: color $transition-normal, border-color $transition-normal, background-color $transition-normal;
+
+    &:hover {
+      border-color: #99D256;
+    }
+  }
+}
+
+.fieldWrapper__avatar {
+  display: inline-block;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  top: 0;
+  left: -150px;
+  line-height: 105px;
+  text-align: center;
+  background-color: #D6DADC;
+  border-radius: 50%;
+  overflow: hidden;
+
+  &:before {
+    content: '';
+    @include icon(avatar_white, 38px, 41px);
+    vertical-align: middle;
+  }
+}
+
+.fieldWrapper__info {
+  margin-bottom: 16px;
+  font: 14px/20px $circe-regular;
+  color: #888888;
+}
+
 .fieldWrapper__label {
   position: absolute;
   top: 14px;
@@ -127,7 +207,7 @@
   display: block;
   width: 100%;
   height: 80px;
-  font: 12px/80px $circe-bold-extra;
+  font: 12px/82px $circe-bold-extra;
   text-transform: uppercase;
   color: $white;
   background-color: #80BA27;

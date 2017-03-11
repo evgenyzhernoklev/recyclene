@@ -17,6 +17,7 @@
   color: $white;
   background-color: transparent;
   cursor: pointer;
+  text-align: center;
 }
 
 .linkButton--green {
@@ -26,6 +27,10 @@
 .linkButton--greenTransparent {
   color: $black;
   border: 2px solid $green;
+
+  &:hover {
+    border-color: #99D256;
+  }
 }
 
 .linkButton--white {
