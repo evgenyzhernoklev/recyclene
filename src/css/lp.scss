@@ -13,11 +13,17 @@
 }
 
 .titleMainLp {
-  padding: 72px 0 36px;
+  padding: 72px 0 24px;
   font-size: 32px;
   line-height: 38px;
   font-family: $circe-light;
   color: $black;
+  text-align: center;
+}
+
+.subtitleMainLp {
+  max-width: 480px;
+  margin: 0 auto 45px;
   text-align: center;
 }
 
@@ -214,7 +220,8 @@
 
 /*************** we change the world ***************/
 .contentLpChanges {
-
+  padding-bottom: 118px;
+  border-bottom: 1px solid $light-gray;
 }
 
 .subtitleChangesLp {
@@ -224,14 +231,92 @@
 
 
 .changesWrapperLp {
+  margin-top: 69px;
+  padding: 100px 0;
+}
+
+.changesLpCol {
+  position: relative;
+}
+
+.changesLpCol--bottle {
+  .changesLpCol__iconWrapper {
+    margin-top: -81px;
+    right: -20px;
+    width: 162px;
+    height: 162px;
+    background-image: linear-gradient(90deg, #67E9CB 0%, #62C4AD 100%);
+    border-radius: 50%;
+    vertical-align: middle;
+    line-height: 162px;
+    z-index: 1;
+
+    &:before {
+      left: -73px;
+    }
+  }
+
+  .changesInfoWrapperLp {
+    float: right;
+    margin-right: 195px;
+  }
+}
+
+.changesLpCol--box {
+  .changesLpCol__iconWrapper {
+    margin-top: -121px;
+    left: -20px;
+    width: 242px;
+    height: 242px;
+    background-image: linear-gradient(90deg, #80EDFF 0%, #81D4E2 100%);
+    border-radius: 50%;
+    vertical-align: middle;
+    line-height: 242px;
+
+    &:before {
+      right: -73px;
+    }
+  }
+
+  .changesInfoWrapperLp {
+    margin-left: 270px;
+  }
+}
+
+.changesInfoWrapperLp {
+  text-align: center;
+  width: 200px;
+  display: inline-block;
+}
+
+.changesInfoWrapperLp__title {
+  margin-bottom: 3px;
+  padding-top: 25px;
+  font-size: 28px;
+  line-height: 38px;
+}
+
+.changesInfoWrapperLp__info {
 
 }
 
 
 
+.changesLpCol__iconWrapper {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
 
-
-
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 55px;
+    height: 1px;
+    background-color: #D0D0D0;
+  }
+}
 
 
 
@@ -242,6 +327,7 @@
 
 /*************** how it works ***************/
 .contentLpHow {
+  padding-bottom: 114px;
   border-bottom: 1px solid $light-gray;
 }
 
@@ -292,13 +378,13 @@
 }
 
 .howSlideLpContent__step {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font: 13px/18px $circe-regular;
   color: #B8B8B8;
 }
 
 .howSlideLpContent__title {
-  margin-bottom: 30px;
+  margin-bottom: 33px;
   font: 20px/24px $circe-regular;
 }
 
@@ -317,6 +403,18 @@
 
 
 
+.howSlideLpContent__buttonsWrapper {
+  margin-top: 42px;
+
+  .icon {
+    margin: 0 4px;
+    width: 46px;
+    height: 46px;
+    border: 2px solid #80BA27;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
 
 
 
@@ -330,37 +428,38 @@
 
 /*************** partners ***************/
 .contentLpPartners {
+  padding-bottom: 57px;
   border-bottom: 1px solid $light-gray;
-
-  .titleMainLp {
-    padding-bottom: 93px;
-  }
 }
 
 .partnersColsLp {
   text-align: center;
-
-  .colFlex {
-    max-width: 350px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-.partnersAboutColLp {
-  margin-bottom: 27px;
 }
 
 .partnersInfoColLp {
-  margin-bottom: 87px;
+  position: relative;
+  margin: 60px 0 27px;
+  padding: 0 40px 70px;
 }
 
-.partnersInfoColLp__name {
+.partnersInfoColLp__info  {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.partnerPerson {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.partnerPerson__name {
   font-family: $circe-regular;
   color: #80BA27;
 }
 
-.partnersInfoColLp__place {
+.partnerPerson__place {
   font-size: 14px;
   color: #969696;
 }
@@ -369,6 +468,7 @@
 
 
 
+// partner logos
 .contentLpPartnersLogos {
 
 }
@@ -398,17 +498,7 @@
   padding: 68px 0 100px;
   background-color: #F8F8F8;
   text-align: center;
-
-  .titleMainLp {
-    padding-bottom: 23px;
-  }
 }
-
-.subtitleRequestLp {
-  max-width: 540px;
-  margin: 0 auto 45px;
-}
-
 
 .contentLpIn__requestButtonsLp {
 

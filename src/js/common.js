@@ -35,12 +35,21 @@ $(document).ready(function() {
 
 
     /*************** toggle blocks ***************/
+    $('.slide-arrow-prev').on('click', function(e) {
+      e.preventDefault();
+      $(this).closest('.slick-slider').slick('slickPrev');
+    });
 
-
+    $('.slide-arrow-next').on('click', function(e) {
+      e.preventDefault();
+      $(this).closest('.slick-slider').slick('slickNext');
+    });
 
     $('.howSliderLp').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
-      fade: true
+      fade: true,
+      prevArrow: '',
+      nextArrow: ''
     });
 });

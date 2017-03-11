@@ -65,7 +65,7 @@
 }
 
 .icon--bottleWhite {
-
+  @include icon(bottle_white, 33px, 63px);
 }
 
 .icon--boxPurple {
@@ -73,5 +73,13 @@
 }
 
 .icon--boxWhite {
+  @include icon(box_white, 53px, 53px);
+}
 
+.icon--sliderLeft {
+  @include icon(arrow_left_green, 28px, 20px);
+}
+
+.icon--sliderRight {
+  @include icon(arrow_right_green, 28px, 20px);
 }
