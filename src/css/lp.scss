@@ -366,11 +366,38 @@
 }
 
 .tabsLinksWrapperLp {
-
+  margin: 20px 0 72px;
+  text-align: center;
+  font-size: 0;
 }
 
 .tabsLinkLp {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  width: 225px;
+  height: 50px;
+  font: 12px/50px $circe-bold-extra;
+  color: $black;
+  cursor: pointer;
+  background: #F8F8F8;
+  border-top-left-radius: 75px;
+  border-bottom-left-radius: 75px;
 
+  &:last-child {
+    border-top-right-radius: 75px;
+    border-bottom-right-radius: 75px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  &.is-active {
+    z-index: 2;
+    color: $white;
+    background: #7BB637;
+    box-shadow: 0px 10px 25px 0px #7BB637;
+
+  }
 }
 
 .tabsContentWrapperLp {
@@ -378,7 +405,11 @@
 }
 
 .tabsContentLp {
+  display: none;
 
+  &.is-active {
+    display: block;
+  }
 }
 
 

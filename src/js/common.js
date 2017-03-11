@@ -47,6 +47,27 @@ $(document).ready(function() {
 
 
     /*************** toggle blocks ***************/
+    $('.tabs-link').on('click', function(e) {
+      e.preventDefault();
+      if ( $(this).hasClass('is-active') ) {
+        return;
+      }
+
+      var $parent = $(this).closest('.tabs-wrapper'),
+          $content = $parent.find('.tabs-content'),
+          targetBlockIndex = +$(this).data('block'),
+          $targetBlock = $content.eq(targetBlockIndex);
+
+      $parent.find('.tabs-link').removeClass('is-active');
+      $(this).addClass('is-active');
+
+      $content.removeClass('is-active');
+      $targetBlock.addClass('is-active');
+    });
+
+
+
+    /*************** slider how it works ***************/
     $('.slide-arrow-prev').on('click', function(e) {
       e.preventDefault();
       $(this).closest('.slick-slider').slick('slickPrev');
