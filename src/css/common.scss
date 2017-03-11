@@ -7,7 +7,8 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-a {
+a,
+button {
     transition: color $transition-normal, border-color $transition-normal, background-color $transition-normal;
     cursor: pointer;
 }
@@ -27,6 +28,12 @@ a {
   display: none;
 }
 
+
+
+.contentWrapper {
+  overflow: hidden;
+}
+
 .contentIn {
   position: relative;
   max-width: 1164px;
@@ -37,7 +44,16 @@ a {
 }
 
 .titleMain {
+  margin: 36px 0 7px;
+  font: 32px/38px $circe-light;
+  color: $white;
+  text-align: center;
+}
 
+.subtitleMain {
+  font: 14px/21px $circe-light;
+  color: #A6C0D1;
+  text-align: center;
 }
 
 

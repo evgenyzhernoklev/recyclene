@@ -1,0 +1,138 @@
+.formWrapper {
+  width: 630px;
+  margin: 53px auto;
+  padding: 12px 0 0;
+  border-radius: 10px;
+  background-color: $white;
+  overflow: hidden;
+}
+
+.form {
+
+}
+
+.formContent {
+  padding: 0 70px;
+  text-align: left;
+}
+
+.formContent__title {
+  margin: 32px 0 22px;
+  font: 20px/28px $circe-light;
+  color: #4F636F;
+}
+
+
+
+// form blocks
+.formBlock {
+  position: relative;
+  margin: 0 0 10px;
+}
+
+.fieldWrapper {
+  display: block;
+  position: relative;
+  margin-left: 150px;
+  height: 50px;
+  cursor: pointer;
+
+  &.has-error {
+
+  }
+
+  &.is-ok {
+
+  }
+}
+
+.fieldWrapper--checkbox {
+  .fieldWrapper__input {
+    display: none;
+
+    &:checked + .fieldWrapper__label:before {
+      @include icon(checkbox_white, 13px, 10px);
+      background-color: #80BA27;
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .fieldWrapper__label {
+    position: relative;
+    display: inline-block;
+    left: 40px;
+    color: $black;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      left: -40px;
+      top: -2px;
+      background-color: $white-light;
+      border-radius: 5px;
+      transition: background-color $transition-normal, background-image $transition-normal;
+    }
+  }
+}
+
+.fieldWrapper__label {
+  position: absolute;
+  top: 14px;
+  left: -150px;
+  font: 14px/22px $circe-regular;
+  color: #4F636F;
+}
+
+.fieldWrapper__input {
+  width: 100%;
+  height: 100%;
+  padding: 0 15px;
+  font-size: 14px;
+  font-family: $circe-regular;
+  color: $black;
+  background-color: $white-light;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color $transition-normal, border-color $transition-normal;
+
+  &:focus {
+    border-color: #E4E4E4;
+  }
+}
+
+
+
+.formBlock__reminderLink {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  font: 14px/22px $circe-regular;
+  color: #80BA27;
+  cursor: pointer;
+}
+
+
+
+// button submit
+.formButtonWrapper {
+  margin: 48px 0 0;
+}
+
+.formButtonWrapper__submit {
+  display: block;
+  width: 100%;
+  height: 80px;
+  font: 12px/80px $circe-bold-extra;
+  text-transform: uppercase;
+  color: $white;
+  background-color: #80BA27;
+
+  &:hover {
+    background-color: #99D256;
+  }
+}

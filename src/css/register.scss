@@ -1,0 +1,17 @@
+html.docForms,
+body {
+  height: 100%;
+}
+
+.sectionForms {
+  display: table;
+  width: 100%;
+  height: 100%;
+  background-color: #4F636F;
+  text-align: center;
+}
+
+.sectionForms__contentIn {
+  display: table-cell;
+  vertical-align: middle;
+}
