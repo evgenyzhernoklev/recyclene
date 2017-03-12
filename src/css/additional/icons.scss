@@ -87,3 +87,7 @@
 .icon--editWhite {
   @include icon(edit_white, 15px, 15px);
 }
+
+.icon--requestOk {
+  @include icon(ok_green, 88px, 88px);
+}

@@ -11,6 +11,13 @@
 
 }
 
+.form__sep {
+  display: block;
+  margin: 30px -70px 20px;
+  height: 1px;
+  background-color: #EBEBEB;
+}
+
 .formSteps {
   position: relative;
   top: -12px;
@@ -26,9 +33,23 @@
   }
 }
 
+
+
+// form content
 .formContent {
   padding: 0 70px;
   text-align: left;
+}
+
+.formContent--result {
+  padding-bottom: 50px;
+  text-align: center;
+
+  .formContent__title {
+    max-width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .formContent__title {
@@ -37,14 +58,16 @@
   color: #4F636F;
 }
 
-.form__sep {
-  display: block;
-  margin: 30px -70px 20px;
-  height: 1px;
-  background-color: #EBEBEB;
+.formContent__info {
+  margin-bottom: 28px;
+  max-width: 340px;
+  font-size: 14px;
+  line-height: 21px;
 }
 
-
+.formContent__iconWrapperResult {
+  margin: 55px 0 58px;
+}
 
 
 
@@ -76,6 +99,32 @@
     .fieldWrapper__label {
       left: -70px
     }
+  }
+}
+
+.formBlock--amount {
+  margin-right: 180px;
+
+  .fieldWrapper {
+    &:after {
+      content: 'кг';
+      display: inline-block;
+      position: absolute;
+      right: 20px;
+      font: 14px/20px $circe-regular;
+      color: #4F636F;
+    }
+  }
+
+  .fieldWrapper__info {
+    position: absolute;
+    top: 5px;
+    left: 100%;
+    margin: 0 0 0 20px;
+  }
+
+  .fieldWrapper__input {
+    padding-right: 50px;
   }
 }
 
