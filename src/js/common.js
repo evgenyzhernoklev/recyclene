@@ -10,8 +10,13 @@ $(document).ready(function() {
 
 
 
-
-
+    /*************** forms ***************/
+    $('.form-select').selectize({
+      sortField: {
+        field: 'text',
+        direction: 'asc'
+      }
+    });
 
 
 
