@@ -60,6 +60,10 @@
   @include icon(logo_gray, 148px, 15px);
 }
 
+.icon--logoHeader {
+  @include icon(logo_header, 138px, 16px);
+}
+
 .icon--bottleGreen {
   @include icon(bottle_green, 33px, 63px);
 }

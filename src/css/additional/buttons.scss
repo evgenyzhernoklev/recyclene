@@ -43,3 +43,17 @@
   line-height: 50px;
   border: 2px solid $white;
 }
+
+
+
+.linkButtonSmall {
+  display: inline-block;
+  width: 128px;
+  height: 38px;
+  border: 1px solid #D0D0D0;
+  border-radius: 100px;
+  font-size: 13px;
+  line-height: 38px;
+  color: $black;
+  text-align: center;
+}

@@ -32,15 +32,16 @@ button {
 
 .contentWrapper {
   overflow: hidden;
+  padding-top: 80px;
 }
 
 .contentIn {
   position: relative;
-  max-width: 1164px;
+  max-width: 1280px;
   min-width: 320px;
   height: 100%;
   margin: 0 auto;
-  padding: 0 78px;
+  padding: 0 50px;
 }
 
 .titleMain {

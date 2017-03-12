@@ -65,7 +65,8 @@
       color: #A1A1A1;
       transition: color $transition-normal, border-color $transition-normal, background-color $transition-normal;
 
-      &.is-active {
+      &.is-active,
+      &:hover {
         color: $black;
       }
     }
