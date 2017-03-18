@@ -66,3 +66,17 @@ button {
     display: block;
   }
 }
+
+
+
+// tolltip
+.tooltip {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 340px;
+  margin-left: -170px;
+  background: $white;
+  box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.20);
+  border-radius: 3px;
+}
