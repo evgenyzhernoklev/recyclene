@@ -73,7 +73,8 @@ button {
 .tooltip {
   display: none;
   position: absolute;
-  top: 40px;
+  z-index: 1;
+  top: 150%;
   right: 50%;
   width: 340px;
   margin-right: -50px;
@@ -84,6 +85,11 @@ button {
   &.is-visible {
     display: block;
   }
+}
+
+.tooltip--small {
+  width: 170px;
+  z-index: 2;
 }
 
 .triangleShadowWrapper {

@@ -100,6 +100,7 @@
 
 .menu {
   height: 100%;
+  text-align: center;
 }
 
 .menuItem {
@@ -148,13 +149,14 @@
   display: inline-block;
   position: absolute;
   right: -120px;
-  top: 30px;
+  top: 22px;
 }
 
 // notifications
 .notificationsWrapper {
   position: relative;
   display: inline-block;
+  margin-right: 32px;
 }
 
 .notificationsWrapper__button {
@@ -241,4 +243,50 @@
   &:hover {
     background-color: #EDEDED;
   }
+}
+
+
+
+// logined menu
+.iconWrapper__notifications {
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  font: 11px/38px $circe-regular;
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: $black;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    margin-top: -2px;
+    display: inline-block;
+    border-style: solid;
+    border-width: 5px 5px 0;
+    border-color: $black transparent transparent;
+  }
+}
+
+.tootipMenu {
+  padding: 12px 17px 10px;
+}
+
+.tootipMenuItem {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.tootipMenuItemLink {
+  font: 14px/20px $circe-regular;
+  color: $black;
 }
