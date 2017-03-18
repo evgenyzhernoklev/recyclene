@@ -145,7 +145,10 @@
 
 // logined block
 .headerLoginedInfo {
-
+  display: inline-block;
+  position: absolute;
+  right: -120px;
+  top: 30px;
 }
 
 // notifications
@@ -182,12 +185,13 @@
 }
 
 .notificationsList {
-  max-height: 395px;
+  max-height: 392px;
   overflow: auto;
 }
 
 .notificationsItem {
-  padding: 21px 25px 16px;
+  position: relative;
+  padding: 20px 25px 16px;
   border-bottom: 1px solid #EDEDED;
 
   &:last-child {
@@ -196,7 +200,17 @@
 }
 
 .notificationsItem__label {
-
+  position: absolute;
+  z-index: 1;
+  top: 13px;
+  right: 25px;
+  display: inline-block;
+  padding: 0 15px;
+  height: 25px;
+  font: 13px/25px $circe-bold-extra;
+  color: $white;
+  background: #E72081;
+  border-radius: 100px;
 }
 
 .notificationsItem__date {

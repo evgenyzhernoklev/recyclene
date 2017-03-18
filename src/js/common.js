@@ -20,7 +20,14 @@ $(document).ready(function() {
 
 
 
+    // notifications
+    $body.on('click', '.notifications-show', function(e) {
+      e.preventDefault();
+      var $parent = $(this).closest('.notifications-wrapper'),
+          $notifications = $parent.find('.tooltip');
 
+      $notifications.toggleClass('is-visible');
+    });
 
 
     // tabs in ads
