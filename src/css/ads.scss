@@ -1,3 +1,32 @@
+// title tabs
+.titlePage__buttonsWrapper {
+  display: inline-block;
+  margin-top: 4px;
+  float: right;
+  font-size: 0;
+  white-space: nowrap;
+}
+
+.titlePageButton {
+  display: inline-block;
+  margin: 0 20px 0 40px;
+  font: 10px/14px $circe-bold-extra;
+  cursor: pointer;
+  opacity: 0.3;
+  transition: opacity $transition-normal;
+
+  &.is-active {
+    opacity: 1;
+    cursor: default;
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+
+// cols
 .adsCols {
   padding: 5px 0 60px;
 }
@@ -18,6 +47,10 @@
 
   &:hover {
     box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.20);
+  }
+
+  &.is-hidden {
+    display: none;
   }
 }
 

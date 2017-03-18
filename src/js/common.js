@@ -20,6 +20,40 @@ $(document).ready(function() {
 
 
 
+
+
+
+    // tabs in ads
+    $body.on('click', '.tabs-button', function(e) {
+      e.preventDefault();
+      var $parent = $('.tabs-wrapper'),
+          $targetBlocks = $parent.find('.tabs-content'),
+          $buttons = $parent.find('.tabs-button'),
+          typeOfBlocks = $(this).data('show');
+
+      if ($(this).hasClass('is-active')) {
+        return;
+      }
+
+      $buttons.removeClass('is-active');
+      $(this).addClass('is-active');
+
+      if (typeOfBlocks == 'all') {
+        $targetBlocks.removeClass('is-hidden');
+        return;
+      }
+
+      $targetBlocks.each(function(index, element) {
+        if ($(element).data('show') == typeOfBlocks) {
+          $(element).removeClass('is-hidden');
+        } else {
+          $(element).addClass('is-hidden');
+        }
+      });
+    });
+
+
+
     /*************** js for landing ***************/
     if ( $('.sliderSells').length ) {
       /*************** menu ***************/

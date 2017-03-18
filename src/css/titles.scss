@@ -16,6 +16,7 @@
 
 .sectionTitle {
   border-bottom: 1px solid #DADADA;
+  @include clearfix();
 }
 
 .sectionTitle--noBorder {
@@ -24,7 +25,7 @@
 
 // title with tabs
 .sectionTitle--tabs {
-  
+
 }
 
 
@@ -37,6 +38,12 @@
 .titlePage {
   font: 32px/38px $circe-light;
   color: $black;
+}
+
+.titlePage--small {
+  padding-top: 10px;
+  font-size: 26px;
+  line-height: 35px;
 }
 
 

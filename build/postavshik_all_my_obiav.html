@@ -19,17 +19,22 @@
 		</div>
 	</header>
 
-	<div class="contentWrapper">
+	<div class="contentWrapper tabs-wrapper">
 		<div class="contentWrapper__sectionTitle sectionTitle sectionTitle--noBorder sectionTitle--tabs">
 			<div class="sectionTitle__contentIn contentIn">
-				<h1 class="contentIn__title titlePage">Мои объявления</h1>
+				<h1 class="contentIn__title titlePage titlePage--small">Мои объявления
+					<div class="titlePage__buttonsWrapper buttonsWrapper">
+						<span class="buttonsWrapper__button titlePageButton tabs-button is-active" data-show="all">Показывать все</span>
+						<span class="buttonsWrapper__button titlePageButton tabs-button" data-show="with-offer">С предложениями</span>
+						<span class="buttonsWrapper__button titlePageButton tabs-button" data-show="without-offer">Без предложений</span>
+					</div>
+				</h1>
 			</div>
 		</div>
 		<div class="contentWrapper__content content">
 			<div class="content__contentIn contentIn">
 				<div class="colsFlex adsCols">
-
-					<div class="colsFlex__col colFlex--3 adsCol adsColEmpty">
+					<div class="colsFlex__col colFlex--3 adsCol adsColEmpty tabs-content">
 						<div class="adsColEmpty__wrapper adsColEmptyWrapper">
 							<div class="adsColEmptyWrapper__iconWrapper iconWrapper">
 								<span class="iconWrapper__icon icon icon--addAds"></span>
@@ -37,8 +42,7 @@
 							<p class="adsColEmptyWrapper__new">НОВОЕ ОБЪЯВЛЕНИЕ</p>
 						</div>
 					</div>
-
-					<div class="colsFlex__col colFlex--3 adsCol">
+					<div class="colsFlex__col colFlex--3 adsCol tabs-content" data-show="with-offer">
 						<span class="adsCol__moreAdsNumber">+5</span>
 						<div class="adsCol__header adsColHeader">
 							<div class="adsColHeader__overlay"></div>
@@ -65,8 +69,7 @@
 							</div>
 						</div>
 					</div>
-
-					<div class="colsFlex__col colFlex--3 adsCol">
+					<div class="colsFlex__col colFlex--3 adsCol tabs-content" data-show="with-offer">
 						<span class="adsCol__moreAdsNumber">+555</span>
 						<div class="adsCol__header adsColHeader">
 							<div class="adsColHeader__overlay"></div>
@@ -92,9 +95,7 @@
 							</div>
 						</div>
 					</div>
-
-					<div class="colsFlex__col colFlex--3 adsCol">
-						<span class="adsCol__moreAdsNumber">+5</span>
+					<div class="colsFlex__col colFlex--3 adsCol tabs-content" data-show="without-offer">
 						<div class="adsCol__header adsColHeader">
 							<div class="adsColHeader__overlay"></div>
 							<div class="adsColHeader__info adsColHeaderInfo">
@@ -119,12 +120,35 @@
 							</div>
 						</div>
 					</div>
-
+					<div class="colsFlex__col colFlex--3 adsCol tabs-content" data-show="without-offer">
+						<div class="adsCol__header adsColHeader">
+							<div class="adsColHeader__overlay"></div>
+							<div class="adsColHeader__info adsColHeaderInfo">
+								<p class="adsColHeaderInfo__title">Флаконы</p>
+							</div>
+							<img class="adsColHeader__img" src="img/materials/raw_mat3.jpg" />
+						</div>
+						<div class="adsCol__content adsColContent">
+							<p class="adsColContent__title">Адрес</p>
+							<p class="adsColContent__info">Москва, ул. Академика Королева, 12, cтроение 21</p>
+							<p class="adsColContent__title">Вывоз</p>
+							<p class="adsColContent__info">до 28 октября 2017</p>
+						</div>
+						<div class="adsCol__footer adsColFooter">
+							<div class="adsColFooter__iconWrapper iconWrapper">
+								<span class="iconWrapper__icon icon icon--eye"></span>
+								<span class="iconWrapper__number">123</span>
+							</div>
+							<div class="adsColFooter__iconWrapper iconWrapper">
+								<span class="iconWrapper__icon icon icon--speaker"></span>
+								<span class="iconWrapper__number">5</span>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
 
 	<script src="js/app.js"></script>
 </body>
