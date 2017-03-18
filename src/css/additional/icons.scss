@@ -103,3 +103,11 @@
 .icon--basket {
   @include icon(basket_white, 11px, 14px);
 }
+
+.icon--eye {
+  @include icon(eye_gray, 17px, 11px);
+}
+
+.icon--speaker {
+  @include icon(speaker_gray, 15px, 13px);
+}
