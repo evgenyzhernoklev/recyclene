@@ -1,6 +1,7 @@
 /*************** common ***************/
 .contentLp {
   @include clearfix();
+  background-color: $white;
 }
 
 .contentLpIn {

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
-	<title>postavshik_register - register_3</title>
+	<title>postavshik_new_zakaz</title>
 	<link rel="stylesheet" media="all" href="css/app.css">
 </head>
 <body>
@@ -19,12 +19,306 @@
 		</div>
 	</header>
 
-	<div class="contentWrapper sectionAdvert">
+	<div class="contentWrapper">
+		<div class="contentWrapper__sectionTitle sectionTitle">
+			<div class="sectionTitle__contentIn contentIn">
+				<h1 class="contentIn__title titlePage">Размещение нового объявления</h1>
+			</div>
+		</div>
+
+		<form class="contentWrapper__sectionZakaz sectionZakaz form">
+			<div class="sectionZakaz__contentIn contentIn">
+
+				<!-- step 1 begin -->
+				<div class="contentIn__zakazStep zakazStep">
+					<h2 class="zakazStep__title zakazStepTitle">Местонахождение<span class="zakazStepTitle__number">1</span></h2>
+					<div class="zakazStep__content zakazContent colsFlex">
+						<div class="colsFlex__col colFlex--2">
+
+
+							<div class="zakazContent__formContent formContent formContent--labelsTop">
+								<p class="formContent__title">Выберите склад и дату отгрузки</p>
+
+								<div class="form__block formBlock">
+									<label class="formBlock__fieldWrapper fieldWrapper">
+										<select class="fieldWrapper__select form-select" placeholder="Выберите склад">
+											<option value="">Выберите склад</option>
+											<option value="4">Перевозки</option>
+											<option value="1">Добыча сырья</option>
+											<option value="3">Строительство</option>
+											<option value="5">B2B</option>
+										</select>
+										<span class="fieldWrapper__label">Где находится сырье?</span>
+									</label>
+								</div>
+
+
+
+							</div>
+
+
+
+						</div>
+						<div class="colsFlex__col colFlex--2 zakazContentCol">
+
+						</div>
+					</div>
+				</div>
+				<!-- step 1 end -->
+
+
+
+				<!-- step 2 begin -->
+				<div class="contentIn__zakazStep zakazStep">
+					<h2 class="zakazStep__title zakazStepTitle">Описание вторсырья<span class="zakazStepTitle__number">2</span></h2>
+
+					<div class="zakazStep__content zakazContent zakazAdded cols">
+						<div class="zakazAdded__imgWrapper imgWrapper">
+							<img class="imgWrapper__img" src="img/materials/raw_mat1.png" />
+						</div>
+						<div class="zakazAdded__about zakazAddedAbout">
+							<p class="zakazAddedAbout__title">Канистры:</p>
+							<p class="zakazAddedAbout__subtitle">Сильные кислоты, щелочи</p>
+						</div>
+						<div class="zakazAdded__info zakazAddedInfo">
+							<p class="zakazAddedInfo__title">300 кг.</p>
+							<p class="zakazAddedInfo__subtitle">Вес товара</p>
+						</div>
+						<div class="zakazAdded__info zakazAddedInfo">
+							<p class="zakazAddedInfo__title">123 м3</p>
+							<p class="zakazAddedInfo__subtitle">Объем товара</p>
+						</div>
+						<div class="zakazAdded__info zakazAddedInfo">
+							<p class="zakazAddedInfo__title">до 28.10</p>
+							<p class="zakazAddedInfo__subtitle">Дата вывоза</p>
+						</div>
+						<div class="zakazAdded__iconWrapper iconWrapper">
+							<span class="iconWrapper__icon icon icon--pensil"></span>
+							<span class="iconWrapper__icon icon icon--basket"></span>
+						</div>
+					</div>
+
+					<div class="zakazStep__content zakazContent">
+						<div class="zakazContent__formContent formContent formContent--labelsTop">
+
+							<p class="formContent__title">Выберите тип сырья</p>
+							<div class="form__block formBlock formBlock--cols">
+								<div class="formBlock__col formBlockCol">
+									<label class="formBlock__fieldWrapper fieldWrapper">
+										<select class="fieldWrapper__select form-select" placeholder="Выберите тип сырья">
+											<option value="">Выберите тип сырья</option>
+											<option value="4">Перевозки</option>
+											<option value="1">Добыча сырья</option>
+											<option value="3">Строительство</option>
+											<option value="5">B2B</option>
+										</select>
+										<span class="fieldWrapper__label">Тип сырья</span>
+									</label>
+								</div>
+								<div class="formBlock__col formBlockCol">
+									<label class="formBlock__fieldWrapper fieldWrapper">
+										<select class="fieldWrapper__select form-select" placeholder="Выберите тип вторсырья">
+											<option value="">Выберите тип вторсырья</option>
+											<option value="4">Перевозки</option>
+											<option value="1">Добыча сырья</option>
+											<option value="3">Строительство</option>
+											<option value="5">B2B</option>
+										</select>
+										<span class="fieldWrapper__label">Тип вторсырья</span>
+									</label>
+								</div>
+							</div>
+
+							<hr class="form__sep" />
+							<p class="formContent__title">Добавьте фотографии</p>
 
 
 
 
+							<hr class="form__sep" />
+							<p class="formContent__title">Дополнительная информация</p>
+							<div class="form__block formBlock formBlock--cols colsFlex">
+								<div class="colsFlex__col colsFlex--2">
+									<label class="formBlock__fieldWrapper fieldWrapper">
+										<select class="fieldWrapper__select form-select" placeholder="Выберите тип упаковки">
+											<option value="">Выберите тип упаковки</option>
+											<option value="4">Перевозки</option>
+											<option value="1">Добыча сырья</option>
+											<option value="3">Строительство</option>
+											<option value="5">B2B</option>
+										</select>
+										<span class="fieldWrapper__label">Тип упаковки</span>
+									</label>
+								</div>
+								<div class="colsFlex__col colsFlex--4">
+									<label class="formBlock__fieldWrapper fieldWrapper">
+										<p class="fieldWrapper__info">м<sup>3</sup></p>
+										<input class="fieldWrapper__input" type="text" name="" placeholder="" />
+										<span class="fieldWrapper__label">Объем</span>
+									</label>
+								</div>
+								<div class="colsFlex__col colsFlex--4">
+									<label class="formBlock__fieldWrapper fieldWrapper">
+										<p class="fieldWrapper__info">кг</p>
+										<input class="fieldWrapper__input" type="text" name="" placeholder="" />
+										<span class="fieldWrapper__label">Вес</span>
+									</label>
+								</div>
+							</div>
+
+							<p class="formContent__titleCheckbox">Загрязнение</p>
+							<div class="form__block formBlock formBlock--cols colsFlex">
+								<div class="colsFlex__col colsFlex--4">
+									<label class="formBlock__fieldWrapper fieldWrapper fieldWrapper--checkbox">
+										<input class="fieldWrapper__input fieldWrapper__input" type="checkbox" name="" placeholder="" />
+										<span class="fieldWrapper__label">Наклейки, скотч, пыль</span>
+									</label>
+								</div>
+								<div class="colsFlex__col colsFlex--4">
+									<label class="formBlock__fieldWrapper fieldWrapper fieldWrapper--checkbox">
+										<input class="fieldWrapper__input fieldWrapper__input" type="checkbox" name="" placeholder="" />
+										<span class="fieldWrapper__label">Земля, влага</span>
+									</label>
+								</div>
+								<div class="colsFlex__col colsFlex--4">
+									<label class="formBlock__fieldWrapper fieldWrapper fieldWrapper--checkbox">
+										<input class="fieldWrapper__input fieldWrapper__input" type="checkbox" name="" placeholder="" />
+										<span class="fieldWrapper__label">Жир, органика</span>
+									</label>
+								</div>
+								<div class="colsFlex__col colsFlex--4">
+									<label class="formBlock__fieldWrapper fieldWrapper fieldWrapper--checkbox">
+										<input class="fieldWrapper__input fieldWrapper__input" type="checkbox" name="" placeholder="" />
+										<span class="fieldWrapper__label">Сырое</span>
+									</label>
+								</div>
+							</div>
+
+
+							<hr class="form__sep" />
+							<div class="form__block formBlock formBlock--links">
+								<span class="formBlock__linkButton linkButton linkButton--green">СОХРАНИТЬ</span>
+							</div>
+
+
+
+						</div>
+					</div>
+				</div>
+				<!-- step 2 end -->
+
+				<div class="form__addStorehouse addStorehouse">
+					<span class="addStorehouse__info">Добавить еще один лот</span>
+				</div>
+
+
+				<!-- step 3 begin -->
+				<div class="contentIn__zakazStep zakazStep">
+					<h2 class="zakazStep__title zakazStepTitle">Условия сделки<span class="zakazStepTitle__number">3</span></h2>
+					<div class="zakazStep__content zakazContent">
+						<div class="zakazContent__formContent formContent formContent--labelsTop">
+
+
+							<p class="formContent__title">Оплата</p>
+							<div class="form__block formBlock formBlock--cols">
+								<div class="formBlock__col formBlockCol">
+									<label class="formBlock__fieldWrapper fieldWrapper">
+										<select class="fieldWrapper__select form-select" placeholder="Выберите форму оплаты">
+											<option value="">Выберите форму оплаты</option>
+											<option value="4">Перевозки</option>
+											<option value="1">Добыча сырья</option>
+											<option value="3">Строительство</option>
+											<option value="5">B2B</option>
+										</select>
+										<span class="fieldWrapper__label">Форма оплаты</span>
+									</label>
+								</div>
+								<div class="formBlock__col formBlockCol">
+									<label class="formBlock__fieldWrapper fieldWrapper">
+										<select class="fieldWrapper__select form-select" placeholder="Выберите срок оплаты">
+											<option value="">Выберите срок оплаты</option>
+											<option value="4">Перевозки</option>
+											<option value="1">Добыча сырья</option>
+											<option value="3">Строительство</option>
+											<option value="5">B2B</option>
+										</select>
+										<span class="fieldWrapper__label">Срок оплаты</span>
+									</label>
+								</div>
+							</div>
+
+							<div class="form__block formBlock formBlock--cols">
+								<div class="formBlock__col formBlockCol">
+									<label class="formBlock__fieldWrapper fieldWrapper">
+										<select class="fieldWrapper__select form-select" placeholder="Выберите нужна ли документация">
+											<option value="">Выберите нужна ли документация</option>
+											<option value="4">Перевозки</option>
+											<option value="1">Добыча сырья</option>
+											<option value="3">Строительство</option>
+											<option value="5">B2B</option>
+										</select>
+										<span class="fieldWrapper__label">Документация</span>
+									</label>
+								</div>
+								<div class="formBlock__col formBlockCol">
+									<label class="formBlock__fieldWrapper fieldWrapper">
+										<select class="fieldWrapper__select form-select" placeholder="Выберите тип доставки">
+											<option value="">Выберите тип доставки</option>
+											<option value="4">Перевозки</option>
+											<option value="1">Добыча сырья</option>
+											<option value="3">Строительство</option>
+											<option value="5">B2B</option>
+										</select>
+										<span class="fieldWrapper__label">Доставка</span>
+									</label>
+								</div>
+							</div>
+
+							<p class="formContent__titleCheckbox">Специальные условия</p>
+							<div class="form__block formBlock formBlock--cols colsFlex">
+								<div class="colsFlex__col colsFlex--4">
+									<label class="formBlock__fieldWrapper fieldWrapper fieldWrapper--checkbox">
+										<input class="fieldWrapper__input fieldWrapper__input" type="checkbox" name="" placeholder="" />
+										<span class="fieldWrapper__label">Нужны ББ взамен</span>
+									</label>
+								</div>
+								<div class="colsFlex__col colsFlex--4">
+									<label class="formBlock__fieldWrapper fieldWrapper fieldWrapper--checkbox">
+										<input class="fieldWrapper__input fieldWrapper__input" type="checkbox" name="" placeholder="" />
+										<span class="fieldWrapper__label">Нужна доверенность на водителя</span>
+									</label>
+								</div>
+								<div class="colsFlex__col colsFlex--4">
+									<label class="formBlock__fieldWrapper fieldWrapper fieldWrapper--checkbox">
+										<input class="fieldWrapper__input fieldWrapper__input" type="checkbox" name="" placeholder="" />
+										<span class="fieldWrapper__label">Платный въезд</span>
+									</label>
+								</div>
+								<div class="colsFlex__col colsFlex--4">
+									<label class="formBlock__fieldWrapper fieldWrapper fieldWrapper--checkbox">
+										<input class="fieldWrapper__input fieldWrapper__input" type="checkbox" name="" placeholder="" />
+										<span class="fieldWrapper__label">Водитель с гражаднством РФ</span>
+									</label>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<!-- step 3 end -->
+
+
+
+			</div>
+		</form>
 	</div>
+
+
+	<footer class="footerZakaz">
+		<div class="footerZakaz__contentIn contentIn">
+
+		</div>
+	</footer>
 
 	<script src="js/app.js"></script>
 </body>

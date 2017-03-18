@@ -3,6 +3,7 @@ body {
   line-height: 1.5;
   font-family: $circe-light;
   color: $black;
+  background-color: $white-light;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
@@ -42,20 +43,6 @@ button {
   height: 100%;
   margin: 0 auto;
   padding: 0 50px;
-}
-
-.titleMain {
-  margin: 36px 0 17px;
-  font: 32px/38px $circe-light;
-  color: $white;
-  text-align: center;
-}
-
-.subtitleMain {
-  margin: 0 auto;
-  font: 14px/21px $circe-light;
-  color: #A6C0D1;
-  text-align: center;
 }
 
 

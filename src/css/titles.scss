@@ -1,0 +1,39 @@
+.titleMain {
+  margin: 36px 0 17px;
+  font: 32px/38px $circe-light;
+  color: $white;
+  text-align: center;
+}
+
+.subtitleMain {
+  margin: 0 auto;
+  font: 14px/21px $circe-light;
+  color: #A6C0D1;
+  text-align: center;
+}
+
+
+
+.sectionTitle {
+  border-bottom: 1px solid #DADADA;
+}
+
+.sectionTitle__contentIn {
+  padding-top: 36px;
+  padding-bottom: 30px;
+}
+
+.titlePage {
+  font: 32px/38px $circe-light;
+  color: $black;
+}
+
+
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
