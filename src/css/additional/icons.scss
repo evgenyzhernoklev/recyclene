@@ -95,3 +95,11 @@
 .icon--requestOk {
   @include icon(ok_green, 88px, 88px);
 }
+
+.icon--pensil {
+  @include icon(pensil_white, 15px, 15px);
+}
+
+.icon--basket {
+  @include icon(basket_white, 11px, 14px);
+}

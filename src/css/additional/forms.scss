@@ -70,10 +70,86 @@
 }
 
 
-
+// .formBlockCol:nth-child(2n) .fieldWrapper__label
 // form content with labels on top
 .formContent--labelsTop {
-  
+
+  &.formContent {
+    padding: 0 20px 0 40px;
+  }
+
+  .form__sep {
+    margin: 35px -20px 22px -40px;
+  }
+
+  .formContent__title {
+    margin: 32px 0 45px;
+  }
+
+  .formBlock {
+    margin-top: 40px;
+    padding-top: 20px;
+  }
+
+
+
+  .fieldWrapper {
+    margin: 0;
+  }
+
+  .fieldWrapper--checkbox {
+    margin: -37px 0 27px;
+    height: auto;
+
+    .fieldWrapper__label {
+      top: 0;
+      padding-right: 60px;
+    }
+  }
+
+  .fieldWrapper__label {
+    top: -32px;
+    left: 0;
+  }
+
+  .fieldWrapper__info {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+
+    & + .fieldWrapper__input {
+      padding-right: 50px;
+    }
+  }
+
+
+  .formBlock--links {
+    margin-top: 35px;
+    padding-top: 0;
+  }
+
+  .formBlock__linkButton {
+    width: 165px;
+    margin: 0 0 20px;
+
+    &:nth-child(2) {
+      margin: 0 0 0 15px;
+    }
+
+    &.linkButton--right {
+      margin-right: 20px;
+    }
+  }
+}
+
+.formBlock__col {
+  padding-right: 20px;
+}
+
+.formContent__titleCheckbox {
+  margin: 35px 0 13px;
+  font: 14px/22px $circe-regular;
+  color: #4F636F;
 }
 
 

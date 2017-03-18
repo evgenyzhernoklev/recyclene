@@ -72,29 +72,58 @@
 				<div class="contentIn__zakazStep zakazStep">
 					<h2 class="zakazStep__title zakazStepTitle">Описание вторсырья<span class="zakazStepTitle__number">2</span></h2>
 
-					<div class="zakazStep__content zakazContent zakazAdded cols">
+					<div class="zakazStep__content zakazContent zakazAdded">
 						<div class="zakazAdded__imgWrapper imgWrapper">
 							<img class="imgWrapper__img" src="img/materials/raw_mat1.png" />
-						</div>
-						<div class="zakazAdded__about zakazAddedAbout">
-							<p class="zakazAddedAbout__title">Канистры:</p>
-							<p class="zakazAddedAbout__subtitle">Сильные кислоты, щелочи</p>
-						</div>
-						<div class="zakazAdded__info zakazAddedInfo">
-							<p class="zakazAddedInfo__title">300 кг.</p>
-							<p class="zakazAddedInfo__subtitle">Вес товара</p>
-						</div>
-						<div class="zakazAdded__info zakazAddedInfo">
-							<p class="zakazAddedInfo__title">123 м3</p>
-							<p class="zakazAddedInfo__subtitle">Объем товара</p>
-						</div>
-						<div class="zakazAdded__info zakazAddedInfo">
-							<p class="zakazAddedInfo__title">до 28.10</p>
-							<p class="zakazAddedInfo__subtitle">Дата вывоза</p>
 						</div>
 						<div class="zakazAdded__iconWrapper iconWrapper">
 							<span class="iconWrapper__icon icon icon--pensil"></span>
 							<span class="iconWrapper__icon icon icon--basket"></span>
+						</div>
+						<div class="zakazAdded__cols zakazAddedCols cols">
+							<div class="zakazAddedCols__about zakazAddedAbout">
+								<p class="zakazAddedAbout__title">Канистры:</p>
+								<p class="zakazAddedAbout__subtitle">Сильные кислоты, щелочи</p>
+							</div>
+							<div class="zakazAddedCols__info zakazAddedInfo">
+								<p class="zakazAddedInfo__title">300 кг.</p>
+								<p class="zakazAddedInfo__subtitle">Вес товара</p>
+							</div>
+							<div class="zakazAddedCols__info zakazAddedInfo">
+								<p class="zakazAddedInfo__title">123 м3</p>
+								<p class="zakazAddedInfo__subtitle">Объем товара</p>
+							</div>
+							<div class="zakazAddedCols__info zakazAddedInfo">
+								<p class="zakazAddedInfo__title">до 28.10</p>
+								<p class="zakazAddedInfo__subtitle">Дата вывоза</p>
+							</div>
+						</div>
+					</div>
+					<div class="zakazStep__content zakazContent zakazAdded">
+						<div class="zakazAdded__imgWrapper imgWrapper">
+							<img class="imgWrapper__img" src="img/materials/raw_mat2.png" />
+						</div>
+						<div class="zakazAdded__iconWrapper iconWrapper">
+							<span class="iconWrapper__icon icon icon--pensil"></span>
+							<span class="iconWrapper__icon icon icon--basket"></span>
+						</div>
+						<div class="zakazAdded__cols zakazAddedCols cols">
+							<div class="zakazAddedCols__about zakazAddedAbout">
+								<p class="zakazAddedAbout__title">Канистры:</p>
+								<p class="zakazAddedAbout__subtitle">Сильные кислоты, щелочи</p>
+							</div>
+							<div class="zakazAddedCols__info zakazAddedInfo">
+								<p class="zakazAddedInfo__title">300 кг.</p>
+								<p class="zakazAddedInfo__subtitle">Вес товара</p>
+							</div>
+							<div class="zakazAddedCols__info zakazAddedInfo">
+								<p class="zakazAddedInfo__title">123 м3</p>
+								<p class="zakazAddedInfo__subtitle">Объем товара</p>
+							</div>
+							<div class="zakazAddedCols__info zakazAddedInfo">
+								<p class="zakazAddedInfo__title">до 28.10</p>
+								<p class="zakazAddedInfo__subtitle">Дата вывоза</p>
+							</div>
 						</div>
 					</div>
 
@@ -102,8 +131,8 @@
 						<div class="zakazContent__formContent formContent formContent--labelsTop">
 
 							<p class="formContent__title">Выберите тип сырья</p>
-							<div class="form__block formBlock formBlock--cols">
-								<div class="formBlock__col formBlockCol">
+							<div class="form__block formBlock formBlock--cols colsFlex">
+								<div class="formBlock__col colFlex--2">
 									<label class="formBlock__fieldWrapper fieldWrapper">
 										<select class="fieldWrapper__select form-select" placeholder="Выберите тип сырья">
 											<option value="">Выберите тип сырья</option>
@@ -115,7 +144,7 @@
 										<span class="fieldWrapper__label">Тип сырья</span>
 									</label>
 								</div>
-								<div class="formBlock__col formBlockCol">
+								<div class="formBlock__col colFlex--2">
 									<label class="formBlock__fieldWrapper fieldWrapper">
 										<select class="fieldWrapper__select form-select" placeholder="Выберите тип вторсырья">
 											<option value="">Выберите тип вторсырья</option>
@@ -138,7 +167,7 @@
 							<hr class="form__sep" />
 							<p class="formContent__title">Дополнительная информация</p>
 							<div class="form__block formBlock formBlock--cols colsFlex">
-								<div class="colsFlex__col colsFlex--2">
+								<div class="formBlock__col colFlex--2">
 									<label class="formBlock__fieldWrapper fieldWrapper">
 										<select class="fieldWrapper__select form-select" placeholder="Выберите тип упаковки">
 											<option value="">Выберите тип упаковки</option>
@@ -150,14 +179,14 @@
 										<span class="fieldWrapper__label">Тип упаковки</span>
 									</label>
 								</div>
-								<div class="colsFlex__col colsFlex--4">
+								<div class="formBlock__col colFlex--4">
 									<label class="formBlock__fieldWrapper fieldWrapper">
 										<p class="fieldWrapper__info">м<sup>3</sup></p>
 										<input class="fieldWrapper__input" type="text" name="" placeholder="" />
 										<span class="fieldWrapper__label">Объем</span>
 									</label>
 								</div>
-								<div class="colsFlex__col colsFlex--4">
+								<div class="formBlock__col colFlex--4">
 									<label class="formBlock__fieldWrapper fieldWrapper">
 										<p class="fieldWrapper__info">кг</p>
 										<input class="fieldWrapper__input" type="text" name="" placeholder="" />
@@ -168,25 +197,25 @@
 
 							<p class="formContent__titleCheckbox">Загрязнение</p>
 							<div class="form__block formBlock formBlock--cols colsFlex">
-								<div class="colsFlex__col colsFlex--4">
+								<div class="colsFlex__col colFlex--4">
 									<label class="formBlock__fieldWrapper fieldWrapper fieldWrapper--checkbox">
 										<input class="fieldWrapper__input fieldWrapper__input" type="checkbox" name="" placeholder="" />
 										<span class="fieldWrapper__label">Наклейки, скотч, пыль</span>
 									</label>
 								</div>
-								<div class="colsFlex__col colsFlex--4">
+								<div class="colsFlex__col colFlex--4">
 									<label class="formBlock__fieldWrapper fieldWrapper fieldWrapper--checkbox">
 										<input class="fieldWrapper__input fieldWrapper__input" type="checkbox" name="" placeholder="" />
 										<span class="fieldWrapper__label">Земля, влага</span>
 									</label>
 								</div>
-								<div class="colsFlex__col colsFlex--4">
+								<div class="colsFlex__col colFlex--4">
 									<label class="formBlock__fieldWrapper fieldWrapper fieldWrapper--checkbox">
 										<input class="fieldWrapper__input fieldWrapper__input" type="checkbox" name="" placeholder="" />
 										<span class="fieldWrapper__label">Жир, органика</span>
 									</label>
 								</div>
-								<div class="colsFlex__col colsFlex--4">
+								<div class="colsFlex__col colFlex--4">
 									<label class="formBlock__fieldWrapper fieldWrapper fieldWrapper--checkbox">
 										<input class="fieldWrapper__input fieldWrapper__input" type="checkbox" name="" placeholder="" />
 										<span class="fieldWrapper__label">Сырое</span>
@@ -198,6 +227,8 @@
 							<hr class="form__sep" />
 							<div class="form__block formBlock formBlock--links">
 								<span class="formBlock__linkButton linkButton linkButton--green">СОХРАНИТЬ</span>
+								<span class="formBlock__linkButton linkButton linkButton--greenTransparent">ОТМЕНИТЬ</span>
+								<span class="formBlock__linkButton linkButton linkButton--red linkButton--right">ОТМЕНИТЬ</span>
 							</div>
 
 
@@ -220,8 +251,8 @@
 
 
 							<p class="formContent__title">Оплата</p>
-							<div class="form__block formBlock formBlock--cols">
-								<div class="formBlock__col formBlockCol">
+							<div class="form__block formBlock formBlock--cols colsFlex">
+								<div class="formBlock__col colFlex--2">
 									<label class="formBlock__fieldWrapper fieldWrapper">
 										<select class="fieldWrapper__select form-select" placeholder="Выберите форму оплаты">
 											<option value="">Выберите форму оплаты</option>
@@ -233,7 +264,7 @@
 										<span class="fieldWrapper__label">Форма оплаты</span>
 									</label>
 								</div>
-								<div class="formBlock__col formBlockCol">
+								<div class="formBlock__col colFlex--2">
 									<label class="formBlock__fieldWrapper fieldWrapper">
 										<select class="fieldWrapper__select form-select" placeholder="Выберите срок оплаты">
 											<option value="">Выберите срок оплаты</option>
@@ -247,8 +278,8 @@
 								</div>
 							</div>
 
-							<div class="form__block formBlock formBlock--cols">
-								<div class="formBlock__col formBlockCol">
+							<div class="form__block formBlock formBlock--cols colsFlex">
+								<div class="formBlock__col colFlex--2">
 									<label class="formBlock__fieldWrapper fieldWrapper">
 										<select class="fieldWrapper__select form-select" placeholder="Выберите нужна ли документация">
 											<option value="">Выберите нужна ли документация</option>
@@ -260,7 +291,7 @@
 										<span class="fieldWrapper__label">Документация</span>
 									</label>
 								</div>
-								<div class="formBlock__col formBlockCol">
+								<div class="formBlock__col colFlex--2">
 									<label class="formBlock__fieldWrapper fieldWrapper">
 										<select class="fieldWrapper__select form-select" placeholder="Выберите тип доставки">
 											<option value="">Выберите тип доставки</option>
@@ -276,25 +307,25 @@
 
 							<p class="formContent__titleCheckbox">Специальные условия</p>
 							<div class="form__block formBlock formBlock--cols colsFlex">
-								<div class="colsFlex__col colsFlex--4">
+								<div class="formBlock__col colFlex--4">
 									<label class="formBlock__fieldWrapper fieldWrapper fieldWrapper--checkbox">
 										<input class="fieldWrapper__input fieldWrapper__input" type="checkbox" name="" placeholder="" />
 										<span class="fieldWrapper__label">Нужны ББ взамен</span>
 									</label>
 								</div>
-								<div class="colsFlex__col colsFlex--4">
+								<div class="formBlock__col colFlex--4">
 									<label class="formBlock__fieldWrapper fieldWrapper fieldWrapper--checkbox">
 										<input class="fieldWrapper__input fieldWrapper__input" type="checkbox" name="" placeholder="" />
 										<span class="fieldWrapper__label">Нужна доверенность на водителя</span>
 									</label>
 								</div>
-								<div class="colsFlex__col colsFlex--4">
+								<div class="formBlock__col colFlex--4">
 									<label class="formBlock__fieldWrapper fieldWrapper fieldWrapper--checkbox">
 										<input class="fieldWrapper__input fieldWrapper__input" type="checkbox" name="" placeholder="" />
 										<span class="fieldWrapper__label">Платный въезд</span>
 									</label>
 								</div>
-								<div class="colsFlex__col colsFlex--4">
+								<div class="formBlock__col colFlex--4">
 									<label class="formBlock__fieldWrapper fieldWrapper fieldWrapper--checkbox">
 										<input class="fieldWrapper__input fieldWrapper__input" type="checkbox" name="" placeholder="" />
 										<span class="fieldWrapper__label">Водитель с гражаднством РФ</span>
