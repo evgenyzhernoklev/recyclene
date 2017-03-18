@@ -1,28 +1,67 @@
 .adsCols {
-
+  padding: 5px 0 60px;
 }
 
 .adsCol {
+  position: relative;
+  flex-basis: 31.5%;
+  margin-right: 2.75%;
+  margin-bottom: 25px;
+  background: $white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: box-shadow $transition-normal;
 
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  &:hover {
+    box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.20);
+  }
+}
+
+.adsCol__moreAdsNumber {
+  display: inline-block;
+  padding: 0 10px 0 8px;
+  position: absolute;
+  z-index: 1;
+  left: 25px;
+  top: -15px;
+  height: 30px;
+  font: 13px/32px $circe-bold-extra;
+  color: $white;
+  background: #E72081;
+  border-radius: 100px;
 }
 
 
 
 // col header
 .adsColHeader {
-
+  position: relative;
+  height: 142px;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
-.adsColHeader__moreAdsNumber {
-
-}
-
-.adsColHeader__moreAdsNumber {
-
+.adsColHeader__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 84px;
+  background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, #000000 100%);
 }
 
 .adsColHeaderInfo {
-
+  position: absolute;
+  left: 25px;
+  right: 25px;
+  bottom: 15px;
+  font: 15px/21px $circe-bold;
+  color: $white;
 }
 
 .adsColHeaderInfo__title {
@@ -30,42 +69,76 @@
 }
 
 .adsColHeaderInfo__subtitle {
-
+  font-family: $circe-regular;
 }
 
 .adsColHeader__img {
-
+  width: 100%;
 }
 
 
 
 // col content
 .adsColContent {
-
+  padding: 21px 50px 0 25px;
 }
 
 .adsColContent__title {
-
+  font: 14px/19px $circe-bold;
+  color: #4F636F;
 }
 
 .adsColContent__info {
-
+  margin-bottom: 20px;
+  font: 14px/20px $circe-regular;
 }
 
 
 
 // col footer
 .adsColFooter {
-
+  padding: 10px 25px 10px;
+  border-top: 1px solid #ECECEC;
 }
 
 .adsColFooter__iconWrapper {
+  display: inline-block;
+  margin-right: 25px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 
   .icon {
-
+    margin-right: 5px;
   }
 
   .iconWrapper__number {
-
+    line-height: 30px;
+    font: 13px/19px $circe-regular;
   }
+}
+
+// empty col
+.adsColEmpty {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border: 1px dashed #D5D5D5;
+  background-color: transparent;
+  transition: box-shadow $transition-normal, border-color $transition-normal;
+
+  &:hover {
+    border-color: transparent;
+  }
+}
+
+.adsColEmptyWrapper__iconWrapper {
+  margin-bottom: 20px;
+}
+
+.adsColEmptyWrapper__new {
+  font: 10px/14px $circe-bold-extra;
+  text-transform: uppercase;
+  text-align: center;
 }

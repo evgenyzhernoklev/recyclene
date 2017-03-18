@@ -111,3 +111,7 @@
 .icon--speaker {
   @include icon(speaker_gray, 15px, 13px);
 }
+
+.icon--addAds {
+  @include icon(add_ads, 80px, 82px);
+}
