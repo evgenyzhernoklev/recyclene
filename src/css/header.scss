@@ -103,6 +103,12 @@
   text-align: center;
 }
 
+.menu--profile {
+  .menuItemLink {
+    color: rgba(0,0,0,1);
+  }
+}
+
 .menuItem {
   display: inline-block;
   height: 100%;
