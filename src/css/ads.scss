@@ -155,11 +155,15 @@
 // empty col
 .adsColEmpty {
   align-items: center;
-  display: flex;
+  display: none;
   justify-content: center;
   border: 1px dashed #D5D5D5;
   background-color: transparent;
   transition: box-shadow $transition-normal, border-color $transition-normal;
+
+  &.is-visible {
+    display: flex;
+  }
 
   &:hover {
     border-color: transparent;

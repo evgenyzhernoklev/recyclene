@@ -30,32 +30,41 @@ $(document).ready(function() {
     });
 
 
-    // tabs in ads
-    $body.on('click', '.tabs-button', function(e) {
-      e.preventDefault();
-      var $parent = $('.tabs-wrapper'),
-          $targetBlocks = $parent.find('.tabs-content'),
-          $buttons = $parent.find('.tabs-button'),
-          typeOfBlocks = $(this).data('show');
+    // tabs
+    $('.tabs-wrapper').each(function(index, element) {
+      var $self = $(this),
+          $links = $self.find('.tabs-button'),
+          $content = $self.find('.tabs-content'),
+          currentTypeOfBlocks = $links.filter('.is-active').data('show');
 
-      if ($(this).hasClass('is-active')) {
-        return;
-      }
-
-      $buttons.removeClass('is-active');
-      $(this).addClass('is-active');
-
-      if (typeOfBlocks == 'all') {
-        $targetBlocks.removeClass('is-hidden');
-        return;
-      }
-
-      $targetBlocks.each(function(index, element) {
-        if ($(element).data('show') == typeOfBlocks) {
-          $(element).removeClass('is-hidden');
-        } else {
-          $(element).addClass('is-hidden');
+      function checkContent(typeOfBlocks) {
+        if (typeOfBlocks == 'all') {
+          $content.addClass('is-visible');
+          return;
         }
+
+        $content.each(function(index, element) {
+          if ($(element).data('show') == typeOfBlocks) {
+            $(element).addClass('is-visible');
+          } else {
+            $(element).removeClass('is-visible');
+          }
+        });
+      }
+
+      checkContent(currentTypeOfBlocks);
+
+      $links.on('click', function(e) {
+        e.preventDefault();
+        if ($(this).hasClass('is-active')) {
+          return;
+        }
+
+        var typeOfBlocks = $(this).data('show');
+
+        $links.removeClass('is-active');
+        $(this).addClass('is-active');
+        checkContent(typeOfBlocks);
       });
     });
 

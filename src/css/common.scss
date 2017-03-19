@@ -118,3 +118,30 @@ button {
     box-shadow: -1px -1px 10px -2px rgba(0, 0, 0, 0.20);
   }
 }
+
+
+
+// rating
+.rating {
+  font-size: 0;
+  line-height: 0;
+}
+
+.rating__star {
+  @include icon(star_gray, 12px, 11px);
+
+  &.is-active {
+    @include icon(star_yellow, 12px, 11px);
+  }
+}
+
+
+
+// tabs
+.tabs-content {
+  display: none;
+
+  &.is-visible {
+    display: block;
+  }
+}
