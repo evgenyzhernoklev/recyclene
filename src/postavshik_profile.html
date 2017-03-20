@@ -106,10 +106,10 @@
 							<a class="menuItem__link menuItemLink tabs-button" href="#" data-show="1">Общая информация</a>
 						</li>
 						<li class="menu__item menuItem">
-							<a class="menuItem__link menuItemLink tabs-button is-active" href="#" data-show="2">Мои склады</a>
+							<a class="menuItem__link menuItemLink tabs-button" href="#" data-show="2">Мои склады</a>
 						</li>
 						<li class="menu__item menuItem">
-							<a class="menuItem__link menuItemLink tabs-button" href="#" data-show="3">Настройки аккаунта</a>
+							<a class="menuItem__link menuItemLink tabs-button is-active" href="#" data-show="3">Настройки аккаунта</a>
 						</li>
 					</ul>
 
@@ -309,15 +309,35 @@
 						</form>
 					</div>
 
-
-
 					<div class="profileWrapper__content profileContent tabs-content" data-show="3">
-
-
+						<form class="formWrapper__form form">
+							<div class="form__content formContent">
+								<p class="formContent__title">Смена пароля</p>
+								<div class="formContent__block formBlock">
+									<label class="formBlock__fieldWrapper fieldWrapper">
+										<input class="fieldWrapper__input" type="password" name="" placeholder="Введите текущий пароль" />
+										<span class="fieldWrapper__label">Текущий пароль</span>
+									</label>
+								</div>
+								<div class="formContent__block formBlock">
+									<label class="formBlock__fieldWrapper fieldWrapper">
+										<input class="fieldWrapper__input" type="password" name="" placeholder="Введите новый пароль" />
+										<span class="fieldWrapper__label">Новый пароль</span>
+									</label>
+								</div>
+								<div class="formContent__block formBlock">
+									<label class="formBlock__fieldWrapper fieldWrapper">
+										<input class="fieldWrapper__input" type="password" name="" placeholder="Подтвердите новый пароль" />
+										<span class="fieldWrapper__label">Подтверждение</span>
+									</label>
+								</div>
+								<div class="formContent__block formBlock formBlock--links">
+									<span class="formBlock__linkButton linkButton linkButton--green">СОХРАНИТЬ</span>
+									<span class="formBlock__linkButton linkButton linkButton--greenTransparent">ОТМЕНИТЬ</span>
+								</div>
+							</div>
+						</form>
 					</div>
-
-
-
 				</div>
 
 			</div>
