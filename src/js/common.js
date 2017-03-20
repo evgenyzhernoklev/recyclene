@@ -70,6 +70,21 @@ $(document).ready(function() {
 
 
 
+    // popups
+    $body.on('click', '.popup-open', function(e) {
+      e.preventDefault();
+      var target = $(this).data('popup'),
+          $target = $('.' + target);
+
+      $target.bPopup({
+        closeClass: 'popup-close',
+        opacity: 0.8,
+        follow: false
+      });
+    });
+
+
+
     /*************** js for landing ***************/
     if ( $('.sliderSells').length ) {
       /*************** menu ***************/
