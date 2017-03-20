@@ -1,10 +1,18 @@
 .profileWrapper {
-  background: $white;
+  margin: 0 0 95px;
+  padding: 0 0 60px;
+  background-color: $white;
   box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.05);
   border-radius: 10px;
 
   .menu {
+    padding: 0 15px;
+    text-align: left;
+    border-bottom: 1px solid #EBEBEB;
+  }
 
+  .menuItemLink {
+    margin: 0 30px;
   }
 }
 
@@ -13,4 +21,21 @@
 // content
 .profileContent {
 
+  .form {
+
+  }
+
+  .formContent {
+    padding: 0 210px;
+  }
+
+  .form__sep {
+    margin-left: -210px;
+    margin-right: -210px;
+  }
+
+  .formBlock__linkButton {
+    margin-top: 25px;
+    margin-bottom: 5px;
+  }
 }

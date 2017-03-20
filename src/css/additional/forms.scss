@@ -70,7 +70,7 @@
 }
 
 
-// .formBlockCol:nth-child(2n) .fieldWrapper__label
+
 // form content with labels on top
 .formContent--labelsTop {
 
@@ -162,6 +162,7 @@
 
 .formBlock--links {
   white-space: nowrap;
+  font-size: 0;
 }
 
 .formBlock--cols {
@@ -174,6 +175,8 @@
 
   &:nth-child(2n) {
     flex-basis: 45%;
+    padding-left: 20px;
+    padding-right: 0;
 
     .fieldWrapper {
       margin-left: 100px;
