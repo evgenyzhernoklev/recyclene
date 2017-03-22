@@ -1,6 +1,6 @@
 .adsContent {
   position: relative;
-  max-width: 1280px;
+  max-width: 1300px;
   min-width: 300px;
   height: 100%;
   margin: 0 auto;
@@ -12,7 +12,7 @@
 
 .adsView {
   margin: 0 0 28px;
-  padding: 22px 60px 0 40px;
+  padding: 22px 50px 0;
   background-color: $white;
   overflow: hidden;
 }
@@ -69,11 +69,6 @@
 
 
 
-
-
-
-
-
 // info
 .adsViewInfo {
   margin: 0 0 30px;
@@ -110,9 +105,54 @@
 
 
 
-
-
 // details
+.adsDetailsWrapper {
+  position: relative;
+  padding: 0 0 56px;
+  background-color: $white;
+}
+
+.adsDetailsWrapper__buttonWrapper {
+  position: absolute;
+  left: -50px;
+  right: -50px;
+  bottom: 0;
+  height: 56px;
+  padding-right: 20px;
+  border-top: 1px dashed #DEDEDE;
+  cursor: pointer;
+}
+
+.adsDetailsButton {
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
+  font: 12px/55px $circe-bold-extra;
+  color: #4F636F;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+
+.adsDetails {
+
+  .dealInfoAboutText {
+    padding-left: 180px;
+  }
+
+  .dealInfoAbout__title {
+    width: auto;
+  }
+
+  .dealInfoAboutText__button {
+    color: $black;
+  }
+}
+
+
+
+
 
 
 
