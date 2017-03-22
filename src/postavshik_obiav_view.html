@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+	<title>postavshik_obiav_view</title>
+	<link rel="stylesheet" media="all" href="css/app.css">
+</head>
+<body>
+	<header class="header">
+		<div class="header__contentIn contentIn">
+			<a href="#" class="header__iconLogo header__iconLogo--closer icon icon--logoHeader"></a>
+			<nav class="header__menuWrapper menuWrapper">
+				<ul class="menuWrapper__menu menu">
+					<li class="menu__item menuItem">
+						<a class="menuItem__link menuItemLink is-active" href="#">Мои объявления</a>
+					</li>
+					<li class="menu__item menuItem">
+						<a class="menuItem__link menuItemLink" href="#">Мои сделки</a>
+					</li>
+					<li class="menu__item menuItem">
+						<a class="menuItem__link menuItemLink menuItemLink--ads" href="#">Новое объявление</a>
+					</li>
+				</ul>
+			</nav>
+			//= partials/logined.html
+		</div>
+	</header>
+
+	<div class="contentWrapper">
+		<div class="contentWrapper__content content adsContent colsFlex">
+
+
+
+
+
+			<div class="colsFlex__col colFlex--2 adsWrapper">
+
+				<div class="adsWrapper__adsView adsView">
+					<div class="adsView__meta adsViewMeta">
+						<span class="adsViewMeta__info adsViewMeta__info--attention">Объявление №123-34</span>
+						<span class="adsViewMeta__info">от 28.03.2017</span>
+					</div>
+					<h1 class="adsView__title adsViewTitle">Макулатура: гофрокартон</h1>
+
+					<div class="adsView__info adsViewInfo colsFlex">
+						<div class="colsFlex__col adsViewInfoCol colFlex--3">
+							<p class="adsViewInfoCol__quantity">6300 кг.</p>
+							<p class="adsViewInfoCol__caption">Вес сырья</p>
+						</div>
+						<div class="colsFlex__col adsViewInfoCol colFlex--3">
+							<p class="adsViewInfoCol__quantity">7123 м<sup>3</sup></p>
+							<p class="adsViewInfoCol__caption">Объем сырья</p>
+						</div>
+						<div class="colsFlex__col adsViewInfoCol colFlex--3">
+							<p class="adsViewInfoCol__quantity">до 28.10.17</p>
+							<p class="adsViewInfoCol__caption">Дата вывоза</p>
+						</div>
+					</div>
+
+
+				</div>
+
+				<div class="adsWrapper__testi adsTesti">
+					<h2 class="adsTesti__title adsViewTitle">Отклики</h2>
+
+
+				</div>
+			</div>
+
+
+
+
+
+			<div class="colsFlex__col colFlex--2"></div>
+		</div>
+	</div>
+
+	<script src="js/app.js"></script>
+</body>
+</html>

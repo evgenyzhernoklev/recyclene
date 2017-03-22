@@ -1,0 +1,112 @@
+.adsContent {
+
+}
+
+.adsWrapper {
+
+}
+
+.adsView {
+
+}
+
+.adsViewTitle {
+  margin-bottom: 20px;
+  font-size: 26px;
+  line-height: 34px;
+}
+
+
+
+// meta
+.adsViewMeta {
+  // margin-bottom: 10px;
+}
+
+.adsViewMeta__info {
+  position: relative;
+  display: inline-block;
+  padding-right: 20px;
+  margin-right: 10px;
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 30px;
+  color: #ACACAC;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-top: -3px;
+    background-color: #D8D8D8;
+    border-radius: 50%;
+  }
+
+  &:last-child {
+    padding-right: 0;
+    margin-right: 0;
+
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.adsViewMeta__info--attention {
+  color: #E72081;
+}
+
+
+
+
+
+
+
+
+// info
+.adsViewInfo {
+  margin: 0 0 30px;
+  background: $white;
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.05);
+  border-radius: 10px;
+}
+
+.adsViewInfoCol {
+
+}
+
+.adsViewInfoCol__quantity {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.adsViewInfoCol__caption {
+  font: 14px/20px $circe-regular;
+  color: #4F636F;
+}
+
+
+
+
+
+// details
+
+
+
+
+
+
+
+
+// testimonials
+.adsTesti {
+
+}
+
+.adsTesti__title {
+  
+}
