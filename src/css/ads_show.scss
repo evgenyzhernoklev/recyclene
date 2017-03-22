@@ -104,7 +104,7 @@
 
 // testimonials
 .adsTesti {
-
+  padding: 0 0 50px;
 }
 
 .adsTesti__title {
@@ -112,61 +112,115 @@
 }
 
 .adsTestiItem {
+  width: 600px;
+  margin: 0 auto 20px;
+  background: $white;
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.05);
+  border-radius: 5px;
+  transition: box-shadow $transition-normal;
 
+  &:hover {
+    box-shadow: 15px 15px 15px 0px rgba(0,0,0,0.20);
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 
 
 .adsTestiItemAuthor {
-
+  flex-basis: 115px;
+  padding: 25px 20px;
+  text-align: center;
 }
 
 .adsTestiItemAuthor__avatar {
-
+  width: 100%;
+  margin-bottom: 5px;
+  border-radius: 50%;
 }
 
 .adsTestiItemAuthor__rating {
+  padding-bottom: 20px;
+}
 
+
+
+.adsTestiInfoWrapper {
+  flex-basis: 325px;
+  padding: 24px 20px 25px 0;
+}
+
+.adsTestiInfo {
+  margin: 0 0 25px;
+}
+
+.adsTestiInfo__title {
+  margin-bottom: 12px;
+  font: 16px/20px $circe-regular;
+}
+
+.adsTestiInfoText {
+  position: relative;
+  margin-bottom: 9px;
+  padding-left: 70px;
+  font: 12px/19px $circe-regular;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.adsTestiInfoText__title {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: $circe-bold;
+  color: #4F636F;
+}
+
+.adsTestiInfoWrapper__additional {
+
+  &.dealInfoAboutText {
+    padding-left: 0;
+  }
 }
 
 
 
 .adsPriceWrapper {
-
+  position: relative;
+  flex-basis: 160px;
+  padding: 27px 15px 70px;
+  text-align: center;
+  background: #F3F8FC;
 }
 
 .adsPriceWrapper__price {
-
+  font-size: 22px;
+  line-height: 29px;
 }
 
 .adsPriceWrapper__quantity {
-
+  font: 12px/14px $circe-regular;
+  color: #7F7F7F;
 }
 
 .adsPriceWrapper__button {
+  position: absolute;
+  bottom: 27px;
+  left: 20px;
+  right: 25px;
+  width: auto;
+  height: 33px;
+  line-height: 31px;
 
-}
-
-
-
-.adsTestiItemInfo {
-
-}
-
-.adsTestiItemInfo__title {
-
-}
-
-.adsTestiItemInfoText {
-
-}
-
-.adsTestiItemInfoText__title {
-
-}
-
-
-
-.dealInfoAboutText {
-  
+  &:hover {
+    background-color: #7BB736;
+    border-color: #7BB736;
+    color: $white;
+  }
 }
