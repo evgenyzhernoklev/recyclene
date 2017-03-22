@@ -127,6 +127,11 @@ button {
   line-height: 0;
 }
 
+.rating__title {
+  font: 12px/14px $circe-regular;
+  text-align: center;
+}
+
 .rating__star {
   @include icon(star_gray, 12px, 11px);
 
