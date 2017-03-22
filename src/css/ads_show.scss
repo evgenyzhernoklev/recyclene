@@ -152,6 +152,40 @@
 
 
 
+.adsDetailsSlider {
+
+  .slick-arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -12px;
+  }
+
+  .slider-details-left {
+    left: -28px;
+    @include icon(arrow_ads_left, 13px, 25px);
+  }
+
+  .slider-details-right {
+    right: -28px;
+    @include icon(arrow_ads_right, 13px, 25px);
+  }
+}
+
+.adsDetailsSlide {
+  margin: 0 7px;
+}
+
+.adsDetailsSlide__img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.slider-details-button {
+  display: inline-block;
+}
+
+
 
 
 

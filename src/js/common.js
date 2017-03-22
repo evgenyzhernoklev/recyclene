@@ -10,6 +10,16 @@ $(document).ready(function() {
 
 
 
+    /*************** slider details ***************/
+    $('.slider-details').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      prevArrow: '<span class="slider-details-left"></span>',
+      nextArrow: '<span class="slider-details-right"></span>'
+    });
+    
+
+
     /*************** forms ***************/
     $('.form-select').selectize({
       sortField: {
