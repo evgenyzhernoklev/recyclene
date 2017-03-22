@@ -1,17 +1,24 @@
 .adsContent {
-
+  position: relative;
+  max-width: 1280px;
+  min-width: 300px;
+  height: 100%;
+  margin: 0 auto;
 }
 
 .adsWrapper {
-
+  width: 700px;
 }
 
 .adsView {
-
+  margin: 0 0 28px;
+  padding: 22px 60px 0 40px;
+  background-color: $white;
+  overflow: hidden;
 }
 
 .adsViewTitle {
-  margin-bottom: 20px;
+  margin-bottom: 32px;
   font-size: 26px;
   line-height: 34px;
 }
@@ -20,7 +27,7 @@
 
 // meta
 .adsViewMeta {
-  // margin-bottom: 10px;
+
 }
 
 .adsViewMeta__info {
@@ -30,7 +37,7 @@
   margin-right: 10px;
   white-space: nowrap;
   font-size: 14px;
-  line-height: 30px;
+  line-height: 32px;
   color: #ACACAC;
 
   &:after {
@@ -76,12 +83,24 @@
 }
 
 .adsViewInfoCol {
+  padding: 21px 10px 16px;
+  border-right: 1px solid #F0F0F0;
+  text-align: center;
 
+  &:last-child {
+    border-right: 0;
+  }
 }
 
 .adsViewInfoCol__quantity {
+  margin-bottom: 1px;
   font-size: 24px;
   line-height: 32px;
+
+  sup {
+    display: inline-block;
+    line-height: 19px;
+  }
 }
 
 .adsViewInfoCol__caption {
@@ -104,7 +123,7 @@
 
 // testimonials
 .adsTesti {
-  padding: 0 0 50px;
+  padding: 0 60px 50px 40px;
 }
 
 .adsTesti__title {
@@ -113,7 +132,7 @@
 
 .adsTestiItem {
   width: 600px;
-  margin: 0 auto 20px;
+  margin: 0 0 20px;
   background: $white;
   box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.05);
   border-radius: 5px;
