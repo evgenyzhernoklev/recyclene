@@ -118,19 +118,43 @@
   right: -50px;
   bottom: 0;
   height: 56px;
-  padding-right: 20px;
   border-top: 1px dashed #DEDEDE;
+  border-bottom: 1px solid transparent;
   cursor: pointer;
+  background-color: $white;
+  transition: background-color $transition-normal, border-color $transition-normal;
+
+  &.is-opened {
+    background-color: $white-light;
+    border-bottom-color: #DEDEDE;
+
+    .adsDetailsButton {
+      &:before {
+        transform: rotate(180deg);
+      }
+    }
+  }
 }
 
 .adsDetailsButton {
   position: relative;
   display: inline-block;
-  padding-left: 20px;
+  padding-left: 27px;
   font: 12px/55px $circe-bold-extra;
   color: #4F636F;
   text-align: center;
   text-transform: uppercase;
+
+  &:before {
+    content: '';
+    @include icon(arrow_down, 15px, 9px);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -4px;
+    transform: rotate(0deg);
+    transition: transform $transition-normal;
+  }
 }
 
 
@@ -153,6 +177,9 @@
 
 
 .adsDetailsSlider {
+  margin: 0 -50px;
+  padding: 25px 50px;
+  background-color: $white-light;
 
   .slick-arrow {
     cursor: pointer;
@@ -162,12 +189,12 @@
   }
 
   .slider-details-left {
-    left: -28px;
+    left: 22px;
     @include icon(arrow_ads_left, 13px, 25px);
   }
 
   .slider-details-right {
-    right: -28px;
+    right: 22px;
     @include icon(arrow_ads_right, 13px, 25px);
   }
 }
@@ -184,14 +211,6 @@
 .slider-details-button {
   display: inline-block;
 }
-
-
-
-
-
-
-
-
 
 
 

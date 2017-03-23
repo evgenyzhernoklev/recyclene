@@ -10,16 +10,6 @@ $(document).ready(function() {
 
 
 
-    /*************** slider details ***************/
-    $('.slider-details').slick({
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      prevArrow: '<span class="slider-details-left"></span>',
-      nextArrow: '<span class="slider-details-right"></span>'
-    });
-    
-
-
     /*************** forms ***************/
     $('.form-select').selectize({
       sortField: {
@@ -91,6 +81,43 @@ $(document).ready(function() {
         opacity: 0.8,
         follow: false
       });
+    });
+
+
+
+    // sliding details
+    var detailsSLiderStarted = false;
+    function initDetailsSlider() {
+      $('.slider-details').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        prevArrow: '<span class="slider-details-left"></span>',
+        nextArrow: '<span class="slider-details-right"></span>'
+      });
+    }
+
+    $('.slide-down').on('click', function(e) {
+      e.preventDefault();
+      var $info = $(this).find('.slide-down-info'),
+          $self = $(this);
+
+      $self
+        .toggleClass('is-opened')
+        .closest('.slide-down-container')
+        .find('.slide-down-content')
+        .stop()
+        .slideToggle(700);
+
+      if ($self.hasClass('is-opened')) {
+        $info.text('СКРЫТЬ ДЕТАЛИ');
+      } else {
+        $info.text('ПОКАЗАТЬ ДЕТАЛИ');
+      }
+
+      if (!detailsSLiderStarted) {
+        detailsSLiderStarted = true;
+        initDetailsSlider();
+      }
     });
 
 
