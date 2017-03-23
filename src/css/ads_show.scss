@@ -18,9 +18,39 @@
 }
 
 .adsViewTitle {
+  position: relative;
   margin-bottom: 32px;
+  padding-right: 60%;
   font-size: 26px;
   line-height: 34px;
+}
+
+
+
+// filters
+.adsTestiFilter {
+  position: absolute;
+  top: 5px;
+  left: 40%;
+  font-size: 0;
+}
+
+.adsTestiFilterItem {
+  display: inline-block;
+  margin-right: 52px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.adsTestiFilterItem__link {
+  font: 10px/20px $circe-bold-extra;
+  color: rgba(0,0,0, 0.3);
+
+  &.is-active {
+    color: rgba(0,0,0, 1);
+  }
 }
 
 
