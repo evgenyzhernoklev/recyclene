@@ -29,11 +29,18 @@ button {
   display: none;
 }
 
+.fullHeight {
+  height: 100%;
+}
 
 
 .contentWrapper {
   overflow: hidden;
   padding-top: 80px;
+
+  &.fullHeight {
+    overflow: auto;
+  }
 }
 
 .content {
@@ -176,11 +183,14 @@ button {
 .emptyInfoWrapper {
   display: table;
   width: 100%;
-  min-height: 350px;
+  min-height: 360px;
+  height: 100%;
+  padding: 0 40px;
 }
 
 .emptyInfo {
   display: table-cell;
+  height: 100%;
   text-align: center;
   vertical-align: middle;
 }
@@ -191,7 +201,7 @@ button {
   height: 120px;
   background-color: rgba(79, 99, 111, 0.2);
   border-radius: 50%;
-  line-height: 120px;
+  line-height: 122px;
   text-align: center;
 
   .icon {
@@ -205,6 +215,14 @@ button {
 }
 
 .emptyInfo__about {
-  max-width: 300px;
+  max-width: 320px;
   margin: 0 auto;
+}
+
+.emptyInfo__button {
+  width: auto;
+  white-space: nowrap;
+  margin-top: 35px;
+  padding: 0 25px;
+  text-transform: uppercase;
 }

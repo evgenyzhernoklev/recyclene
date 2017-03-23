@@ -123,3 +123,11 @@
 .icon--speech {
   @include icon(speech, 46px, 44px);
 }
+
+.icon--billboard {
+  @include icon(billboard, 47px, 47px);
+}
+
+.icon--handshake {
+  @include icon(handshake, 47px, 47px);
+}
