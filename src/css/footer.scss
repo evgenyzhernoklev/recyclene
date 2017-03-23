@@ -6,10 +6,51 @@
   left: 0;
   right: 0;
   height: 100px;
+  padding: 25px 0;
   background: $white;
   box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.10);
 }
 
-.footerZakaz__contentIn {
-  
+.footerZakazIn {
+
+  &.footerZakazIn--error {
+    .footerZakazIn__button,
+    .footerZakazIn__button[disabled='disabled'] {
+      background-color: #D0D7DD;
+      cursor: default;
+    }
+
+    .icon {
+      @include icon(attention, 20px, 20px);
+      width: auto;
+      height: auto;
+      padding-left: 32px;
+      background-position: 0 1px;
+    }
+  }
+}
+
+.footerZakazIn__button {
+  width: 270px;
+  float: left;
+}
+
+
+
+.footerZakazCols {
+  position: relative;
+  align-items: center;
+  margin-left: 325px;
+  height: 100%;
+  padding-left: 32px;
+  font: 14px/19px $circe-regular;
+  color: #4F636F;
+
+  .icon {
+    @include icon(flag_green, 16px, 20px);
+    width: auto;
+    height: auto;
+    padding: 3px 0 3px 32px;
+    background-position: 0 1px;
+  }
 }
