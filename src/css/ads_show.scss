@@ -20,22 +20,25 @@
 .adsViewTitle {
   position: relative;
   margin-bottom: 32px;
-  padding-right: 60%;
   font-size: 26px;
   line-height: 34px;
+
+  .adsResponse & {
+    padding-right: 60%;
+  }
 }
 
 
 
 // filters
-.adsTestiFilter {
+.adsResponseFilter {
   position: absolute;
   top: 5px;
   left: 40%;
   font-size: 0;
 }
 
-.adsTestiFilterItem {
+.adsResponseFilterItem {
   display: inline-block;
   margin-right: 52px;
 
@@ -44,7 +47,7 @@
   }
 }
 
-.adsTestiFilterItem__link {
+.adsResponseFilterItem__link {
   font: 10px/20px $circe-bold-extra;
   color: rgba(0,0,0, 0.3);
 
@@ -245,15 +248,15 @@
 
 
 // testimonials
-.adsTesti {
-  padding: 0 60px 50px 40px;
+.adsResponse {
+  padding: 0 50px 50px;
 }
 
-.adsTesti__title {
+.adsResponse__title {
 
 }
 
-.adsTestiItem {
+.adsResponseItem {
   width: 600px;
   margin: 0 0 20px;
   background: $white;
@@ -272,39 +275,39 @@
 
 
 
-.adsTestiItemAuthor {
+.adsResponseItemAuthor {
   flex-basis: 115px;
   padding: 25px 20px;
   text-align: center;
 }
 
-.adsTestiItemAuthor__avatar {
+.adsResponseItemAuthor__avatar {
   width: 100%;
   margin-bottom: 5px;
   border-radius: 50%;
 }
 
-.adsTestiItemAuthor__rating {
+.adsResponseItemAuthor__rating {
   padding-bottom: 20px;
 }
 
 
 
-.adsTestiInfoWrapper {
+.adsResponseInfoWrapper {
   flex-basis: 325px;
   padding: 24px 20px 25px 0;
 }
 
-.adsTestiInfo {
+.adsResponseInfo {
   margin: 0 0 25px;
 }
 
-.adsTestiInfo__title {
+.adsResponseInfo__title {
   margin-bottom: 12px;
   font: 16px/20px $circe-regular;
 }
 
-.adsTestiInfoText {
+.adsResponseInfoText {
   position: relative;
   margin-bottom: 9px;
   padding-left: 70px;
@@ -315,7 +318,7 @@
   }
 }
 
-.adsTestiInfoText__title {
+.adsResponseInfoText__title {
   display: inline-block;
   position: absolute;
   top: 0;
@@ -324,7 +327,7 @@
   color: #4F636F;
 }
 
-.adsTestiInfoWrapper__additional {
+.adsResponseInfoWrapper__additional {
 
   &.dealInfoAboutText {
     padding-left: 0;

@@ -169,3 +169,42 @@ button {
 
   }
 }
+
+
+
+// empty block
+.emptyInfoWrapper {
+  display: table;
+  width: 100%;
+  min-height: 350px;
+}
+
+.emptyInfo {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.emptyInfo__iconWrapper {
+  margin: 0 auto 30px;
+  width: 120px;
+  height: 120px;
+  background-color: rgba(79, 99, 111, 0.2);
+  border-radius: 50%;
+  line-height: 120px;
+  text-align: center;
+
+  .icon {
+
+  }
+}
+
+.emptyInfo__title {
+  margin-bottom: 10px;
+  font: 24px/32px $circe-regular;
+}
+
+.emptyInfo__about {
+  max-width: 300px;
+  margin: 0 auto;
+}
