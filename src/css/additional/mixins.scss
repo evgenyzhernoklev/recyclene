@@ -44,7 +44,7 @@ mixins for:
   height: $height;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url('../img/logos/#{$name}.png');
+  background-image: url('../img/logos/png/#{$name}.png');
   background-size: $width $height;
 }
 
