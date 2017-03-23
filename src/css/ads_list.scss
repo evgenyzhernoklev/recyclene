@@ -47,6 +47,11 @@
 
   &:hover {
     box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.20);
+
+    .adsColMoreAdsNumber__text {
+      max-width: 120px;
+      opacity: 1;
+    }
   }
 
   &.is-hidden {
@@ -54,7 +59,7 @@
   }
 }
 
-.adsCol__moreAdsNumber {
+.adsColMoreAdsNumber {
   display: inline-block;
   padding: 0 10px 0 8px;
   position: absolute;
@@ -66,6 +71,13 @@
   color: $white;
   background: #E72081;
   border-radius: 100px;
+}
+
+.adsColMoreAdsNumber__text {
+  display: inline-block;
+  max-width: 0;
+  opacity: 0;
+  transition: max-width $transition-normal, opacity $transition-normal;
 }
 
 
