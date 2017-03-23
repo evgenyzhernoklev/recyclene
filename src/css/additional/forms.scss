@@ -400,6 +400,11 @@
   &:focus {
     border-color: #E4E4E4;
   }
+
+  &[type="password"] {
+    font-size: 48px;
+    letter-spacing: 3px;
+  }
 }
 
 
