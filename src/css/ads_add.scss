@@ -77,13 +77,27 @@
 
 .zakazAdded__iconWrapper {
   position: absolute;
-  top: 0;
+  top: 30px;
   right: 0;
   width: 140px;
   text-align: center;
+  font-size: 0;
 
   .icon {
     cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    line-height: 40px;
+    border-radius: 50%;
+  }
+
+  .icon--pensil {
+    background-color: #7BB736;
+  }
+
+  .icon--basket {
+    background-color: #D96A6A;
   }
 }
 
