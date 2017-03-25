@@ -96,6 +96,8 @@ $(document).ready(function() {
       });
     }
 
+    initDetailsSlider();
+
     $('.slide-down').on('click', function(e) {
       e.preventDefault();
       var $info = $(this).find('.slide-down-info'),
