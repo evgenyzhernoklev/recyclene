@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html class="docForms">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+	<title>pererabotchik_register1</title>
+	<link rel="stylesheet" media="all" href="css/app.css">
+</head>
+<body>
+	<header class="header">
+		<div class="header__contentIn contentIn">
+			<a href="#" class="header__iconLogo icon icon--logoHeader"></a>
+			<nav class="header__menuWrapper menuRegWrapper">
+				<ul class="menuRegWrapper__menu menuReg">
+					<li class="menuReg__item menuRegItem"><a class="menuRegItem__link linkButtonSmall" href="#">Авторизация</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div class="contentWrapper sectionForms">
+		<div class="sectionForms__contentIn contentIn">
+			<h1 class="contentIn__title titleMain">Регистрация переработчика</h1>
+			<h2 class="contentIn__subtitle subtitleMain">Зарегистрируйтесь, чтобы искать сырье для переработки и заключать сделки</h2>
+
+			<div class="contentIn__formWrapper formWrapper">
+				<form class="formWrapper__form form">
+					<div class="form__steps formSteps colsFlex">
+						<div class="colsFlex__col colFlex colFlex--3 formSteps__step is-active"></div>
+						<div class="colsFlex__col colFlex colFlex--3 formSteps__step"></div>
+						<div class="colsFlex__col colFlex colFlex--3 formSteps__step"></div>
+					</div>
+					<div class="form__content formContent">
+						<p class="formContent__title formContentTitle">Компания</p>
+						<div class="formContent__block formBlock">
+							<label class="formBlock__fieldWrapper fieldWrapper fieldWrapper--companyName">
+								<input class="fieldWrapper__input" type="text" name="" placeholder="Название вашей компании" />
+							</label>
+						</div>
+
+						<hr class="formContent__sep" />
+						<p class="formContent__title formContentTitle">Юзерпик</p>
+						<div class="formContent__block formBlock formBlock--userPick">
+							<label class="formBlock__fieldWrapper fieldWrapper fieldWrapper--image">
+								<span class="fieldWrapper__avatar"></span>
+								<p class="fieldWrapper__info">Принимаются только jpg и png файлы, не более 3-х мегабайт</p>
+								<input class="fieldWrapper__input" type="file" name="" placeholder="" />
+								<span class="fieldWrapper__label">ВЫБРАТЬ ФАЙЛ</span>
+							</label>
+						</div>
+
+						<hr class="formContent__sep" />
+						<p class="formContent__title formContentTitle">Представитель</p>
+						<div class="formContent__block formBlock">
+							<label class="formBlock__fieldWrapper fieldWrapper">
+								<input class="fieldWrapper__input" type="text" name="" placeholder="" />
+								<span class="fieldWrapper__label">Ваше имя</span>
+							</label>
+						</div>
+						<div class="formContent__block formBlock">
+							<label class="formBlock__fieldWrapper fieldWrapper is-error">
+								<input class="fieldWrapper__input" type="text" name="" placeholder="" />
+								<span class="fieldWrapper__label">Ваш e-mail</span>
+							</label>
+						</div>
+						<div class="formContent__block formBlock">
+							<label class="formBlock__fieldWrapper fieldWrapper is-ok">
+								<input class="fieldWrapper__input" type="text" name="" placeholder="" />
+								<span class="fieldWrapper__label">Ваш телефон</span>
+							</label>
+						</div>
+						<div class="formContent__block formBlock">
+							<label class="formBlock__fieldWrapper fieldWrapper">
+								<input class="fieldWrapper__input" type="password" name="" placeholder="" />
+								<span class="fieldWrapper__label">Придумайте пароль</span>
+							</label>
+						</div>
+						<div class="formContent__block formBlock">
+							<label class="formBlock__fieldWrapper fieldWrapper">
+								<input class="fieldWrapper__input" type="password" name="" placeholder="" />
+								<span class="fieldWrapper__label">Повторите пароль</span>
+							</label>
+						</div>
+					</div>
+					<div class="form__buttonWrapper formButtonWrapper">
+						<button type="submit" class="formButtonWrapper__submit">продолжить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/app.js"></script>
+</body>
+</html>
