@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
-	<title>postavshik_profile</title>
+	<title>pererabotchik_profile</title>
 	<link rel="stylesheet" media="all" href="css/app.css">
 </head>
 <body>
@@ -13,17 +13,77 @@
 			<nav class="header__menuWrapper menuWrapper">
 				<ul class="menuWrapper__menu menu menu--profile">
 					<li class="menu__item menuItem">
-						<a class="menuItem__link menuItemLink" href="#">Мои объявления</a>
+						<a class="menuItem__link menuItemLink" href="#">Объявления</a>
 					</li>
 					<li class="menu__item menuItem">
 						<a class="menuItem__link menuItemLink" href="#">Мои сделки</a>
 					</li>
-					<li class="menu__item menuItem">
-						<a class="menuItem__link menuItemLink menuItemLink--ads" href="#">Новое объявление</a>
-					</li>
 				</ul>
 			</nav>
-			//= partials/logined.html
+			<div class="headerLoginedInfo">
+			  <div class="headerLoginedInfo__notificationsWrapper notificationsWrapper notifications-wrapper">
+			    <div class="notificationsWrapper__button iconWrapper notifications-show">
+			      <span class="iconWrapper__icon icon icon--bell"></span>
+			      <span class="iconWrapper__number">10</span>
+			    </div>
+			    <div class="notificationsWrapper__notifications notifications tooltip">
+			      <p class="triangleShadowWrapper"><span class="triangleShadow"></span></p>
+			      <div class="notifications__list notificationsList">
+			        <div class="notificationsList__item notificationsItem">
+			          <span class="notificationsItem__label">Новое</span>
+			          <p class="notificationsItem__date">02 марта 2017,  20:04:34</p>
+			          <p class="notificationsItem__info notificationsItemInfo">
+			            Ваш отклик на 5000 руб на
+			            <span class="notificationsItemInfo__adsNumber">объявление №1234-45</span>
+			            был принят, ожидайте совершения сделки
+			          </p>
+			        </div>
+			        <div class="notificationsList__item notificationsItem">
+			          <p class="notificationsItem__date">02 марта 2017,  20:04:34</p>
+			          <p class="notificationsItem__info notificationsItemInfo">
+			            Ваш отклик на 5000 руб на
+			            <span class="notificationsItemInfo__adsNumber">объявление №1234-45</span>
+			            был принят, ожидайте совершения сделки
+			          </p>
+			        </div>
+			        <div class="notificationsList__item notificationsItem">
+			          <span class="notificationsItem__label">Новое</span>
+			          <p class="notificationsItem__date">02 марта 2017,  20:04:34</p>
+			          <p class="notificationsItem__info notificationsItemInfo">
+			            Ваш отклик на 5000 руб на
+			            <span class="notificationsItemInfo__adsNumber">объявление №1234-45</span>
+			            был принят, ожидайте совершения сделки
+			          </p>
+			        </div>
+			        <div class="notificationsList__item notificationsItem">
+			          <p class="notificationsItem__date">02 марта 2017,  20:04:34</p>
+			          <p class="notificationsItem__info notificationsItemInfo">
+			            Ваш отклик на 5000 руб на
+			            <span class="notificationsItemInfo__adsNumber">объявление №1234-45</span>
+			            был принят, ожидайте совершения сделки
+			          </p>
+			        </div>
+			      </div>
+			      <span class="notifications__button notificationsButton">ПОМЕТИТЬ КАК ПРОЧТЕННЫЕ</span>
+			    </div>
+			  </div>
+			  <div class="headerLoginedInfo__notificationsWrapper notificationsWrapper notifications-wrapper">
+			    <div class="notificationsWrapper__button iconWrapper notifications-show">
+			      <span class="iconWrapper__notifications">ИА</span>
+			    </div>
+			    <div class="notificationsWrapper__notifications tooltip tooltip--small">
+			      <p class="triangleShadowWrapper"><span class="triangleShadow"></span></p>
+			      <ul class="tooltip__menu tootipMenu">
+			        <li class="tootipMenu__item tootipMenuItem">
+			          <a class="ttootipMenuItem__link tootipMenuItemLink" href="#">Настройки</a>
+			        </li>
+			        <li class="tootipMenu__item tootipMenuItem">
+			          <a class="ttootipMenuItem__link tootipMenuItemLink" href="#">Выйти из системы</a>
+			        </li>
+			      </ul>
+			    </div>
+			  </div>
+			</div>
 		</div>
 	</header>
 
@@ -43,7 +103,7 @@
 							<a class="menuItem__link menuItemLink tabs-button is-active" href="#" data-show="1">Общая информация</a>
 						</li>
 						<li class="menu__item menuItem">
-							<a class="menuItem__link menuItemLink tabs-button" href="#" data-show="2">Мои склады</a>
+							<a class="menuItem__link menuItemLink tabs-button" href="#" data-show="2">Мой склад</a>
 						</li>
 						<li class="menu__item menuItem">
 							<a class="menuItem__link menuItemLink tabs-button" href="#" data-show="3">Настройки аккаунта</a>
@@ -177,30 +237,7 @@
 					<div class="profileWrapper__content profileContent tabs-content" data-show="2">
 						<form class="formWrapper__form form">
 							<div class="form__content formContent">
-								<p class="formContentTitle formContent__title">Список складов</p>
-								<div class="storehouse">
-									<div class="storehouse__counter storehouseCounter">
-										<p class="storehouseCounter__number">1</p>
-										<p class="storehouseCounter__text">склад</p>
-									</div>
-									<span class="storehouse__edit icon icon--editWhite"></span>
-									<div class="storehouse__info">
-										г. Москва, ул. Академика Королева, 12, строение 1, д. 56
-									</div>
-								</div>
-								<div class="storehouse">
-									<div class="storehouse__counter storehouseCounter">
-										<p class="storehouseCounter__number">2</p>
-										<p class="storehouseCounter__text">склад</p>
-									</div>
-									<span class="storehouse__edit icon icon--editWhite"></span>
-									<div class="storehouse__info">
-										г. Москва, ул. Митинская, 10, корпус 1
-									</div>
-								</div>
-
-								<hr class="formContent__sep" />
-								<p class="formContentTitle formContent__title">Адрес склада №3</p>
+								<p class="formContentTitle formContent__title">Адрес склада</p>
 								<div class="formContent__block formBlock">
 									<label class="formBlock__fieldWrapper fieldWrapper">
 										<input class="fieldWrapper__input" type="text" name="" placeholder="" />
@@ -235,12 +272,6 @@
 								</div>
 								<div class="formContent__block formBlock formBlock--links">
 									<span class="formBlock__linkButton linkButton linkButton--green">СОХРАНИТЬ</span>
-									<span class="formBlock__linkButton linkButton linkButton--greenTransparent">УДАЛИТЬ</span>
-								</div>
-								<hr class="formContent__sep" />
-
-								<div class="form__addStorehouse addStorehouse">
-									<span class="addStorehouse__info">Добавить еще склад</span>
 								</div>
 							</div>
 						</form>
