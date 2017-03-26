@@ -85,3 +85,39 @@
 .ownConditions {
 
 }
+
+
+
+// result
+.offerWrapper__iconWrapper {
+  padding: 20px 36px 30px;
+}
+
+.iconWrapper__sentInfo {
+  margin: 15px 0;
+  font: 14px/20px $circe-regular;
+}
+
+
+
+.offerResult {
+  margin: 0 30px 30px;
+  padding: 32px 20px 28px;
+  text-align: center;
+  background-color: #F3F8FC;
+  border-radius: 5px;
+}
+
+.offerResult__sum {
+  font-size: 26px;
+  line-height: 32px;
+}
+
+.offerResult__info {
+  font: 14px/19px $circe-regular;
+  color: #7F7F7F;
+}
+
+.offerWrapperDealInfo {
+  margin: -15px 36px 0;
+}

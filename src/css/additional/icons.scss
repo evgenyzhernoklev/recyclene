@@ -131,3 +131,7 @@
 .icon--handshake {
   @include icon(handshake, 47px, 47px);
 }
+
+.icon--sentOk {
+  @include icon(sent_ok, 40px, 40px);
+}
