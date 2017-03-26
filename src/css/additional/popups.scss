@@ -1,6 +1,7 @@
 .popup {
   display: none;
   width: 560px;
+  padding: 25px 35px 30px;
   background-color: $white;
   border-radius: 10px;
 
@@ -13,7 +14,70 @@
 }
 
 .popupTitle {
+  position: relative;
+  padding: 5px 0;
+  font-size: 26px;
+  line-height: 35px;
+  text-align: center;
+}
 
+.popup-open {
+  cursor: pointer;
+}
+
+.popup__closeIcon {
+  position: absolute;
+  z-index: 5;
+  top: 34px;
+  right: 50px;
+  cursor: pointer;
+}
+
+
+
+// testimonials
+.popup--testi {
+  .popupTitle {
+    padding-right: 60px;
+    text-align: left;
+  }
+}
+
+.popupTestiWrapper {
+  position: relative;
+  max-height: 350px;
+  overflow: auto;
+  margin: 38px 0 50px;
+}
+
+.popupTestiItem {
+  position: relative;
+  margin-bottom: 42px;
+  padding-left: 100px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.popupTestiItem__rating {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.popupTestiItem__review {
+  font: 14px/22px $circe-regular;
+}
+
+.testiMoreButton {
+  height: 63px;
+  border: 1px solid #D2D2D2;
+  font: 12px/63px $circe-bold-extra;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 3px;
 }
 
 

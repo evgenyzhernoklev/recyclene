@@ -143,3 +143,7 @@
 .icon--condOwn {
   @include icon(equalizer, 20px, 18px);
 }
+
+.icon--close {
+  @include icon(close_popup, 28px, 28px);
+}
