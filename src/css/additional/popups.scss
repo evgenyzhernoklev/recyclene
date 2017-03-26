@@ -1,10 +1,43 @@
 .popup {
   display: none;
   width: 560px;
-  background: $white;
+  background-color: $white;
   border-radius: 10px;
+
+  &.popup--dealAsk {
+    width: 225px;
+    padding: 42px 44px 35px;
+    background-color: #F3F8FC;
+    border-radius: 5px;
+  }
 }
 
 .popupTitle {
 
+}
+
+
+
+// ask popup
+.popupTitleAsk {
+  margin-bottom: 26px;
+  font: 14px/19px $circe-regular;
+  text-align: center;
+}
+
+
+
+.askButtonsWrapper {
+
+}
+
+.askButtonsWrapper__button {
+  height: 33px;
+  width: 100%;
+  line-height: 31px;
+
+  &.linkButton--green {
+    margin-bottom: 12px;
+    line-height: 35px;
+  }
 }
