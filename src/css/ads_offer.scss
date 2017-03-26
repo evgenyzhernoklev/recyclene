@@ -1,3 +1,74 @@
+// recommendations
+.recommendations {
+  margin: 0 -50px -15px;
+  padding: 35px 50px 0;
+  border-top: 1px solid #EBEBEB;
+  @include clearfix();
+
+  .recommendations__title {
+
+  }
+}
+
+
+
+.recommendationsDistance {
+  float:left;
+  width: 148px;
+  margin-top: 20px;
+  padding: 45px 15px 41px;
+  text-align: center;
+  background-color: #F3F8FC;
+  border-radius: 5px;
+}
+
+.recommendationsDistance__distance {
+  font-size: 22px;
+  line-height: 29px;
+}
+
+.recommendationsDistance__caption {
+  margin-top: 3px;
+  font: 14px/19px $circe-regular;
+  color: #4F636F;
+}
+
+
+
+.recommendations__cols {
+  margin-left: 175px;
+  padding-top: 8px;
+}
+
+.recommendationsCol {
+  padding: 16px 15px 12px;
+  text-align: center;
+  border-bottom: 1px solid #E3E3E3;
+  border-right: 1px solid #E3E3E3;
+
+  &:nth-child(2n) {
+    border-right: 0;
+  }
+
+  &:nth-last-child(1),
+  &:nth-last-child(2) {
+    border-bottom: 0;
+  }
+}
+
+.recommendationsCols__price {
+  font-size: 22px;
+  line-height: 29px;
+}
+
+.recommendationsCols__transport {
+  font: 14px/19px $circe-regular;
+  color: #4F636F;
+}
+
+
+
+// own response
 .offerWrapper {
   margin: 50px 50px 70px;
   padding-top: 30px;
@@ -12,5 +83,5 @@
 }
 
 .ownConditions {
-  
+
 }
