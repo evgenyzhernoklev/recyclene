@@ -16,6 +16,10 @@
   margin: 30px -70px 20px;
   height: 1px;
   background-color: #EBEBEB;
+
+  .form--response & {
+    margin: 37px -36px 20px;
+  }
 }
 
 .formSteps {
@@ -39,6 +43,10 @@
 .formContent {
   padding: 0 70px;
   text-align: left;
+
+  .form--response & {
+    padding: 0 36px;
+  }
 }
 
 .formContent--result {
@@ -308,6 +316,10 @@
   }
 }
 
+.fieldWrapper--fullHeight {
+  height: auto;
+}
+
 .fieldWrapper--image {
   margin-bottom: 39px;
   height: auto;
@@ -452,6 +464,78 @@
 
 
 
+// radio button
+.fieldWrapperRadio {
+  position: relative;
+  display: block;
+  margin-bottom: 18px;
+  padding-left: 40px;
+  font: 14px/22px $circe-regular;
+  cursor: pointer;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  & + .fieldWrapper__label {
+    top: -3px;
+  }
+}
+
+.fieldWrapperRadio__input {
+  display: none;
+
+  &:checked + .fieldWrapperRadio__button:before {
+    opacity: 1;
+  }
+}
+
+.fieldWrapperRadio__button {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 0;
+  top: -2px;
+  background-color: #F6F6F6;
+  border: 1px solid #F3F3F3;
+  border-radius: 50%;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    background-color: #7BB736;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity $transition-normal;
+  }
+}
+
+
+
+// response form
+.form--response {
+
+
+
+  .formBlock__linkButton {
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+
+  .fieldWrapper--fullHeight {
+    margin-top: 40px;
+  }
+}
+
+
+
+
 // selectize
 .form {
 
@@ -525,6 +609,4 @@
   .selectize-dropdown-content {
     max-height: 152px;
   }
-
-
 }
