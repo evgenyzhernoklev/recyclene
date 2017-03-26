@@ -61,7 +61,7 @@
 
 .adsColMoreAdsNumber {
   display: inline-block;
-  padding: 0 10px 0 8px;
+  padding: 0 12px;
   position: absolute;
   z-index: 1;
   left: 25px;
@@ -77,6 +77,7 @@
   display: inline-block;
   max-width: 0;
   opacity: 0;
+  margin-left: 2px;
   transition: max-width $transition-normal, opacity $transition-normal;
 }
 
@@ -190,4 +191,54 @@
   font: 10px/14px $circe-bold-extra;
   text-transform: uppercase;
   text-align: center;
+}
+
+
+
+// pererab cols
+.adsCol--responses {
+
+  .adsColMoreAdsNumber {
+    top: 10px;
+    left: auto;
+    right: 10px;
+  }
+}
+
+
+.adsColInfoCols {
+  border-top: 1px solid #F0F0F0;
+}
+
+.adsColInfoCol {
+  padding: 23px 5px 20px;
+  text-align: center;
+  border-right: 1px solid #F0F0F0;
+
+  &:last-child {
+    border-right: 0;
+  }
+}
+
+.adsColInfoCol__title {
+
+}
+
+.adsColInfoCol__about {
+  font: 12px/19px $circe-regular;
+  color: #4F636F;
+}
+
+
+
+.adsColFooterConditions {
+  position: relative;
+  padding: 11px 0 9px 32px;
+  font: 14px/19px $circe-regular;
+}
+
+.adsColFooterConditions__icon {
+  position: absolute;
+  top: 9px;
+  left: 0;
 }

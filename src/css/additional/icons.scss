@@ -135,3 +135,11 @@
 .icon--sentOk {
   @include icon(sent_ok, 40px, 40px);
 }
+
+.icon--condOk {
+  @include icon(sent_ok, 20px, 20px);
+}
+
+.icon--condOwn {
+  @include icon(equalizer, 20px, 18px);
+}
