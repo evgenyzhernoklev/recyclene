@@ -20,6 +20,13 @@ $(document).ready(function() {
 
 
 
+    // form response
+    $('.conditions-more').on('change', 'input', function() {
+      $('.conditions-hidden').toggleClass('is-active', $('.conditions-toggle').is(':checked'));
+    });
+
+
+
     // notifications
     $body.on('click', '.notifications-show', function(e) {
       e.preventDefault();

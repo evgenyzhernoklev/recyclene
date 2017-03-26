@@ -28,6 +28,17 @@
   }
 }
 
+.adsViewTitle--info {
+  padding-right: 200px;
+}
+
+.adsViewTitle__button {
+  position: absolute;
+  top: -16px;
+  right: 0;
+  line-height: 54px;
+}
+
 
 
 /***** filters *****/
@@ -213,6 +224,10 @@
   margin: 0 -50px;
   padding: 25px 50px;
   background-color: $white-light;
+
+  &.adsDetailsSlider--bgWhite {
+    background-color: $white;
+  }
 
   .slick-arrow {
     cursor: pointer;

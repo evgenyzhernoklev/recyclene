@@ -521,8 +521,6 @@
 // response form
 .form--response {
 
-
-
   .formBlock__linkButton {
     margin-top: 5px;
     margin-bottom: 15px;
@@ -530,6 +528,24 @@
 
   .fieldWrapper--fullHeight {
     margin-top: 40px;
+  }
+
+  .formContentTitleCheckbox {
+    float: left;
+    width: 100px;
+  }
+
+  .formBlock--cols {
+    margin: 0 0 46px 150px;
+
+    .fieldWrapper {
+      margin-left: 0;
+      height: auto;
+    }
+  }
+
+  .formBlock__col {
+    margin-bottom: 25px;
   }
 }
 
@@ -590,6 +606,25 @@
   width: 50px;
   font: 14px/19px $circe-regular;
   color: #4F636F;
+}
+
+
+
+.ownConditions {
+  display: none;
+  padding: 5px 0 0;
+
+  &.is-active {
+    display: block;
+  }
+
+  .formBlock {
+    margin-bottom: 25px;
+  }
+
+  .formContent__sep {
+    margin-top: 20px;
+  }
 }
 
 

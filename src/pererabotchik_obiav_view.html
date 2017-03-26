@@ -33,7 +33,9 @@
 						<span class="adsViewMeta__info adsViewMeta__info--attention">Объявление №123-34</span>
 						<span class="adsViewMeta__info">от 28.03.2017</span>
 					</div>
-					<h1 class="adsView__title adsViewTitle">Макулатура: гофрокартон</h1>
+					<h1 class="adsView__title adsViewTitle adsViewTitle--info">Макулатура: гофрокартон
+						<span class="adsViewTitle__button linkButton linkButton--green">ПРЕДЛОЖИТЬ ЦЕНУ</span>
+					</h1>
 
 					<div class="adsView__info adsViewInfo colsFlex">
 						<div class="colsFlex__col adsViewInfoCol colFlex--3">
@@ -87,7 +89,7 @@
 								</div>
 							</div>
 
-							<div class="adsDetails__slider adsDetailsSlider slider-details">
+							<div class="adsDetails__slider adsDetailsSlider adsDetailsSlider--bgWhite slider-details">
 								<div class="adsDetailsSlider__slide adsDetailsSlide">
 									<img class="adsDetailsSlide__img" src="img/materials/raw_mat6.png">
 								</div>
@@ -116,10 +118,8 @@
 
 				<div class="offerWrapper">
 					<h2 class="offerWrapper__title adsViewTitle">Ваше предложение</h2>
-
 					<form class="form form--response" action="" method="">
 						<div class="form__content formContent">
-
 							<div class="formContent__block formBlock formBlock--price">
 								<label class="formBlock__fieldWrapper fieldWrapper">
 									<input class="fieldWrapper__input" type="text" name="" placeholder="" />
@@ -132,7 +132,7 @@
 							</div>
 
 							<div class="formContent__block formBlock">
-								<div class="formBlock__fieldWrapper fieldWrapper fieldWrapper--fullHeight">
+								<div class="formBlock__fieldWrapper fieldWrapper fieldWrapper--fullHeight conditions-more">
 									<label class="fieldWrapper__radio fieldWrapperRadio">
 										Полностью согласен со всеми условиями
 										<input type="radio" class="fieldWrapperRadio__input" name="conditions" value="" />
@@ -140,21 +140,81 @@
 									</label>
 									<label class="fieldWrapper__radio fieldWrapperRadio">
 										Предложить свои условия
-										<input type="radio" class="fieldWrapperRadio__input" name="conditions" value="" />
+										<input type="radio" class="fieldWrapperRadio__input conditions-toggle" name="conditions" value="" />
 										<span class="fieldWrapperRadio__button"></span>
 									</label>
 									<span class="fieldWrapper__label">Условия</span>
 								</div>
 							</div>
-
 							<hr class="formContent__sep" />
+
+							<div class="formContent__conditions ownConditions conditions-hidden">
+								<div class="formContent__block formBlock">
+									<label class="formBlock__fieldWrapper fieldWrapper">
+										<select class="fieldWrapper__select form-select" placeholder="Выберите условия оплаты">
+											<option value="">Выберите условия оплаты</option>
+											<option value="1">Наличные</option>
+											<option value="3">Банковский перевод</option>
+										</select>
+										<span class="fieldWrapper__label">Условия оплаты</span>
+									</label>
+								</div>
+								<div class="formContent__block formBlock">
+									<label class="formBlock__fieldWrapper fieldWrapper">
+										<select class="fieldWrapper__select form-select" placeholder="Выберите срок оплаты">
+											<option value="">Выберите срок оплаты</option>
+											<option value="1">Наличные</option>
+											<option value="3">Банковский перевод</option>
+										</select>
+										<span class="fieldWrapper__label">Срок оплаты</span>
+									</label>
+								</div>
+								<div class="formContent__block formBlock">
+									<label class="formBlock__fieldWrapper fieldWrapper">
+										<select class="fieldWrapper__select form-select" placeholder="Выберите документацию">
+											<option value="">Выберите документацию</option>
+											<option value="1">Наличные</option>
+											<option value="3">Банковский перевод</option>
+										</select>
+										<span class="fieldWrapper__label">Документация</span>
+									</label>
+								</div>
+								<p class="formContent__title formContentTitleCheckbox">Специальные условия</p>
+								<div class="formContent__block formBlock formBlock--cols colsFlex">
+									<div class="formBlock__col colFlex--2">
+										<label class="formBlock__fieldWrapper fieldWrapper fieldWrapper--checkbox">
+											<input class="fieldWrapper__input fieldWrapper__input" type="checkbox" name="" placeholder="" />
+											<span class="fieldWrapper__label">Нужны ББ взамен</span>
+										</label>
+									</div>
+									<div class="formBlock__col colFlex--2">
+										<label class="formBlock__fieldWrapper fieldWrapper fieldWrapper--checkbox">
+											<input class="fieldWrapper__input fieldWrapper__input" type="checkbox" name="" placeholder="" />
+											<span class="fieldWrapper__label">Нужна доверенность на водителя</span>
+										</label>
+									</div>
+									<div class="formBlock__col colFlex--2">
+										<label class="formBlock__fieldWrapper fieldWrapper fieldWrapper--checkbox">
+											<input class="fieldWrapper__input fieldWrapper__input" type="checkbox" name="" placeholder="" />
+											<span class="fieldWrapper__label">Платный въезд</span>
+										</label>
+									</div>
+									<div class="formBlock__col colFlex--2">
+										<label class="formBlock__fieldWrapper fieldWrapper fieldWrapper--checkbox">
+											<input class="fieldWrapper__input fieldWrapper__input" type="checkbox" name="" placeholder="" />
+											<span class="fieldWrapper__label">Водитель с гражаднством РФ</span>
+										</label>
+									</div>
+								</div>
+								<hr class="formContent__sep" />
+							</div>
+
 							<div class="formContent__block formBlock formBlock--links">
 								<span class="formBlock__linkButton linkButton linkButton--green">Отправить</span>
 								<span class="formBlock__errorInfo">Укажите цену</span>
 							</div>
 						</div>
 					</form>
-
 				</div>
 
 
