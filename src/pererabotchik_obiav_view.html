@@ -120,11 +120,14 @@
 					<form class="form form--response" action="" method="">
 						<div class="form__content formContent">
 
-							<div class="formContent__block formBlock formBlock--amount">
+							<div class="formContent__block formBlock formBlock--price">
 								<label class="formBlock__fieldWrapper fieldWrapper">
-									<p class="fieldWrapper__info">Перерабатывается<br/>за месяц</p>
 									<input class="fieldWrapper__input" type="text" name="" placeholder="" />
 									<span class="fieldWrapper__label">Предложите цену</span>
+									<div class="fieldWrapperPriceInfo">
+										<span class="fieldWrapperPriceInfo__sum">9 000 000 &#8381;</span>
+										<span class="fieldWrapperPriceInfo__info">общая<br>цена</span>
+									</div>
 								</label>
 							</div>
 
@@ -147,6 +150,7 @@
 							<hr class="formContent__sep" />
 							<div class="formContent__block formBlock formBlock--links">
 								<span class="formBlock__linkButton linkButton linkButton--green">Отправить</span>
+								<span class="formBlock__errorInfo">Укажите цену</span>
 							</div>
 						</div>
 					</form>

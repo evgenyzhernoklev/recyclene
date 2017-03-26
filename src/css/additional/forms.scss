@@ -533,6 +533,64 @@
   }
 }
 
+.formBlock__errorInfo {
+  position: relative;
+  display: inline-block;
+  margin-left: 50px;
+  padding: 3px 0 3px 36px;
+  font: 14px/19px $circe-regular;
+  color: #4F636F;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    @include icon(attention, 20px, 20px);
+  }
+}
+
+.formBlock--price {
+  margin-right: 200px;
+
+  .fieldWrapper {
+    &:after {
+      content: 'руб. / кг.';
+      display: inline-block;
+      position: absolute;
+      right: 20px;
+      font: 14px/20px $circe-regular;
+      color: #4F636F;
+    }
+  }
+
+  .fieldWrapper__input {
+    padding-right: 80px;
+  }
+}
+
+.fieldWrapperPriceInfo {
+  position: absolute;
+  top: 11px;
+  left: 100%;
+  margin-left: 30px;
+  padding-right: 60px;
+}
+
+.fieldWrapperPriceInfo__sum {
+  font-size: 24px;
+  line-height: 32px;
+  white-space: nowrap;
+}
+
+.fieldWrapperPriceInfo__info {
+  position: absolute;
+  top: -4px;
+  right: 0;
+  width: 50px;
+  font: 14px/19px $circe-regular;
+  color: #4F636F;
+}
 
 
 
