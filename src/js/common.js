@@ -90,6 +90,18 @@ $(document).ready(function() {
       });
     });
 
+    $('.popup-deal').on('click', function(e) {
+      e.preventDefault();
+      var $popup = $(this).closest('.popup'),
+          $steps = $popup.find('.popupStep');
+
+      $popup.removeClass('popup--small');
+      $steps
+        .removeClass('is-active')
+        .eq($(this).data('step'))
+        .addClass('is-active');
+    });
+
 
 
     // sliding details

@@ -5,7 +5,7 @@
   background-color: $white;
   border-radius: 10px;
 
-  &.popup--dealAsk {
+  &.popup--small {
     width: 225px;
     padding: 42px 44px 35px;
     background-color: #F3F8FC;
@@ -104,4 +104,47 @@
     margin-bottom: 12px;
     line-height: 35px;
   }
+}
+
+
+
+// ask popup form
+.popupForm {
+
+}
+
+.popupStep {
+  display: none;
+
+  &.is-active {
+    display: block;
+  }
+}
+
+.popupStepReason {
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.popupStepReasonField {
+  position: relative;
+  display: block;
+  padding: 5px 15px 5px;
+  font: 14px/19px $circe-regular;
+  text-align: center;
+  background-color: $white-light;
+  border-bottom: 1px solid #E4E4E4;
+  cursor: pointer;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.popupStepReasonField__input {
+  display: none;
+}
+
+.popupStep__buttonsWrapper {
+
 }
