@@ -55,6 +55,7 @@
 
   .formContentTitle {
     max-width: 240px;
+    padding-right: 0;
     margin-left: auto;
     margin-right: auto;
   }
@@ -330,7 +331,7 @@
       position: absolute;
       left: -40px;
       top: -2px;
-      background-color: $white-light;
+      background-color: $input-bg;
       border-radius: 5px;
       transition: background-color $transition-normal, background-image $transition-normal;
     }
@@ -430,7 +431,7 @@
   padding: 0 15px;
   font: 14px/50px $circe-regular;
   color: $black;
-  background-color: $white-light;
+  background-color: $input-bg;
   border: 1px solid transparent;
   border-radius: 5px;
   cursor: pointer;
@@ -601,7 +602,7 @@
   padding: 16px 15px 0;
   font: 14px/19px $circe-regular;
   color: $black;
-  background: $white-light;
+  background: $input-bg;
   border: 1px solid transparent;
   border-radius: 5px;
   cursor: pointer;
@@ -734,7 +735,7 @@
     padding: 0 15px;
     font: 14px/50px $circe-regular;
     color: $black;
-    background: $white-light;
+    background: $input-bg;
     border: 1px solid transparent;
     border-radius: 5px;
     cursor: pointer;
@@ -752,7 +753,7 @@
   }
 
   .selectize-control.single .selectize-input.input-active {
-    background: $white-light;
+    background: $input-bg;
     border-color: #E4E4E4;
     border-radius: 5px 5px 0 0;
   }
@@ -774,7 +775,7 @@
 
   .selectize-dropdown [data-selectable] {
     padding: 14px 15px;
-    background: $white-light;
+    background: $input-bg;
     font: 14px/22px $circe-regular;
     color: #4F636F;
     border-bottom: 1px solid #E4E4E4;
