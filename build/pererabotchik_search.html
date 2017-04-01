@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+	<title>pererabotchik_search</title>
+	<link rel="stylesheet" media="all" href="css/app.css">
+</head>
+<body>
+	<header class="header">
+		<div class="header__contentIn contentIn">
+			<a href="#" class="header__iconLogo header__iconLogo--closer icon icon--logoHeader"></a>
+			<nav class="header__menuWrapper menuWrapper">
+				<ul class="menuWrapper__menu menu">
+					<li class="menu__item menuItem">
+						<a class="menuItem__link menuItemLink is-active" href="#">Объявления</a>
+					</li>
+					<li class="menu__item menuItem">
+						<a class="menuItem__link menuItemLink" href="#">Мои сделки</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="headerLoginedInfo">
+			  <div class="headerLoginedInfo__notificationsWrapper notificationsWrapper notifications-wrapper">
+			    <div class="notificationsWrapper__button iconWrapper notifications-show">
+			      <span class="iconWrapper__icon icon icon--bell"></span>
+			      <span class="iconWrapper__number">10</span>
+			    </div>
+			    <div class="notificationsWrapper__notifications notifications tooltip">
+			      <p class="triangleShadowWrapper"><span class="triangleShadow"></span></p>
+			      <div class="notifications__list notificationsList">
+			        <div class="notificationsList__item notificationsItem">
+			          <span class="notificationsItem__label">Новое</span>
+			          <p class="notificationsItem__date">02 марта 2017,  20:04:34</p>
+			          <p class="notificationsItem__info notificationsItemInfo">
+			            Ваш отклик на 5000 руб на
+			            <span class="notificationsItemInfo__adsNumber">объявление №1234-45</span>
+			            был принят, ожидайте совершения сделки
+			          </p>
+			        </div>
+			        <div class="notificationsList__item notificationsItem">
+			          <p class="notificationsItem__date">02 марта 2017,  20:04:34</p>
+			          <p class="notificationsItem__info notificationsItemInfo">
+			            Ваш отклик на 5000 руб на
+			            <span class="notificationsItemInfo__adsNumber">объявление №1234-45</span>
+			            был принят, ожидайте совершения сделки
+			          </p>
+			        </div>
+			        <div class="notificationsList__item notificationsItem">
+			          <span class="notificationsItem__label">Новое</span>
+			          <p class="notificationsItem__date">02 марта 2017,  20:04:34</p>
+			          <p class="notificationsItem__info notificationsItemInfo">
+			            Ваш отклик на 5000 руб на
+			            <span class="notificationsItemInfo__adsNumber">объявление №1234-45</span>
+			            был принят, ожидайте совершения сделки
+			          </p>
+			        </div>
+			        <div class="notificationsList__item notificationsItem">
+			          <p class="notificationsItem__date">02 марта 2017,  20:04:34</p>
+			          <p class="notificationsItem__info notificationsItemInfo">
+			            Ваш отклик на 5000 руб на
+			            <span class="notificationsItemInfo__adsNumber">объявление №1234-45</span>
+			            был принят, ожидайте совершения сделки
+			          </p>
+			        </div>
+			      </div>
+			      <span class="notifications__button notificationsButton">ПОМЕТИТЬ КАК ПРОЧТЕННЫЕ</span>
+			    </div>
+			  </div>
+			  <div class="headerLoginedInfo__notificationsWrapper notificationsWrapper notifications-wrapper">
+			    <div class="notificationsWrapper__button iconWrapper notifications-show">
+			      <span class="iconWrapper__notifications">ИА</span>
+			    </div>
+			    <div class="notificationsWrapper__notifications tooltip tooltip--small">
+			      <p class="triangleShadowWrapper"><span class="triangleShadow"></span></p>
+			      <ul class="tooltip__menu tootipMenu">
+			        <li class="tootipMenu__item tootipMenuItem">
+			          <a class="ttootipMenuItem__link tootipMenuItemLink" href="#">Настройки</a>
+			        </li>
+			        <li class="tootipMenu__item tootipMenuItem">
+			          <a class="ttootipMenuItem__link tootipMenuItemLink" href="#">Выйти из системы</a>
+			        </li>
+			      </ul>
+			    </div>
+			  </div>
+			</div>
+		</div>
+	</header>
+
+	<div class="contentWrapper">
+		<div class="contentWrapper__content content adsContent">
+			<div class="content__adsWrapper adsWrapper">
+
+
+				<div class="adsWrapper__response adsResponse adsResponse--search tabs-wrapper">
+
+					<h2 class="adsResponse__title adsViewTitle">Объявления
+						<ul class="adsViewTitle__filter adsResponseFilter adsResponseFilter--right">
+							<li class="adsResponseFilter__item adsResponseFilterItem">
+								<a href="#" class="adsResponseFilterItem__link tabs-button is-active" data-show="all">ВСЕ</a>
+							</li>
+							<li class="adsResponseFilter__item adsResponseFilterItem">
+								<a href="#" class="adsResponseFilterItem__link tabs-button" data-show="favorites">ИЗБРАННЫЕ</a>
+							</li>
+						</ul>
+					</h2>
+
+					<div class="colsFlex adsCols">
+
+						<div class="colsFlex__col colFlex--2 adsCol adsCol--borderGreen tabs-content" data-show="all">
+							<div class="adsCol__header adsColHeader">
+								<div class="adsColHeader__overlay"></div>
+								<div class="adsColHeader__info adsColHeaderInfo">
+									<p class="adsColHeaderInfo__title">Макулатура</p>
+								</div>
+								<img class="adsColHeader__img" src="img/materials/raw_mat3.jpg" />
+							</div>
+							<div class="adsCol__content adsColContent">
+								<span class="adsColContent__date">от 28.03.2017</span>
+								<p class="adsColContent__title">Место вывоза</p>
+								<p class="adsColContent__info">район Щукино</p>
+							</div>
+							<div class="adsCol__infoCols adsColInfoCols colsFlex">
+								<div class="colsFlex__col colFlex--3 adsColInfoCol">
+									<p class="adsColInfoCol__title">6300 кг.</p>
+									<p class="adsColInfoCol__about">Вес сырья</p>
+								</div>
+								<div class="colsFlex__col colFlex--3 adsColInfoCol">
+									<p class="adsColInfoCol__title">7123 м<sup>3</sup></p>
+									<p class="adsColInfoCol__about">Объем сырья</p>
+								</div>
+								<div class="colsFlex__col colFlex--3 adsColInfoCol">
+									<p class="adsColInfoCol__title">до 28.03</p>
+									<p class="adsColInfoCol__about">Отгрузка</p>
+								</div>
+							</div>
+							<div class="adsCol__footer adsColFooter">
+								<a class="adsColFooter__link" href="#">откликнуться</a><a class="adsColFooter__link" href="#">в избранное</a>
+							</div>
+						</div>
+
+						<div class="colsFlex__col colFlex--2 adsCol adsCol--borderGreen tabs-content" data-show="all">
+							<div class="adsCol__header adsColHeader">
+								<div class="adsColHeader__overlay"></div>
+								<div class="adsColHeader__info adsColHeaderInfo">
+									<p class="adsColHeaderInfo__title">Макулатура</p>
+								</div>
+								<img class="adsColHeader__img" src="img/materials/raw_mat3.jpg" />
+							</div>
+							<div class="adsCol__content adsColContent">
+								<span class="adsColContent__date">от 28.03.2017</span>
+								<p class="adsColContent__title">Место вывоза</p>
+								<p class="adsColContent__info">район Щукино</p>
+							</div>
+							<div class="adsCol__infoCols adsColInfoCols colsFlex">
+								<div class="colsFlex__col colFlex--3 adsColInfoCol">
+									<p class="adsColInfoCol__title">6300 кг.</p>
+									<p class="adsColInfoCol__about">Вес сырья</p>
+								</div>
+								<div class="colsFlex__col colFlex--3 adsColInfoCol">
+									<p class="adsColInfoCol__title">7123 м<sup>3</sup></p>
+									<p class="adsColInfoCol__about">Объем сырья</p>
+								</div>
+								<div class="colsFlex__col colFlex--3 adsColInfoCol">
+									<p class="adsColInfoCol__title">до 28.03</p>
+									<p class="adsColInfoCol__about">Отгрузка</p>
+								</div>
+							</div>
+							<div class="adsCol__footer adsColFooter">
+								<a class="adsColFooter__link" href="#">откликнуться</a><a class="adsColFooter__link" href="#">в избранное</a>
+							</div>
+						</div>
+
+						<div class="colsFlex__col colFlex--2 adsCol adsCol--borderGreen tabs-content" data-show="favorites">
+							<div class="adsCol__header adsColHeader">
+								<div class="adsColHeader__overlay"></div>
+								<div class="adsColHeader__info adsColHeaderInfo">
+									<p class="adsColHeaderInfo__title">Макулатура</p>
+								</div>
+								<img class="adsColHeader__img" src="img/materials/raw_mat3.jpg" />
+							</div>
+							<div class="adsCol__content adsColContent">
+								<span class="adsColContent__date">от 28.03.2017</span>
+								<p class="adsColContent__title">Место вывоза</p>
+								<p class="adsColContent__info">район Щукино</p>
+							</div>
+							<div class="adsCol__infoCols adsColInfoCols colsFlex">
+								<div class="colsFlex__col colFlex--3 adsColInfoCol">
+									<p class="adsColInfoCol__title">6300 кг.</p>
+									<p class="adsColInfoCol__about">Вес сырья</p>
+								</div>
+								<div class="colsFlex__col colFlex--3 adsColInfoCol">
+									<p class="adsColInfoCol__title">7123 м<sup>3</sup></p>
+									<p class="adsColInfoCol__about">Объем сырья</p>
+								</div>
+								<div class="colsFlex__col colFlex--3 adsColInfoCol">
+									<p class="adsColInfoCol__title">до 28.03</p>
+									<p class="adsColInfoCol__about">Отгрузка</p>
+								</div>
+							</div>
+							<div class="adsCol__footer adsColFooter">
+								<a class="adsColFooter__link" href="#">откликнуться</a><a class="adsColFooter__link adsColFooter__link--active" href="#">в избранном</a>
+							</div>
+						</div>
+
+						<div class="colsFlex__col colFlex--2 adsCol adsCol--borderGreen tabs-content" data-show="favorites">
+							<div class="adsCol__header adsColHeader">
+								<div class="adsColHeader__overlay"></div>
+								<div class="adsColHeader__info adsColHeaderInfo">
+									<p class="adsColHeaderInfo__title">Макулатура</p>
+								</div>
+								<img class="adsColHeader__img" src="img/materials/raw_mat3.jpg" />
+							</div>
+							<div class="adsCol__content adsColContent">
+								<span class="adsColContent__date">от 28.03.2017</span>
+								<p class="adsColContent__title">Место вывоза</p>
+								<p class="adsColContent__info">район Щукино</p>
+							</div>
+							<div class="adsCol__infoCols adsColInfoCols colsFlex">
+								<div class="colsFlex__col colFlex--3 adsColInfoCol">
+									<p class="adsColInfoCol__title">6300 кг.</p>
+									<p class="adsColInfoCol__about">Вес сырья</p>
+								</div>
+								<div class="colsFlex__col colFlex--3 adsColInfoCol">
+									<p class="adsColInfoCol__title">7123 м<sup>3</sup></p>
+									<p class="adsColInfoCol__about">Объем сырья</p>
+								</div>
+								<div class="colsFlex__col colFlex--3 adsColInfoCol">
+									<p class="adsColInfoCol__title">до 28.03</p>
+									<p class="adsColInfoCol__about">Отгрузка</p>
+								</div>
+							</div>
+							<div class="adsCol__footer adsColFooter">
+								<a class="adsColFooter__link" href="#">откликнуться</a><a class="adsColFooter__link adsColFooter__link--active" href="#">в избранном</a>
+							</div>
+						</div>
+
+						<div class="colsFlex__col colFlex--2 adsCol adsCol--borderGreen tabs-content" data-show="all">
+							<div class="adsCol__header adsColHeader">
+								<div class="adsColHeader__overlay"></div>
+								<div class="adsColHeader__info adsColHeaderInfo">
+									<p class="adsColHeaderInfo__title">Макулатура</p>
+								</div>
+								<img class="adsColHeader__img" src="img/materials/raw_mat3.jpg" />
+							</div>
+							<div class="adsCol__content adsColContent">
+								<span class="adsColContent__date">от 28.03.2017</span>
+								<p class="adsColContent__title">Место вывоза</p>
+								<p class="adsColContent__info">район Щукино</p>
+							</div>
+							<div class="adsCol__infoCols adsColInfoCols colsFlex">
+								<div class="colsFlex__col colFlex--3 adsColInfoCol">
+									<p class="adsColInfoCol__title">6300 кг.</p>
+									<p class="adsColInfoCol__about">Вес сырья</p>
+								</div>
+								<div class="colsFlex__col colFlex--3 adsColInfoCol">
+									<p class="adsColInfoCol__title">7123 м<sup>3</sup></p>
+									<p class="adsColInfoCol__about">Объем сырья</p>
+								</div>
+								<div class="colsFlex__col colFlex--3 adsColInfoCol">
+									<p class="adsColInfoCol__title">до 28.03</p>
+									<p class="adsColInfoCol__about">Отгрузка</p>
+								</div>
+							</div>
+							<div class="adsCol__footer adsColFooter">
+								<a class="adsColFooter__link" href="#">откликнуться</a><a class="adsColFooter__link" href="#">в избранное</a>
+							</div>
+						</div>
+
+						<div class="colsFlex__col colFlex--2 adsCol adsCol--borderGreen tabs-content" data-show="all">
+							<div class="adsCol__header adsColHeader">
+								<div class="adsColHeader__overlay"></div>
+								<div class="adsColHeader__info adsColHeaderInfo">
+									<p class="adsColHeaderInfo__title">Макулатура</p>
+								</div>
+								<img class="adsColHeader__img" src="img/materials/raw_mat3.jpg" />
+							</div>
+							<div class="adsCol__content adsColContent">
+								<span class="adsColContent__date">от 28.03.2017</span>
+								<p class="adsColContent__title">Место вывоза</p>
+								<p class="adsColContent__info">район Щукино</p>
+							</div>
+							<div class="adsCol__infoCols adsColInfoCols colsFlex">
+								<div class="colsFlex__col colFlex--3 adsColInfoCol">
+									<p class="adsColInfoCol__title">6300 кг.</p>
+									<p class="adsColInfoCol__about">Вес сырья</p>
+								</div>
+								<div class="colsFlex__col colFlex--3 adsColInfoCol">
+									<p class="adsColInfoCol__title">7123 м<sup>3</sup></p>
+									<p class="adsColInfoCol__about">Объем сырья</p>
+								</div>
+								<div class="colsFlex__col colFlex--3 adsColInfoCol">
+									<p class="adsColInfoCol__title">до 28.03</p>
+									<p class="adsColInfoCol__about">Отгрузка</p>
+								</div>
+							</div>
+							<div class="adsCol__footer adsColFooter">
+								<a class="adsColFooter__link" href="#">откликнуться</a><a class="adsColFooter__link" href="#">в избранное</a>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+
+
+
+
+
+
+			</div>
+		</div>
+	</div>
+
+	<script src="js/app.js"></script>
+</body>
+</html>

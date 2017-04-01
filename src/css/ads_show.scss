@@ -68,6 +68,11 @@
   font-size: 0;
 }
 
+.adsResponseFilter--right {
+  left: auto;
+  right: 0;
+}
+
 .adsResponseFilterItem {
   display: inline-block;
   margin-right: 52px;
@@ -284,6 +289,14 @@
 /***** responses *****/
 .adsResponse {
   padding: 0 50px 50px;
+}
+
+.adsResponse--search {
+  padding-bottom: 10px;
+
+  .adsCols {
+    padding-bottom: 0;
+  }
 }
 
 .adsResponse__title {

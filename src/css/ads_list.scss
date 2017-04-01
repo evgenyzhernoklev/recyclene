@@ -33,17 +33,11 @@
 
 .adsCol {
   position: relative;
-  flex-basis: 31.5%;
-  margin-right: 2.75%;
   margin-bottom: 25px;
   background: $white;
   border-radius: 10px;
   cursor: pointer;
   transition: box-shadow $transition-normal;
-
-  &:nth-child(3n) {
-    margin-right: 0;
-  }
 
   &:hover {
     box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.20);
@@ -56,6 +50,24 @@
 
   &.is-hidden {
     display: none;
+  }
+
+  &.colFlex--3 {
+    flex-basis: 31.5%;
+    margin-right: 2.75%;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+  &.colFlex--2 {
+    flex-basis: 48%;
+    margin-right: 4%;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
   }
 }
 
@@ -126,6 +138,7 @@
 
 // col content
 .adsColContent {
+  position: relative;
   padding: 21px 50px 0 25px;
 }
 
@@ -135,8 +148,19 @@
 }
 
 .adsColContent__info {
-  margin-bottom: 20px;
+  padding-bottom: 20px;
   font: 14px/20px $circe-regular;
+}
+
+.adsColContent__date {
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ACACAC;
+  white-space: nowrap;
 }
 
 
@@ -145,6 +169,7 @@
 .adsColFooter {
   padding: 10px 25px 10px;
   border-top: 1px solid #ECECEC;
+  @include clearfix();
 }
 
 .adsColFooter__iconWrapper {
@@ -164,6 +189,25 @@
     font: 13px/19px $circe-regular;
   }
 }
+
+.adsColFooter__link {
+  float: left;
+  display: inline-block;
+  padding: 5px 0 2px;
+  font: 12px/19px $circe-bold-extra;
+  color: #4F636F;
+  text-transform: uppercase;
+
+  &:last-child {
+    float: right;
+  }
+}
+
+.adsColFooter__link--active {
+  color: #D1AE45;
+}
+
+
 
 // empty col
 .adsColEmpty {
@@ -241,4 +285,39 @@
   position: absolute;
   top: 9px;
   left: 0;
+}
+
+
+
+// pererab cols search
+.adsCol--borderGreen {
+
+  .adsColContent,
+  .adsColInfoCols,
+  .adsColFooter {
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    transition: border-color $transition-normal;
+  }
+
+  .adsColFooter {
+    border-bottom: 2px solid transparent;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  &:hover {
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.05);
+
+    .adsColContent,
+    .adsColInfoCols,
+    .adsColFooter {
+      border-left-color: #7BB736;
+      border-right-color: #7BB736;
+    }
+
+    .adsColFooter {
+      border-bottom-color: #7BB736;
+    }
+  }
 }
