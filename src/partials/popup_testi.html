@@ -1,51 +1,74 @@
-<div class="popup popup--small">
-
-  <div class="popup__step popupStep is-active" data-step="0">
+<div class="popup popup--small popup--dealClose">
+  <div class="popup__step popupStep">
     <p class="popupStep__titleAsk popupTitleAsk">Успешно ли<br>завершена сделка?</p>
     <div class="popupStep__askButtonsWrapper askButtonsWrapper">
-      <span class="askButtonsWrapper__button linkButton linkButton--green popup-deal" data-step="2">УСПЕШНО</span>
-      <span class="askButtonsWrapper__button linkButton linkButton--greenTransparent popup-deal" data-step="1">НЕ УСПЕШНО</span>
+      <span class="askButtonsWrapper__button linkButton linkButton--green popup-deal">УСПЕШНО</span>
+      <span class="askButtonsWrapper__button linkButton linkButton--greenTransparent popup-deal">НЕ УСПЕШНО</span>
     </div>
   </div>
-
   <form class="popup__form popupForm">
-
-    <div class="popupForm__step popupStep" data-step="1">
-      <p class="popupStep__title popupTitle">Укажите причину неудачи</p>
-      <div class="popupStep__reason popupStepReason">
-        <label class="popupStepReason__field popupStepReasonField">
-          <input class="popupStepReasonField__input" type="radio" name="reason">
-          <span class="popupStepReasonField__info">Причина номер 1</span>
-          <span class="popupStepReasonField__icon"></span>
+    <div class="form__content formContent">
+      <p class="formContent__title popupTitle">Оставьте отзыв о переработчике</p>
+      <div class="formContent__block formBlock">
+        <p class="formBlock__title">Поставьте оценку</p>
+        <p class="formBlock__rating rating">
+          <span class="rating__star is-active"></span>
+          <span class="rating__star is-active"></span>
+          <span class="rating__star is-active"></span>
+          <span class="rating__star"></span>
+          <span class="rating__star"></span>
+        </p>
+      </div>
+      <hr class="formContent__sep" />
+      <p class="formContent__title popupTitle">Преимущества и недостатки</p>
+      <div class="formContent__block formBlock formBlock--labels">
+        <label class="formBlock__label formBlockLabel">
+          <input class="formBlockLabel__input" type="checkbox">
+          <span class="formBlockLabel__info">преимущество номер один</span>
         </label>
-        <label class="popupStepReason__field popupStepReasonField">
-          <input class="popupStepReasonField__input" type="radio" name="reason">
-          <span class="popupStepReasonField__info">Причина номер 2</span>
-          <span class="popupStepReasonField__icon"></span>
+        <label class="formBlock__label formBlockLabel">
+          <input class="formBlockLabel__input" type="checkbox">
+          <span class="formBlockLabel__info">недостаток</span>
         </label>
-        <label class="popupStepReason__field popupStepReasonField">
-          <input class="popupStepReasonField__input" type="radio" name="reason">
-          <span class="popupStepReasonField__info">Причина номер 3 Причина номер 3 Причина номер 3 Причина номер 3 Причина номер 3 Причина номер 3 Причина номер 3</span>
-          <span class="popupStepReasonField__icon"></span>
+        <label class="formBlock__label formBlockLabel">
+          <input class="formBlockLabel__input" type="checkbox">
+          <span class="formBlockLabel__info">ЕЩЕ ЧТО-ТО ТАМ</span>
         </label>
-        <label class="popupStepReason__field popupStepReasonField">
-          <input class="popupStepReasonField__input" type="radio" name="reason">
-          <span class="popupStepReasonField__info">Причина номер 4</span>
-          <span class="popupStepReasonField__icon"></span>
+        <label class="formBlock__label formBlockLabel">
+          <input class="formBlockLabel__input" type="checkbox">
+          <span class="formBlockLabel__info">ХОРОШИЙ ТАМАДА</span>
+        </label>
+        <label class="formBlock__label formBlockLabel">
+          <input class="formBlockLabel__input" type="checkbox">
+          <span class="formBlockLabel__info">КАКАЯ-ТО ПОХВАЛА</span>
+        </label>
+        <label class="formBlock__label formBlockLabel">
+          <input class="formBlockLabel__input" type="checkbox">
+          <span class="formBlockLabel__info">А ВОТ ТУТ РУГАНЬ</span>
+        </label>
+        <label class="formBlock__label formBlockLabel">
+          <input class="formBlockLabel__input" type="checkbox">
+          <span class="formBlockLabel__info">ЕЩЕ ЧТО-ТО ТАМ</span>
+        </label>
+        <label class="formBlock__label formBlockLabel">
+          <input class="formBlockLabel__input" type="checkbox">
+          <span class="formBlockLabel__info">КОНКУРСЫ ИНТЕРЕСНЫЕ</span>
         </label>
       </div>
+      <hr class="formContent__sep" />
+      <div class="formContent__addStorehouse addStorehouse slide-toggle-block is-visible">
+        <span class="addStorehouse__info slide-toggle-link">Добавить комментарий</span>
+      </div>
+      <div class="slide-toggle-block">
+        <p class="formContent__title popupTitle">Комментарий<span class="popupTitle__hide slide-toggle-link">Убрать</span></p>
+        <div class="formContent__block formBlock">
+          <textarea class="formBlock__textarea" placeholder="Текст комментария"></textarea>
+        </div>
+      </div>
     </div>
-
-    <div class="popupForm__step popupStep" data-step="2">
-      <p class="popupStep__title popupTitle">Оставьте отзыв о переработчике</p>
-
-    </div>
-
     <div class="popupForm__buttonsWrapper buttonsWrapper">
-      <button type="submit" class="buttonsWrapper__button linkButton linkButton--green popup-submit" disabled>ЗАКРЫТЬ СДЕЛКУ</button>
+      <button type="submit" class="buttonsWrapper__button linkButton linkButton--green">ЗАКРЫТЬ СДЕЛКУ</button>
       <button type="button" class="buttonsWrapper__button linkButton linkButton--greenTransparent popup-close">ОТМЕНИТЬ</button>
     </div>
-
   </form>
-
 </div>

@@ -111,18 +111,18 @@ $(document).ready(function() {
 
     $('.popup-deal').on('click', function(e) {
       e.preventDefault();
-      var $popup = $(this).closest('.popup'),
-          $steps = $popup.find('.popupStep');
+      var $popup = $(this).closest('.popup');
 
       $popup.removeClass('popup--small');
-      $steps
-        .removeClass('is-active')
-        .eq($(this).data('step'))
-        .addClass('is-active');
     });
 
-    $('.popup-submit').on('click', function(e) {
-      
+    $('.slide-toggle-link').on('click', function(e) {
+      e.preventDefault();
+
+      $('.slide-toggle-link')
+        .closest('.slide-toggle-block')
+        .stop()
+        .slideToggle(300);
     });
 
 
