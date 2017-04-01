@@ -103,6 +103,15 @@
   text-transform: uppercase;
 }
 
+.formContentTitle__error {
+  display: inline-block;
+  position: absolute;
+  top: 7px;
+  right: 0;
+  font: 14px/16px $circe-regular;
+  color: #D96A6A;
+}
+
 
 
 .formContent__info {
