@@ -27,6 +27,11 @@
   &:hover {
     background-color: #99D256;
   }
+
+  &:disabled {
+    background-color: #D0D7DD;
+    cursor: default;
+  }
 }
 
 .linkButton--greenTransparent {

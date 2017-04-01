@@ -107,6 +107,8 @@ $(document).ready(function() {
       });
     });
 
+
+
     $('.popup-deal').on('click', function(e) {
       e.preventDefault();
       var $popup = $(this).closest('.popup'),
@@ -117,6 +119,10 @@ $(document).ready(function() {
         .removeClass('is-active')
         .eq($(this).data('step'))
         .addClass('is-active');
+    });
+
+    $('.popup-submit').on('click', function(e) {
+      
     });
 
 

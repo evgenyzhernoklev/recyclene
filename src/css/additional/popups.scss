@@ -122,6 +122,7 @@
 }
 
 .popupStepReason {
+  margin: 18px 0 34px;
   border-radius: 5px;
   overflow: hidden;
 }
@@ -129,22 +130,61 @@
 .popupStepReasonField {
   position: relative;
   display: block;
-  padding: 5px 15px 5px;
+  padding: 17px 50px 14px;
   font: 14px/19px $circe-regular;
   text-align: center;
   background-color: $white-light;
   border-bottom: 1px solid #E4E4E4;
   cursor: pointer;
+  transition: color $transition-normal;
 
   &:last-child {
     border-bottom: 0;
+  }
+
+  &:hover {
+    .popupStepReasonField__info {
+      color: $green;
+    }
   }
 }
 
 .popupStepReasonField__input {
   display: none;
+
+  &:checked + .popupStepReasonField__info {
+    color: $green;
+
+    & + .popupStepReasonField__icon {
+      opacity: 1;
+    }
+  }
 }
 
-.popupStep__buttonsWrapper {
+.popupStepReasonField__info {
+  transition: color $transition-normal;
+}
 
+.popupStepReasonField__icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -10px;
+  @include icon(form_ok, 20px, 20px);
+  opacity: 0;
+  transition: opacity $transition-normal;
+}
+
+
+// buttons
+.popupForm__buttonsWrapper {
+  margin-bottom: 10px;
+
+  .popup--small & {
+    display: none;
+  }
+
+  .buttonsWrapper__button {
+    margin: 0 7px;
+  }
 }
