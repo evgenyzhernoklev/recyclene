@@ -101,7 +101,7 @@ body {
 
 .storehouse__edit {
   position: absolute;
-  right: 20px;
+  right: 62px;
   top: 14px;
   width: 41px;
   height: 41px;
@@ -110,8 +110,20 @@ body {
   border-radius: 50%;
 }
 
+.storehouse__delete {
+  position: absolute;
+  right: 12px;
+  top: 14px;
+  width: 41px;
+  height: 41px;
+  background-color: #D96A6A;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+
 .storehouse__info {
-  margin: 0 99px;
+  margin: 0 115px 0 99px;
   font: 14px/21px $circe-regular;
   color: #4F636F;
 }
