@@ -419,6 +419,19 @@
   }
 }
 
+.fieldWrapperDistance {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font: 14px/19px $circe-bold-extra;
+  white-space: nowrap;
+
+  .formContent--labelsTop & {
+    top: -30px;
+  }
+}
+
 
 
 .formBlock__reminderLink {

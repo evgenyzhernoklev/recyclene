@@ -28,9 +28,38 @@
 		<div class="contentWrapper__content content adsContent">
 			<div class="content__adsWrapper adsWrapper">
 
+				<div class="adsWrapper__searchFormWrapper searchFormWrapper">
+					<form class="searchFormWrapper__form form">
+						<div class="formContent formContent--labelsTop">
+							<div class="formContent__block formBlock formBlock--cols colsFlex">
+								<div class="formBlock__col colFlex--2">
+									<label class="formBlock__fieldWrapper fieldWrapper">
+										<select class="fieldWrapper__select form-select" placeholder="Выберите склад">
+											<option value="">Выберите склад</option>
+											<option value="4">Перевозки</option>
+											<option value="1">Добыча сырья</option>
+											<option value="3">Строительство</option>
+											<option value="5">B2B</option>
+										</select>
+										<span class="fieldWrapper__label">Местоположение рядом</span>
+									</label>
+								</div>
+								<div class="formBlock__col colFlex--2">
+									<div class="formBlock__fieldWrapper fieldWrapper">
+
+										<span class="fieldWrapper__label">Расстояние, не далее чем</span>
+										<p class="fieldWrapper__distance fieldWrapperDistance"><span class="distance-number">22</span> км</p>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</form>
+				</div>
+
+
 
 				<div class="adsWrapper__response adsResponse adsResponse--search tabs-wrapper">
-
 					<h2 class="adsResponse__title adsViewTitle">Объявления
 						<ul class="adsViewTitle__filter adsResponseFilter adsResponseFilter--right">
 							<li class="adsResponseFilter__item adsResponseFilterItem">
@@ -43,7 +72,6 @@
 					</h2>
 
 					<div class="colsFlex adsCols">
-
 						<div class="colsFlex__col colFlex--2 adsCol adsCol--borderGreen tabs-content" data-show="all">
 							<div class="adsCol__header adsColHeader">
 								<div class="adsColHeader__overlay"></div>
@@ -235,14 +263,8 @@
 								<a class="adsColFooter__link" href="#">откликнуться</a><a class="adsColFooter__link" href="#">в избранное</a>
 							</div>
 						</div>
-
 					</div>
-
 				</div>
-
-
-
-
 
 
 
