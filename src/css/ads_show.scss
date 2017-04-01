@@ -95,7 +95,7 @@
 
 /***** meta *****/
 .adsViewMeta {
-
+  margin-bottom: 10px;
 }
 
 .adsViewMeta__info {
@@ -106,7 +106,7 @@
   white-space: nowrap;
   font-size: 14px;
   line-height: 32px;
-  color: #ACACAC;
+  color: $black;
 
   &:after {
     content: '';
@@ -131,8 +131,12 @@
   }
 }
 
-.adsViewMeta__info--attention {
-  color: #E72081;
+.adsViewMeta__info--date {
+  color: #ACACAC;
+}
+
+.adsViewMeta__info--link {
+  color: $green;
 }
 
 
