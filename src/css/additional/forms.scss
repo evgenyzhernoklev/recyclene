@@ -391,6 +391,74 @@
 
 
 
+// add photo
+.formContentTitle--addImage {
+  &.formContentTitle {
+    margin-bottom: 5px;
+  }
+}
+
+.formBlock--addImage {
+
+  &.formBlock {
+    margin-top: 0;
+  }
+
+}
+
+.fieldWrapper--photo {
+  height: 120px;
+  background: #D0D7DD;
+  border-radius: 5px;
+  overflow: hidden;
+
+  &:before {
+    content: '';
+    @include icon(photocamera, 30px, 27px);
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    margin-top: -15px;
+    margin-left: -14px;
+  }
+
+  .fieldWrapper__input {
+    display: none;
+  }
+
+  &.with-image {
+    .fieldWrapper__imgBg,
+    .icon {
+      display: block;
+    }
+  }
+
+  .icon {
+    position: absolute;
+    z-index: 3;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: $white;
+    border-radius: 50%;
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.50);
+    cursor: pointer;
+    display: none;
+  }
+}
+
+.fieldWrapper__imgBg {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: none;
+}
+
+
+
+// userpick
 .fieldWrapper__avatar {
   display: inline-block;
   width: 105px;

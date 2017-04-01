@@ -20,6 +20,37 @@ $(document).ready(function() {
 
 
 
+    // form image
+    $('.field-image').on('change', function() {
+      var $container = $(this).closest('.fieldWrapper'),
+          $preview = $container.find('.fieldWrapper__imgBg'),
+          reader  = new FileReader(),
+          file = $(this).prop('files')[0];
+
+      reader.onloadend = function () {
+        $container.addClass('with-image');
+        $preview.attr('src', reader.result);
+      }
+
+      if (file) {
+        reader.readAsDataURL(file);
+      } else {
+        $preview.attr('src', '');
+        $container.removeClass('with-image');
+      }
+    });
+
+    $('.image-delete').on('click', function (e) {
+      e.preventDefault();
+      var $container = $(this).closest('.fieldWrapper'),
+          $preview = $container.find('.fieldWrapper__imgBg');
+
+      $preview.attr('src', '');
+      $container.removeClass('with-image');
+    });
+
+
+
     // form response
     $('.conditions-more').on('change', 'input', function() {
       $('.conditions-hidden').toggleClass('is-active', $('.conditions-toggle').is(':checked'));

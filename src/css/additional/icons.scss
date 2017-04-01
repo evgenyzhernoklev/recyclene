@@ -104,6 +104,10 @@
   @include icon(basket_white, 11px, 14px);
 }
 
+.icon--basketRed {
+  @include icon(basket_red, 11px, 14px);
+}
+
 .icon--eye {
   @include icon(eye_gray, 17px, 11px);
 }
