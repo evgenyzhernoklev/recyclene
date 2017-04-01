@@ -27,6 +27,23 @@ $(document).ready(function() {
 
 
 
+    // form slider
+    var $distance = $('.distance-number');
+
+    $('.form-slider').slider({
+      value: 60,
+      range: "min",
+      animate: true,
+      create: function(event, ui) {
+        $distance.text( $(this).slider("value") );
+      },
+      slide: function( event, ui ) {
+        $distance.text( ui.value );
+      }
+    });
+
+
+
     // notifications
     $body.on('click', '.notifications-show', function(e) {
       e.preventDefault();

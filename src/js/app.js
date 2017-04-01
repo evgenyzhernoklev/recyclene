@@ -5,6 +5,7 @@
 //= ../../node_modules/slick-carousel/slick/slick.min.js
 //= vendor/selectize.min.js
 //= vendor/bpopup.min.js
+//= vendor/jquery-ui.min.js
 
 /*
  * Custom
