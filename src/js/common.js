@@ -51,6 +51,27 @@ $(document).ready(function() {
 
 
 
+    // avatar
+    $('.field-avatar').on('change', function() {
+      var $container = $(this).closest('.fieldWrapper'),
+          $preview = $container.find('.fieldWrapperAvatar__img'),
+          img_src = $preview.data('img'),
+          reader  = new FileReader(),
+          file = $(this).prop('files')[0];
+
+      reader.onloadend = function () {
+        $preview.attr('src', reader.result);
+      }
+
+      if (file) {
+        reader.readAsDataURL(file);
+      } else {
+        $preview.attr('src', img_src);
+      }
+    });
+
+
+
     // form response
     $('.conditions-more').on('change', 'input', function() {
       $('.conditions-hidden').toggleClass('is-active', $('.conditions-toggle').is(':checked'));

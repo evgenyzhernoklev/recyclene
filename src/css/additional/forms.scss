@@ -480,7 +480,7 @@
 
 
 // userpick
-.fieldWrapper__avatar {
+.fieldWrapperAvatar {
   display: inline-block;
   width: 105px;
   height: 105px;
@@ -489,15 +489,11 @@
   left: -150px;
   line-height: 105px;
   text-align: center;
-  background-color: #D6DADC;
-  border-radius: 50%;
   overflow: hidden;
+}
 
-  &:before {
-    content: '';
-    @include icon(avatar_white, 38px, 41px);
-    vertical-align: middle;
-  }
+.fieldWrapperAvatar__img {
+  width: 100%;
 }
 
 .fieldWrapper__info {
