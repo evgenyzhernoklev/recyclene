@@ -60,6 +60,18 @@
 
 
 
+// map
+.mapWrapper {
+  position: fixed;
+  top: 80px;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  margin-left: 50px;
+}
+
+
+
 /***** filters *****/
 .adsResponseFilter {
   position: absolute;

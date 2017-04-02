@@ -212,6 +212,7 @@ $(document).ready(function() {
 
       if (!detailsSLiderStarted) {
         detailsSLiderStarted = true;
+        $('.slider-details').slick('unslick');
         initDetailsSlider();
       }
     });
