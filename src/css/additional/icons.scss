@@ -151,3 +151,7 @@
 .icon--close {
   @include icon(close_popup, 28px, 28px);
 }
+
+.icon--papers {
+  @include icon(papers, 13px, 15px);
+}

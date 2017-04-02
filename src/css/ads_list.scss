@@ -174,10 +174,21 @@
 
 .adsColFooter__iconWrapper {
   display: inline-block;
-  margin-right: 25px;
+  margin-left: 25px;
 
-  &:last-child {
-    margin-right: 0;
+  &.adsColFooter__iconWrapper--example {
+    float: right;
+    margin-left: 0;
+    color: $black;
+    @include hide();
+
+    .adsCol:hover & {
+      @include show();
+    }
+  }
+
+  &:first-child {
+    margin-left: 0;
   }
 
   .icon {
