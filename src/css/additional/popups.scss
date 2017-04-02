@@ -69,6 +69,17 @@
   left: 0;
 }
 
+.popupTestiItem__labels {
+  &.dealInfoAboutText {
+    padding: 0 0 5px;
+  }
+
+  .dealInfoAboutText__button {
+    color: #4F636F;
+    font-size: 10px;
+  }
+}
+
 .popupTestiItem__review {
   font: 14px/22px $circe-regular;
 }
