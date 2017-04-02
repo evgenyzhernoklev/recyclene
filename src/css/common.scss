@@ -232,3 +232,28 @@ button {
   padding: 0 25px;
   text-transform: uppercase;
 }
+
+
+
+// notifications
+.notification {
+  position: fixed;
+  z-index: 98;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #899CA8;
+  transition: top .5s ease;
+
+  &.is-active {
+    top: 80px;
+  }
+}
+
+.notification__contentIn {
+  padding-top: 22px;
+  padding-bottom: 19px;
+  font: 14px/19px $circe-regular;
+  color: $white;
+  text-align: center;
+}
