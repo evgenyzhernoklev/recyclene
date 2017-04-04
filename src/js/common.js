@@ -253,25 +253,6 @@ $(document).ready(function() {
         }, 1500);
       });
 
-      /*************** toggle blocks ***************/
-      $('.tabs-link').on('click', function(e) {
-        e.preventDefault();
-        if ( $(this).hasClass('is-active') ) {
-          return;
-        }
-
-        var $parent = $(this).closest('.tabs-wrapper'),
-            $content = $parent.find('.tabs-content'),
-            targetBlockIndex = +$(this).data('block'),
-            $targetBlock = $content.eq(targetBlockIndex);
-
-        $parent.find('.tabs-link').removeClass('is-active');
-        $(this).addClass('is-active');
-
-        $content.removeClass('is-active');
-        $targetBlock.addClass('is-active');
-      });
-
       /*************** slider who sells ***************/
       $('.sliderSells').slick({
         slidesToShow: 3,
@@ -297,6 +278,18 @@ $(document).ready(function() {
         fade: true,
         prevArrow: '',
         nextArrow: ''
+      });
+
+      $('.tabs-button').on('click', function() {
+        $('.howSliderLp').slick('unslick');
+
+        $('.howSliderLp').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          fade: true,
+          prevArrow: '',
+          nextArrow: ''
+        });
       });
     }
 });
