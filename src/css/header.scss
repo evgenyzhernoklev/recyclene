@@ -132,7 +132,7 @@
 
   &.is-active {
     color: rgba(0,0,0, 1);
-    border-color: #7BB736;
+    border-color: $green;
   }
 }
 
@@ -225,7 +225,7 @@
 .notificationsItem__date {
   margin-bottom: 10px;
   font: 14px/21px $circe-regular;
-  color: #4F636F;
+  color: $gray;
 }
 
 .notificationsItemInfo {

@@ -44,7 +44,7 @@
   height: 100%;
   padding-left: 32px;
   font: 14px/19px $circe-regular;
-  color: #4F636F;
+  color: $gray;
 
   .icon {
     @include icon(flag_green, 16px, 20px);

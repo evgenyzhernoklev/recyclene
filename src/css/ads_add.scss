@@ -65,7 +65,7 @@
   margin-top: 14px;
   margin-right: 30px;
   font: 14px/22px $circe-regular;
-  color: #7BB736;
+  color: $green;
 
   &:last-child {
     margin-right: 0;
@@ -115,7 +115,7 @@
   }
 
   .icon--pensil {
-    background-color: #7BB736;
+    background-color: $green;
   }
 
   .icon--basket {

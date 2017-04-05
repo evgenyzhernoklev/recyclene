@@ -10,7 +10,7 @@ body {
   padding-top: 98px;
   width: 100%;
   height: 100%;
-  background-color: #4F636F;
+  background-color: $gray;
   text-align: center;
 
   .titleMain__info {
@@ -96,7 +96,7 @@ body {
 
 .storehouseCounter__text {
   font: 14px/22px $circe-regular;
-  color: #4F636F;
+  color: $gray;
 }
 
 .storehouse__edit {
@@ -105,7 +105,7 @@ body {
   top: 14px;
   width: 41px;
   height: 41px;
-  background-color: #7BB736;
+  background-color: $green;
   cursor: pointer;
   border-radius: 50%;
 }
@@ -125,5 +125,5 @@ body {
 .storehouse__info {
   margin: 0 115px 0 99px;
   font: 14px/21px $circe-regular;
-  color: #4F636F;
+  color: $gray;
 }

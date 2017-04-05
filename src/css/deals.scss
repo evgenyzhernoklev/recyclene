@@ -44,7 +44,7 @@
 .dealPrice__dealNumber {
   margin-bottom: 36px;
   font: 14px/19px $circe-regular;
-  color: #4F636F;
+  color: $gray;
 }
 
 .dealPrice__price {
@@ -74,7 +74,7 @@
 
 .dealPrice__resume {
   font: 12px/17px $circe-bold-extra;
-  color: #7BB736;
+  color: $green;
   text-transform: uppercase;
 }
 
@@ -112,7 +112,7 @@
 
 .dealQuantityInfo__about {
   font: 12px/18px $circe-regular;
-  color: #4F636F;
+  color: $gray;
 }
 
 
@@ -131,7 +131,7 @@
   max-width: 115px;
   font-size: 18px;
   line-height: 24px;
-  color: #4F636F;
+  color: $gray;
 }
 
 .dealInfoTitle {
@@ -146,7 +146,7 @@
 }
 
 .dealInfoTitle__important {
-  color: #7BB736;
+  color: $green;
 }
 
 .dealInfoTitle__rating {
@@ -170,7 +170,7 @@
   float: left;
   width: 100px;
   font: 14px/19px $circe-regular;
-  color: #4F636F;
+  color: $gray;
 }
 
 .dealInfoAboutText {
@@ -179,7 +179,7 @@
 }
 
 .dealInfoAboutText__link {
-  color: #7BB736;
+  color: $green;
 }
 
 .dealInfoAboutText__button {
@@ -194,6 +194,6 @@
 
   &.is-active {
     color: $black;
-    border-color: #7BB736;
+    border-color: $green;
   }
 }

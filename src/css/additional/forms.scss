@@ -66,7 +66,7 @@
   margin: 32px 0 22px;
   padding-right: 160px;
   font: 20px/28px $circe-light;
-  color: #4F636F;
+  color: $gray;
 }
 
 .formContentTitle__saved {
@@ -205,7 +205,7 @@
 .formContentTitleCheckbox {
   margin: 35px 0 13px;
   font: 14px/22px $circe-regular;
-  color: #4F636F;
+  color: $gray;
 }
 
 
@@ -254,7 +254,7 @@
       position: absolute;
       right: 20px;
       font: 14px/20px $circe-regular;
-      color: #4F636F;
+      color: $gray;
     }
   }
 
@@ -273,7 +273,7 @@
 .formBlock__title {
   margin-bottom: 15px;
   font: 14px/19px $circe-regular;
-  color: #4F636F;
+  color: $gray;
   text-align: center;
 }
 
@@ -533,8 +533,23 @@
   top: 14px;
   left: -150px;
   font: 14px/22px $circe-regular;
-  color: #4F636F;
+  color: $gray;
+
+  &.fieldWrapper__label--conditions {
+    color: $gray;
+
+    a {
+      color: $gray;
+      border-bottom: 1px solid $gray;
+
+      &:hover {
+        border-bottom-color: transparent;
+      }
+    }
+  }
 }
+
+
 
 .fieldWrapper__input {
   width: 100%;
@@ -661,7 +676,7 @@
     position: absolute;
     left: 5px;
     top: 5px;
-    background-color: #7BB736;
+    background-color: $green;
     border-radius: 50%;
     opacity: 0;
     transition: opacity $transition-normal;
@@ -695,7 +710,7 @@
   margin: 0 5px 5px 0;
   padding: 7px 15px 5px;
   font: 10px/16px $circe-bold;
-  color: #4F636F;
+  color: $gray;
   border: 1px solid #E6E6E6;
   border-radius: 7px;
   background-color: transparent;
@@ -763,7 +778,7 @@
   margin-left: 50px;
   padding: 3px 0 3px 36px;
   font: 14px/19px $circe-regular;
-  color: #4F636F;
+  color: $gray;
 
   &:before {
     content: '';
@@ -784,7 +799,7 @@
       position: absolute;
       right: 20px;
       font: 14px/20px $circe-regular;
-      color: #4F636F;
+      color: $gray;
     }
   }
 
@@ -813,7 +828,7 @@
   right: 0;
   width: 50px;
   font: 14px/19px $circe-regular;
-  color: #4F636F;
+  color: $gray;
 }
 
 
@@ -888,7 +903,7 @@
     padding: 14px 15px;
     background: $input-bg;
     font: 14px/22px $circe-regular;
-    color: #4F636F;
+    color: $gray;
     border-bottom: 1px solid #E4E4E4;
     transition: background-color $transition-normal, color $transition-normal;
 
