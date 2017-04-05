@@ -41,13 +41,10 @@
 				<!-- step 1 begin -->
 				<div class="contentIn__zakazStep zakazStep">
 					<h2 class="zakazStep__title zakazStepTitle">Местонахождение<span class="zakazStepTitle__number">1</span></h2>
-					<div class="zakazStep__content zakazContent colsFlex">
+					<div class="zakazStep__content zakazContent zakazContent--map colsFlex">
 						<div class="colsFlex__col colFlex--2">
-
-
 							<div class="zakazContent__formContent formContent formContent--labelsTop">
 								<p class="formContent__title formContentTitle">Выберите склад и дату отгрузки</p>
-
 								<div class="formContent__block formBlock">
 									<label class="formBlock__fieldWrapper fieldWrapper">
 										<select class="fieldWrapper__select form-select" placeholder="Выберите склад">
@@ -60,16 +57,22 @@
 										<span class="fieldWrapper__label">Где находится сырье?</span>
 									</label>
 								</div>
-
-
-
+								<div class="formContent__block formBlock formBlock--cols colsFlex">
+									<div class="formBlock__col colFlex--2">
+										<label class="formBlock__fieldWrapper fieldWrapper fieldWrapper--date">
+											<input class="fieldWrapper__input" type="text" name="" placeholder="" />
+											<span class="fieldWrapper__label">Выберите дату отгрузки</span>
+											<span class="fieldWrapper__calendarIcon icon icon--calendar"></span>
+										</label>
+									</div>
+									<div class="formBlock__col colFlex--2">
+										<a class="dateLink" href="#">Завтра</a><a class="dateLink" href="#">Послезавтра</a>
+									</div>
+								</div>
 							</div>
-
-
-
 						</div>
 						<div class="colsFlex__col colFlex--2 zakazContentCol">
-
+							<img src="img/map_zakaz.png" width="100%" style="position: absolute; top: 0; bottom: 0; left: 50%;">
 						</div>
 					</div>
 				</div>
