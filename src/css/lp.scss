@@ -30,7 +30,7 @@
 
 
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .contentLpIn {
     padding: 0 20px;
   }
@@ -122,37 +122,41 @@
 
 /*************** header ***************/
 .contentLpHeader {
-  padding: 178px 0 132px;
+  padding: 163px 0 76px;
   background-color: #4D636E;
 }
 
 .contentLpIn__headerIconWrapper {
   margin-bottom: 32px;
+  text-align: left;
 }
 
 .titleHeaderLp {
-  max-width: 680px;
-  margin: 0 auto 20px;
+  max-width: 480px;
+  margin: 0 0 30px;
   font-size: 34px;
   line-height: 47px;
   color: $white;
-  text-align: center;
 }
 
 .subtitleHeaderLp {
-  max-width: 600px;
-  margin: 0 auto 48px;
+  max-width: 380px;
+  margin: 0 0 46px;
   font: 16px/25px $circe-regular;
   color: $white;
-  text-align: center;
 }
 
 
 
 .contentLpIn__headerButtonsLp {
+  text-align: left;
 
   .linkButton {
-    margin: 0 10px;
+    margin-right: 18px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
@@ -227,6 +231,11 @@
 
 
 
+@media (max-width: 1024px) {
+  .sliderSells {
+    padding-right: 80px;
+  }
+}
 
 
 
@@ -350,9 +359,9 @@
 }
 
 .changesInfoWrapperLp {
-  text-align: center;
-  width: 200px;
   display: inline-block;
+  max-width: 200px;
+  text-align: center;
 }
 
 .changesInfoWrapperLp__title {
@@ -386,7 +395,31 @@
 
 
 
+@media (max-width: 1024px) {
+  .changesLpCol--bottle {
 
+    .changesLpCol__iconWrapper {
+      width: 105px;
+      height: 105px;
+      margin-top: -53px;
+      line-height: 105px;
+
+      .icon--bottleWhite {
+        background-size: 21px 41px;
+      }
+    }
+  }
+
+  .changesLpCol--box {
+
+    .changesLpCol__iconWrapper {
+      width: 157px;
+      height: 157px;
+      margin-top: -79px;
+      line-height: 157px;
+    }
+  }
+}
 
 
 
@@ -515,7 +548,28 @@
 
 
 
+@media (max-width: 1024px) {
+  .howSlideLpContentWrapper {
+    float: none;
+    width: 100%;
+  }
 
+  .howSlideLpContent {
+    max-width: none;
+  }
+
+  .icon--sliderLeft {
+    position: absolute;
+    left: 0;
+    top: 300px;
+  }
+
+  .icon--sliderRight {
+    position: absolute;
+    right: 0;
+    top: 300px;
+  }
+}
 
 
 
@@ -583,6 +637,25 @@
     border-right: 1px solid $light-gray;
   }
 }
+
+
+
+@media (max-width: 1024px) {
+  .contentLpPartnersLogos {
+    .contentLpIn {
+      padding: 0;
+    }
+  }
+
+  .logosWrapperPartnersLp__col {
+    flex-basis: 25%;
+
+    &:last-child {
+      border-right: 0;
+    }
+  }
+}
+
 
 
 

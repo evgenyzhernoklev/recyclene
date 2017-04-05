@@ -258,7 +258,18 @@ $(document).ready(function() {
         slidesToShow: 3,
         slidesToScroll: 1,
         prevArrow: '<span class="icon icon--sliderLeft"></span>',
-        nextArrow: '<span class="icon icon--sliderRight"></span>'
+        nextArrow: '<span class="icon icon--sliderRight"></span>',
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              prevArrow: '<span class="icon icon--sliderLeft"></span>',
+              nextArrow: '<span class="icon icon--sliderRight"></span>'
+            }
+          }
+        ]
       });
 
       /*************** slider how it works ***************/
