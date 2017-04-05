@@ -155,3 +155,7 @@
 .icon--papers {
   @include icon(papers, 13px, 15px);
 }
+
+.icon--calendar {
+  @include icon(calendar, 18px, 18px);
+}

@@ -412,6 +412,32 @@
 
 
 
+// date
+.fieldWrapper--date {
+  &:before {
+    content: 'До';
+    display: inline-block;
+    position: absolute;
+    left: 15px;
+    font: 14px/50px $circe-regular;
+    color: #ACACAC;
+  }
+
+  .fieldWrapper__input {
+    padding-left: 42px;
+    padding-right: 30px;
+  }
+}
+
+.fieldWrapper__calendarIcon {
+  position: absolute;
+  right: 18px;
+  top: 16px;
+  cursor: pointer;
+}
+
+
+
 // add photo
 .formContentTitle--addImage {
   &.formContentTitle {
