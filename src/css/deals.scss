@@ -64,6 +64,16 @@
   line-height: 31px;
 }
 
+.dealQuantityWrapper__button {
+  position: absolute;
+  width: auto;
+  bottom: -57px;
+  left: 30px;
+  right: 30px;
+  height: 33px;
+  line-height: 31px;
+}
+
 
 
 .dealPrice__date {
@@ -82,6 +92,7 @@
 
 // quantity block
 .dealQuantityWrapper {
+  position: relative;
   float: right;
   width: 225px;
   text-align: center;
