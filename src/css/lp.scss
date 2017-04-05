@@ -272,6 +272,8 @@
   background-color: $white-light;
 
   .titleMainLp {
+    padding-left: 120px;
+    padding-right: 120px;
     padding-bottom: 76px;
   }
 }
@@ -287,7 +289,7 @@
   .icon--sliderRight {
     position: absolute;
     right: 58px;
-    top: -115px;
+    top: -117px;
     width: 46px;
     height: 46px;
     border: 2px solid #80BA27;
@@ -358,6 +360,14 @@
 @media (max-width: 1024px) {
   .sliderSells {
     padding-right: 80px;
+
+    .icon--sliderRight {
+      right: 0;
+    }
+
+    .icon--sliderLeft {
+      right: 60px;
+    }
   }
 }
 
@@ -368,7 +378,9 @@
     padding: 0 0 27px;
 
     .titleMainLp {
-      padding-bottom: 35px;
+      padding-left: 0;
+      padding-right: 140px;
+      text-align: left;
     }
   }
 
@@ -380,6 +392,14 @@
 
 
 @media (max-width: 480px) {
+  .contentLpWhoSells {
+    .titleMainLp {
+      padding-right: 0;
+      padding-bottom: 35px;
+      text-align: center;
+    }
+  }
+
   .sliderSellsSlide {
     margin: 0 10px;
     padding: 38px 25px 28px;
@@ -436,8 +456,18 @@
 
 
 
-
 @media (max-width: 768px) {
+  .whoBuysLpCol {
+    flex-basis: 50%;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: none;
+  }
+}
+
+
+
+@media (max-width: 480px) {
   .contentLpWhoBuys {
     padding-bottom: 0;
 
@@ -447,6 +477,7 @@
   }
 
   .whoBuysLpCol {
+    flex-basis: 100%;
     max-width: none;
   }
 
@@ -839,7 +870,7 @@
 
   .partnersInfoColLp {
     flex-basis: 100%;
-    margin: 10px 0 20px;
+    margin: 0 0 20px;
     padding: 0 0 80px;
   }
 
