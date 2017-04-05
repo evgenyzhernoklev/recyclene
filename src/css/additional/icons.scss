@@ -7,7 +7,7 @@
 }
 
 .iconWrapper__logo {
-
+  vertical-align: middle;
 }
 
 
@@ -15,22 +15,6 @@
 // logos
 .logo {
   vertical-align: middle;
-}
-
-.logo--pjat {
-  @include logo(pjatorochka, 150px, 28px);
-}
-
-.logo--perek {
-  @include logo(perekrestok, 146px, 29px);
-}
-
-.logo--cola {
-  @include logo(coca-cola, 115px, 38px);
-}
-
-.logo--pepsi {
-  @include logo(pepsi, 123px, 47px);
 }
 
 

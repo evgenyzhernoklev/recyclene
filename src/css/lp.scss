@@ -11,13 +11,15 @@
   height: 100%;
   margin: 0 auto;
   padding: 0 40px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: $circe-light;
+  color: #000000;
 }
 
 .titleMainLp {
   padding: 72px 0 24px;
-  font-size: 32px;
-  line-height: 38px;
-  font-family: $circe-light;
+  font: 32px/38px $circe-light;
   color: $black;
   text-align: center;
 }
@@ -30,9 +32,30 @@
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .contentLpIn {
     padding: 0 20px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .contentLpIn {
+    font-size: 14px;
+
+    .buttonsWrapper {
+      .linkButton {
+        width: 100%;
+        margin: 0 0 18px;
+      }
+    }
+  }
+
+  .titleMainLp {
+    padding: 32px 0 24px;
+    font-size: 24px;
+    line-height: 33px;
   }
 }
 
@@ -162,7 +185,25 @@
 
 
 
+@media (max-width: 768px) {
+  .contentLpHeader {
+    padding-bottom: 41px;
+  }
 
+  .titleHeaderLp {
+    margin: 0 auto 30px;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+  }
+
+  .subtitleHeaderLp {
+    margin: 0 auto 30px;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+  }
+}
 
 
 
@@ -202,6 +243,34 @@
   .icon--sliderLeft {
     right: 118px;
   }
+
+  .slick-dots {
+    margin: 28px 0 0;
+    font-size: 0;
+    line-height: 0;
+    text-align: center;
+
+    li {
+      display: inline-block;
+
+      &.slick-active {
+        button {
+          background-color: #80BA27;
+          cursor: default;
+        }
+      }
+    }
+
+    button {
+      display: inline-block;
+      margin: 0 3px;
+      width: 11px;
+      height: 11px;
+      background-color: #D8D8D8;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
 }
 
 .sliderSellsSlide {
@@ -234,6 +303,22 @@
 @media (max-width: 1024px) {
   .sliderSells {
     padding-right: 80px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .contentLpWhoSells {
+    padding: 0 0 27px;
+
+    .titleMainLp {
+      padding-bottom: 35px;
+    }
+  }
+
+  .sliderSells {
+    padding-right: 0;
   }
 }
 
@@ -286,7 +371,42 @@
 
 
 
+@media (max-width: 768px) {
+  .contentLpWhoBuys {
+    padding-bottom: 0;
 
+    .titleMainLp {
+      padding-bottom: 35px;
+    }
+  }
+
+  .whoBuysLpCol {
+    max-width: none;
+  }
+
+  .whoBuysLpCol__iconWrapper {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 25px;
+    line-height: 90px;
+
+    .icon--bottleGreen {
+      background-size: 24px 47px;
+    }
+
+    .icon--boxPurple {
+      background-size: 39px 39px;
+    }
+  }
+
+
+
+  .whoBuysLpCol__title {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
 
 
 
@@ -426,7 +546,7 @@
 
 /*************** how it works ***************/
 .contentLpHow {
-  padding-bottom: 114px;
+  padding-bottom: 200px;
   border-bottom: 1px solid $light-gray;
 }
 
@@ -522,13 +642,11 @@
 
 }
 
-.howSlideLpImgWrapper {
-  float: left;
-  width: 50%;
-}
-
 .howSlideLpImgWrapper__img {
   max-width: 795px;
+  position: absolute;
+  top: 0;
+  left: 50%;
 }
 
 
@@ -549,6 +667,10 @@
 
 
 @media (max-width: 1024px) {
+  .contentLpHow {
+    padding-bottom: 74px;
+  }
+
   .howSlideLpContentWrapper {
     float: none;
     width: 100%;
@@ -556,18 +678,37 @@
 
   .howSlideLpContent {
     max-width: none;
+    padding-top: 0;
   }
 
-  .icon--sliderLeft {
-    position: absolute;
-    left: 0;
-    top: 300px;
+  .howSlideLpContent__buttonsWrapper {
+    margin: 0;
+
+    .icon {
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin-top: 30%;
+    }
+
+    .icon--sliderRight {
+      left: auto;
+      right: 0;
+    }
   }
 
-  .icon--sliderRight {
-    position: absolute;
-    right: 0;
-    top: 300px;
+
+
+  .howSlideLpImgWrapper__img {
+    position: static;
+    max-width: 795px;
+    width: 80%;
+    margin: 10px auto 55px;
+  }
+
+  .howSlideLpContent__info {
+    max-width: 420px;
+    margin: 0 auto;
   }
 }
 
@@ -616,6 +757,24 @@
 }
 
 
+@media (max-width: 768px) {
+  .contentLpPartners {
+    padding-bottom: 18px;
+  }
+
+  .partnersInfoColLp {
+    margin: 10px 0 20px;
+    padding: 0 0 80px;
+  }
+
+  .partnersInfoColLp__info {
+    line-height: 24px;
+  }
+
+  .partnerPerson__name {
+    font-size: 16px;
+  }
+}
 
 
 
@@ -635,6 +794,10 @@
 
   &:last-child {
     border-right: 1px solid $light-gray;
+  }
+
+  .iconWrapper__logo {
+    max-width: 70%;
   }
 }
 
@@ -658,8 +821,16 @@
 
 
 
+@media (max-width: 768px) {
+  .logosWrapperPartnersLp__col {
+    flex-basis: 50%;
+    border-bottom: 1px solid $light-gray;
 
-
+    &:nth-child(2n+1) {
+      border-left: 0;
+    }
+  }
+}
 
 
 
@@ -679,7 +850,17 @@
 
 
 
+@media (max-width: 768px) {
+  .contentLpRequest {
+    position: relative;
+    margin-top: -1px;
+    padding-top: 0;
 
+    .subtitleMainLp {
+      margin: 5px auto 39px;
+    }
+  }
+}
 
 
 

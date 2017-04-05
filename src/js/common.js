@@ -268,6 +268,15 @@ $(document).ready(function() {
               prevArrow: '<span class="icon icon--sliderLeft"></span>',
               nextArrow: '<span class="icon icon--sliderRight"></span>'
             }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false,
+              dots: true
+            }
           }
         ]
       });
