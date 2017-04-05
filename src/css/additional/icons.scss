@@ -143,3 +143,11 @@
 .icon--calendar {
   @include icon(calendar, 18px, 18px);
 }
+
+.icon--star {
+  @include icon(star_big, 60px, 57px);
+}
+
+.icon--boxEmpty {
+  @include icon(box_empty, 63px, 48px);
+}
