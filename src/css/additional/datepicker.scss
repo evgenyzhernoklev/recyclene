@@ -15,53 +15,57 @@
   padding: 28px 10px 27px;
   border: 0;
   background-color: $white;
+
+  .ui-datepicker-prev,
+  .ui-datepicker-next {
+    position: absolute;
+    top: 26px;
+    right: 18px;
+    background-color: #F7F8FC;
+    border-radius: 50%;
+    @include icon(datepicker_right, 8px, 13px);
+    width: 22px;
+    height: 22px;
+    background-position: 8px center;
+
+    .ui-icon {
+      display: none;
+    }
+
+    &:hover {
+      @include icon(datepicker_right, 8px, 13px);
+      background-color: #F7F8FC;
+      border: 0;
+      width: 22px;
+      height: 22px;
+      background-position: 8px center;
+    }
+
+    &.ui-state-disabled {
+      opacity: 1;
+    }
+  }
+
+  .ui-datepicker-next {
+    right: 51px;
+    @include icon(datepicker_left, 8px, 13px);
+    width: 22px;
+    height: 22px;
+    background-position: 6px center;
+
+    &:hover {
+      @include icon(datepicker_left, 8px, 13px);
+      width: 22px;
+      height: 22px;
+      background-position: 6px center;
+    }
+  }
 }
 
 .ui-datepicker-title {
   font: 15px/21px $circe-regular;
   color: #6B7897;
   letter-spacing: 0.59px;
-}
-
-.ui-datepicker-prev,
-.ui-datepicker-next {
-  position: absolute;
-  top: 26px;
-  right: 18px;
-  background-color: #F7F8FC;
-  border-radius: 50%;
-  @include icon(datepicker_right, 8px, 13px);
-  width: 22px;
-  height: 22px;
-  background-position: 8px center;
-
-  .ui-icon {
-    display: none;
-  }
-
-  &:hover {
-    @include icon(datepicker_right, 8px, 13px);
-    background-color: #F7F8FC;
-    border: 0;
-    width: 22px;
-    height: 22px;
-    background-position: 8px center;
-  }
-}
-
-.ui-datepicker-next {
-  right: 51px;
-  @include icon(datepicker_left, 8px, 13px);
-  width: 22px;
-  height: 22px;
-  background-position: 6px center;
-
-  &:hover {
-    @include icon(datepicker_left, 8px, 13px);
-    width: 22px;
-    height: 22px;
-    background-position: 6px center;
-  }
 }
 
 

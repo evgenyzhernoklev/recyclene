@@ -100,7 +100,9 @@ $(document).ready(function() {
     $('.field-date').datepicker({
       dateFormat: "dd.mm.yy",
       showOtherMonths: true,
-      selectOtherMonths: true
+      selectOtherMonths: true,
+      minDate: 0,
+      maxDate: "+3M +3D"
     }, $.datepicker.regional[ "ru" ] );
 
 
