@@ -6,6 +6,7 @@
 //= vendor/selectize.min.js
 //= vendor/bpopup.min.js
 //= vendor/jquery-ui.min.js
+//= vendor/datepicker-ru.js
 
 /*
  * Custom

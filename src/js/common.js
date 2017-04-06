@@ -97,11 +97,12 @@ $(document).ready(function() {
 
 
     // datepicker
+    $( ".field-date" ).datepicker( $.datepicker.regional[ "ru" ] );
     $('.field-date').datepicker({
+      dateFormat: "dd.mm.yy",
       showOtherMonths: true,
       selectOtherMonths: true
     });
-    // $.datepicker.setDefaults( $.datepicker.regional[ "fr" ] );
 
 
 
