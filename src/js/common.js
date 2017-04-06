@@ -97,8 +97,11 @@ $(document).ready(function() {
 
 
     // datepicker
-    $('.field-date').datepicker();
-    $.datepicker.setDefaults( $.datepicker.regional[ "fr" ] );
+    $('.field-date').datepicker({
+      showOtherMonths: true,
+      selectOtherMonths: true
+    });
+    // $.datepicker.setDefaults( $.datepicker.regional[ "fr" ] );
 
 
 
