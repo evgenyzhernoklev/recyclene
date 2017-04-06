@@ -99,7 +99,9 @@
 						<span class="adsViewMeta__info">Объявление №123-34</span>
 						<span class="adsViewMeta__info adsViewMeta__info--date">от 28.03.2017</span>
 					</div>
-					<h1 class="adsView__title adsViewTitle">Макулатура: гофрокартон</h1>
+					<h1 class="adsView__title adsViewTitle">Макулатура: гофрокартон
+						<span class="adsViewTitle__buttonDelete icon icon--basket popup-open" data-popup="popup--delete"></span>
+					</h1>
 
 					<div class="adsView__info adsViewInfo colsFlex">
 						<div class="colsFlex__col adsViewInfoCol colFlex--3">
@@ -449,6 +451,14 @@
 	  </div>
 	
 	  <div class="popup__testiMore testiMoreButton">ПОКАЗАТЬ ЕЩЕ</div>
+	</div>
+	<div class="popup popup--delete">
+	  <p class="popup__title popupTitle">Хотите удалить объявление?</p>
+	  <p class="popup__info popupInfo">Вы удалите его навсегда, это действие нельзя отменить и вы потеряете все активные отклики</p>
+	  <div class="popup__buttonsWrapper buttonsWrapper">
+	    <button type="button" class="buttonsWrapper__button linkButton linkButton--greenTransparent popup-close">НЕ УДАЛЯТЬ</button>
+	    <button type="button" class="buttonsWrapper__button linkButton linkButton--green">УДАЛИТЬ</button>
+	  </div>
 	</div>
 
 	<script src="js/app.js"></script>

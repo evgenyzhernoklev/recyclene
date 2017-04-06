@@ -24,6 +24,13 @@
   text-align: center;
 }
 
+.popupInfo {
+  margin: 17px auto 28px;
+  padding: 0 30px;
+  font: 14px/22px $circe-regular;
+  text-align: center;
+}
+
 .popup-open {
   cursor: pointer;
 }
@@ -191,6 +198,17 @@
 
 .popup__iconWrapperResult {
   margin: 40px 0 50px;
+}
+
+
+
+// delete
+.popup--delete {
+  padding-bottom: 45px;
+
+  .buttonsWrapper__button {
+    margin: 0 8px;
+  }
 }
 
 
