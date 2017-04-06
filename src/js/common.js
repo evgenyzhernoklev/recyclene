@@ -96,6 +96,12 @@ $(document).ready(function() {
 
 
 
+    // datepicker
+    $('.field-date').datepicker();
+    $.datepicker.setDefaults( $.datepicker.regional[ "fr" ] );
+
+
+
     // notifications
     $body.on('click', '.notifications-show', function(e) {
       e.preventDefault();
