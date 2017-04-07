@@ -105,6 +105,37 @@ $(document).ready(function() {
       maxDate: "+3M +3D"
     }, $.datepicker.regional[ "ru" ] );
 
+    function checkDate(plusDays) {
+      var date = new Date();
+      date.setDate(date.getDate() + plusDays);
+
+      var date_date = date.getDate(),
+          date_month = date.getMonth() + 1,
+          date_year = date.getFullYear(),
+          date_format = '';
+
+      if (date_date < 10) {
+        date_date = '0' + date_date;
+      }
+
+      if (date_month < 10) {
+        date_month = '0' + date_month;
+      }
+
+      return date_format = date_date + '.' + date_month + '.' + date_year;
+    }
+
+    $('.field-date-next').on('click', function(e) {
+      e.preventDefault();
+      var plusDays = +$(this).data('days'),
+          date = checkDate(plusDays);
+
+      $(this)
+        .closest('.field-date-container')
+        .find('.field-date')
+        .val(date);
+    });
+
 
 
     // notifications
