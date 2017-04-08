@@ -261,6 +261,12 @@ $(document).ready(function() {
 
 
 
+    // menu
+    $('.menuToggle').on('click', function() {
+      $body.toggleClass('mobile-menu-opened');
+    });
+
+
     /*************** js for landing ***************/
     if ( $('.sliderSells').length ) {
       /*************** menu ***************/

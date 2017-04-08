@@ -1,0 +1,106 @@
+.menuToggle {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  top: 50px;
+  right: 40px;
+  height: 38px;
+  padding: 0 15px;
+  font-size: 0;
+  background: #80BA27;
+  border-radius: 100px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: top .25s ease-in-out, right .25s ease-in-out;
+}
+
+.menuToggle__info {
+  display: inline-block;
+  margin-left: 12px;
+  font: 13px/42px $circe-regular;
+  color: $white;
+  vertical-align: middle;
+}
+
+.hamburger {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.hamburger__line {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 16px;
+  background: $white;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+
+  &:nth-child(1) {
+    top: 0px;
+  }
+
+  &:nth-child(2) {
+    width: 13px;
+    top: 5px;
+  }
+
+  &:nth-child(3) {
+    top: 10px;
+  }
+
+  .mobile-menu-opened & {
+    &:nth-child(1) {
+      top: 5px;
+      transform: rotate(135deg);
+    }
+
+    &:nth-child(2) {
+      opacity: 0;
+      left: -60px;
+    }
+
+    &:nth-child(3) {
+      top: 5px;
+      transform: rotate(-135deg);
+    }
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .menuToggle {
+    display: block;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .menuToggle {
+    width: 38px;
+    top: 30px;
+    right: 25px;
+    border-radius: 50%;
+  }
+
+  .menuToggle__info {
+    display: none;
+  }
+
+  .hamburger {
+    position: absolute;
+    top: 13px;
+    left: 11px;
+  }
+}
