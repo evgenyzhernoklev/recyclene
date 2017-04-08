@@ -777,6 +777,10 @@
 .contentLpHow {
   padding-bottom: 200px;
   border-bottom: 1px solid $light-gray;
+
+  .tabsLinksWrapperLp {
+    white-space: nowrap;
+  }
 }
 
 .tabsWrapperLp {
@@ -784,7 +788,8 @@
 }
 
 .tabsLinksWrapperLp {
-  margin: 20px 0 72px;
+  margin: 20px auto 72px;
+  max-width: 550px;
   text-align: center;
   font-size: 0;
 }
@@ -793,7 +798,7 @@
   position: relative;
   z-index: 1;
   display: inline-block;
-  width: 225px;
+  width: 50%;
   height: 50px;
   font: 12px/50px $circe-bold-extra;
   color: $black;
@@ -943,7 +948,32 @@
 
 
 
+@media (max-width: 480px) {
+  .contentLpHow {
+    padding-bottom: 32px;
+  }
 
+  .howSlideLpContentWrapper {
+    padding-bottom: 70px;
+  }
+
+  .howSlideLpContent__buttonsWrapper {
+
+    .icon {
+      margin: 0 0 0 -55px;
+      top: auto;
+      bottom: 0;
+      left: 50%;
+    }
+
+    .icon--sliderRight {
+      left: auto;
+      right: 50%;
+      margin-left: 0;
+      margin-right: -55px
+    }
+  }
+}
 
 
 
