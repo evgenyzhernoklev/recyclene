@@ -154,6 +154,8 @@
 
 .dealInfoTitle--withRating {
   padding-right: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .dealInfoTitle__important {

@@ -29,6 +29,18 @@ body {
 
 
 
+@media (max-width: 768px) {
+  .sectionForms {
+    padding-top: 70px;
+  }
+
+  .sectionForms__contentIn {
+    padding: 0;
+  }
+}
+
+
+
 // storehouse add
 .addStorehouse {
   margin: 35px 0 -12px;

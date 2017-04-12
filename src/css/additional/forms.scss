@@ -39,6 +39,18 @@
 
 
 
+@media (max-width: 768px) {
+  .formWrapper {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px 85px;
+    border-radius: 0;
+  }
+}
+
+
+
 // form content
 .formContent {
   padding: 0 70px;
@@ -123,6 +135,31 @@
 
 .formContent__iconWrapperResult {
   margin: 55px 0 58px;
+}
+
+
+
+@media (max-width: 768px) {
+  .formContent {
+    padding: 0;
+  }
+
+  .formContentTitle {
+    padding: 0;
+    margin-top: 30px;
+  }
+
+
+
+  .formContentTitle__error {
+    position: static;
+    display: block;
+    margin-top: 20px;
+  }
+
+  .formContent__info {
+    margin-bottom: 20px;
+  }
 }
 
 
@@ -293,6 +330,19 @@
 
 
 
+@media (max-width: 768px) {
+  .formBlock {
+    margin-bottom: 12px;
+  }
+
+  .formBlock--links {
+    margin-top: 18px;
+    white-space: normal;
+  }
+}
+
+
+
 .fieldWrapper {
   display: block;
   position: relative;
@@ -327,6 +377,8 @@
 }
 
 .fieldWrapper--checkbox {
+  margin-top: 24px;
+
   .fieldWrapper__input {
     display: none;
 
@@ -341,6 +393,7 @@
   .fieldWrapper__label {
     position: relative;
     display: inline-block;
+    top: 0;
     left: 40px;
     color: $black;
 
@@ -408,6 +461,19 @@
 
 .fieldWrapper--slider {
   padding-top: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+  .fieldWrapper {
+    margin: 0;
+    height: auto;
+  }
+
+  .fieldWrapper--checkbox {
+    margin-top: 34px;
+  }
 }
 
 
@@ -590,7 +656,7 @@
 
 .formBlock__reminderLink {
   position: absolute;
-  top: 15px;
+  top: 1px;
   right: 0;
   font: 14px/22px $circe-regular;
   color: #80BA27;
@@ -610,9 +676,32 @@
 
 
 
+@media (max-width: 768px) {
+  .fieldWrapper__label {
+    position: static;
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+
+  .fieldWrapper__input {
+    height: 50px;
+  }
+
+  .formBlock__linkButton {
+    margin: 0 0 15px;
+    width: 100%;
+
+    &:nth-child(2) {
+      margin: 0 0 15px;
+    }
+  }
+}
+
+
+
 // button submit
 .formButtonWrapper {
-  margin: 48px 0 0;
+  margin: 35px 0 0;
 }
 
 .formButtonWrapper__submit {
@@ -626,6 +715,25 @@
 
   &:hover {
     background-color: #99D256;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .formButtonWrapper {
+    position: fixed;
+    margin: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+
+
+  .formButtonWrapper__submit {
+    height: 50px;
+    line-height: 25px;
   }
 }
 

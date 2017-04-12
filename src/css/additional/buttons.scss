@@ -76,3 +76,10 @@
   color: $black;
   text-align: center;
 }
+
+
+@media (max-width: 768px) {
+  .linkButton {
+    width: 100%;
+  }
+}

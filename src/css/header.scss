@@ -9,6 +9,10 @@
   box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.10);
 }
 
+.header__contentIn {
+  max-width: 1220px;
+}
+
 .header__iconLogo {
   position: absolute;
   top: 50%;
@@ -36,6 +40,19 @@
 @media (max-width: 1024px) {
   .header__iconLogo--closer {
     left: 20px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .header {
+    height: 70px;
+  }
+
+  .header__iconLogo {
+    width: 35px;
+    background-position: left center;
   }
 }
 
