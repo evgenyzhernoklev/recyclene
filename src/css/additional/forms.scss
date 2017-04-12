@@ -47,6 +47,29 @@
     padding: 0 20px 85px;
     border-radius: 0;
   }
+
+
+
+  .formContent__sep {
+    margin: 20px -70px 20px;
+  }
+
+
+
+  .formSteps {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+
+    .colFlex--3 {
+      flex-basis: calc(100%/3);
+    }
+  }
+
+  .formSteps__step {
+    height: 8px;
+  }
 }
 
 
@@ -147,6 +170,7 @@
   .formContentTitle {
     padding: 0;
     margin-top: 30px;
+    margin-bottom: 18px;
     font-size: 18px;
     line-height: 24px;
   }
@@ -359,7 +383,7 @@
 
 @media (max-width: 768px) {
   .formBlock {
-    margin-bottom: 12px;
+    margin-bottom: 20px;
   }
 
   .formBlock--links {
@@ -402,6 +426,20 @@
     }
   }
 }
+
+
+
+@media (max-width: 768px) {
+  .fieldWrapper {
+
+    &:after {
+      top: 9px;
+      right: 0;
+    }
+  }
+}
+
+
 
 .fieldWrapper--checkbox {
   margin-top: 24px;
@@ -500,6 +538,23 @@
 
   .fieldWrapper--checkbox {
     margin-top: 34px;
+  }
+
+
+
+  .fieldWrapper--image {
+    text-align: center;
+  }
+
+
+
+  .fieldWrapper--companyName {
+
+    .fieldWrapper__input {
+      height: auto;
+      font-size: 20px;
+      line-height: 28px;
+    }
   }
 }
 
@@ -643,6 +698,7 @@
   color: $gray;
 
   &.fieldWrapper__label--conditions {
+    padding-right: 40px;
     color: $gray;
 
     a {
@@ -653,6 +709,19 @@
         border-bottom-color: transparent;
       }
     }
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .fieldWrapperAvatar {
+    position: static;
+    margin-bottom: 15px;
+  }
+
+  .fieldWrapper__info {
+    margin-bottom: 22px;
   }
 }
 
