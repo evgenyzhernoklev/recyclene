@@ -14,6 +14,18 @@
   transition: top .25s ease-in-out, right .25s ease-in-out;
 }
 
+.menuToggle--green {
+  position: absolute;
+  top: 20px;
+  line-height: 38px;
+  right: 12px;
+  background-color: transparent;
+
+  .hamburger__line {
+    background-color: $green;
+  }
+}
+
 .menuToggle__info {
   display: inline-block;
   margin-left: 12px;
@@ -92,6 +104,12 @@
     top: 30px;
     right: 25px;
     border-radius: 50%;
+  }
+
+  .menuToggle--green {
+    top: 18px;
+    right: 15px;
+    background-color: transparent;
   }
 
   .menuToggle__info {
