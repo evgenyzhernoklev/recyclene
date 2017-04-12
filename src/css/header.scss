@@ -130,8 +130,9 @@
 
 // menu common
 .menuWrapper {
-  padding: 0 200px;
+  padding: 0 170px;
   height: 100%;
+  white-space: nowrap;
 }
 
 .menu {
@@ -182,6 +183,15 @@
     left: 5px;
     margin-top: -10px;
     @include icon(add_green, 20px, 20px);
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .menuWrapper {
+    display: none;
+    position: fixed;
   }
 }
 

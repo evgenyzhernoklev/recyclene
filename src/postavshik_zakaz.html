@@ -10,6 +10,7 @@
 	<header class="header">
 		<div class="header__contentIn contentIn">
 			<a href="#" class="header__iconLogo header__iconLogo--closer icon icon--logoHeader"></a>
+			<span class="contentIn__titleHeader forMobile">Новое объявление</span>
 			<nav class="header__menuWrapper menuWrapper">
 				<ul class="menuWrapper__menu menu">
 					<li class="menu__item menuItem">
@@ -27,9 +28,17 @@
 		</div>
 	</header>
 
+	<div class="menuToggle menuToggle--green">
+		<div class="menuToggle__hamburger hamburger">
+		  <span class="hamburger__line"></span>
+		  <span class="hamburger__line"></span>
+		  <span class="hamburger__line"></span>
+		</div>
+	</div>
+
 <form class="form">
 	<div class="contentWrapper">
-		<div class="contentWrapper__sectionTitle sectionTitle">
+		<div class="contentWrapper__sectionTitle sectionTitle forDesktop">
 			<div class="sectionTitle__contentIn contentIn">
 				<h1 class="contentIn__title titlePage">Размещение нового объявления</h1>
 			</div>
@@ -47,6 +56,7 @@
 								<p class="formContent__title formContentTitle">Выберите склад и дату отгрузки</p>
 								<div class="formContent__block formBlock">
 									<label class="formBlock__fieldWrapper fieldWrapper">
+										<span class="fieldWrapper__label">Где находится сырье?</span>
 										<select class="fieldWrapper__select form-select" placeholder="Выберите склад">
 											<option value="">Выберите склад</option>
 											<option value="4">Перевозки</option>
@@ -54,14 +64,13 @@
 											<option value="3">Строительство</option>
 											<option value="5">B2B</option>
 										</select>
-										<span class="fieldWrapper__label">Где находится сырье?</span>
 									</label>
 								</div>
 								<div class="formContent__block formBlock formBlock--cols colsFlex field-date-container">
 									<div class="formBlock__col colFlex--2">
 										<label class="formBlock__fieldWrapper fieldWrapper fieldWrapper--date">
-											<input class="fieldWrapper__input field-date" type="text" name="" placeholder="" />
 											<span class="fieldWrapper__label">Выберите дату отгрузки</span>
+											<input class="fieldWrapper__input field-date" type="text" name="" placeholder="" />
 											<span class="fieldWrapper__calendarIcon icon icon--calendar"></span>
 										</label>
 									</div>
@@ -71,7 +80,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="colsFlex__col colFlex--2 zakazContentCol">
+						<div class="colsFlex__col colFlex--2 zakazContentColMap">
 							<img src="img/map_zakaz.png" width="100%" style="position: absolute; top: 0; bottom: 0; left: 50%;">
 						</div>
 					</div>
@@ -85,7 +94,7 @@
 					<h2 class="zakazStep__title zakazStepTitle">Описание вторсырья<span class="zakazStepTitle__number">2</span></h2>
 
 					<div class="zakazStep__content zakazContent zakazAdded">
-						<div class="zakazAdded__imgWrapper imgWrapper">
+						<div class="zakazAdded__imgWrapper imgWrapper forDesktop">
 							<img class="imgWrapper__img" src="img/materials/raw_mat1.png" />
 						</div>
 						<div class="zakazAdded__iconWrapper iconWrapper">
@@ -112,7 +121,7 @@
 						</div>
 					</div>
 					<div class="zakazStep__content zakazContent zakazAdded">
-						<div class="zakazAdded__imgWrapper imgWrapper">
+						<div class="zakazAdded__imgWrapper imgWrapper forDesktop">
 							<img class="imgWrapper__img" src="img/materials/raw_mat2.png" />
 						</div>
 						<div class="zakazAdded__iconWrapper iconWrapper">
@@ -146,6 +155,7 @@
 							<div class="formContent__block formBlock formBlock--cols colsFlex">
 								<div class="formBlock__col colFlex--2">
 									<label class="formBlock__fieldWrapper fieldWrapper">
+										<span class="fieldWrapper__label">Тип сырья</span>
 										<select class="fieldWrapper__select form-select" placeholder="Выберите тип сырья">
 											<option value="">Выберите тип сырья</option>
 											<option value="4">Перевозки</option>
@@ -153,11 +163,11 @@
 											<option value="3">Строительство</option>
 											<option value="5">B2B</option>
 										</select>
-										<span class="fieldWrapper__label">Тип сырья</span>
 									</label>
 								</div>
 								<div class="formBlock__col colFlex--2">
 									<label class="formBlock__fieldWrapper fieldWrapper">
+										<span class="fieldWrapper__label">Тип вторсырья</span>
 										<select class="fieldWrapper__select form-select" placeholder="Выберите тип вторсырья">
 											<option value="">Выберите тип вторсырья</option>
 											<option value="4">Перевозки</option>
@@ -165,7 +175,6 @@
 											<option value="3">Строительство</option>
 											<option value="5">B2B</option>
 										</select>
-										<span class="fieldWrapper__label">Тип вторсырья</span>
 									</label>
 								</div>
 							</div>
@@ -217,6 +226,7 @@
 							<div class="formContent__block formBlock formBlock--cols colsFlex">
 								<div class="formBlock__col colFlex--2">
 									<label class="formBlock__fieldWrapper fieldWrapper">
+										<span class="fieldWrapper__label">Тип упаковки</span>
 										<select class="fieldWrapper__select form-select" placeholder="Выберите тип упаковки">
 											<option value="">Выберите тип упаковки</option>
 											<option value="4">Перевозки</option>
@@ -224,21 +234,20 @@
 											<option value="3">Строительство</option>
 											<option value="5">B2B</option>
 										</select>
-										<span class="fieldWrapper__label">Тип упаковки</span>
 									</label>
 								</div>
 								<div class="formBlock__col colFlex--4">
 									<label class="formBlock__fieldWrapper fieldWrapper">
 										<p class="fieldWrapper__info">м<sup>3</sup></p>
-										<input class="fieldWrapper__input" type="text" name="" placeholder="" />
 										<span class="fieldWrapper__label">Объем</span>
+										<input class="fieldWrapper__input" type="text" name="" placeholder="" />
 									</label>
 								</div>
 								<div class="formBlock__col colFlex--4">
 									<label class="formBlock__fieldWrapper fieldWrapper">
 										<p class="fieldWrapper__info">кг</p>
-										<input class="fieldWrapper__input" type="text" name="" placeholder="" />
 										<span class="fieldWrapper__label">Вес</span>
+										<input class="fieldWrapper__input" type="text" name="" placeholder="" />
 									</label>
 								</div>
 							</div>
@@ -301,6 +310,7 @@
 							<div class="formContent__block formBlock formBlock--cols colsFlex">
 								<div class="formBlock__col colFlex--2">
 									<label class="formBlock__fieldWrapper fieldWrapper">
+										<span class="fieldWrapper__label">Форма оплаты</span>
 										<select class="fieldWrapper__select form-select" placeholder="Выберите форму оплаты">
 											<option value="">Выберите форму оплаты</option>
 											<option value="4">Перевозки</option>
@@ -308,11 +318,11 @@
 											<option value="3">Строительство</option>
 											<option value="5">B2B</option>
 										</select>
-										<span class="fieldWrapper__label">Форма оплаты</span>
 									</label>
 								</div>
 								<div class="formBlock__col colFlex--2">
 									<label class="formBlock__fieldWrapper fieldWrapper">
+										<span class="fieldWrapper__label">Срок оплаты</span>
 										<select class="fieldWrapper__select form-select" placeholder="Выберите срок оплаты">
 											<option value="">Выберите срок оплаты</option>
 											<option value="4">Перевозки</option>
@@ -320,7 +330,6 @@
 											<option value="3">Строительство</option>
 											<option value="5">B2B</option>
 										</select>
-										<span class="fieldWrapper__label">Срок оплаты</span>
 									</label>
 								</div>
 							</div>
@@ -328,6 +337,7 @@
 							<div class="formContent__block formBlock formBlock--cols colsFlex">
 								<div class="formBlock__col colFlex--2">
 									<label class="formBlock__fieldWrapper fieldWrapper">
+										<span class="fieldWrapper__label">Документация</span>
 										<select class="fieldWrapper__select form-select" placeholder="Выберите нужна ли документация">
 											<option value="">Выберите нужна ли документация</option>
 											<option value="4">Перевозки</option>
@@ -335,11 +345,11 @@
 											<option value="3">Строительство</option>
 											<option value="5">B2B</option>
 										</select>
-										<span class="fieldWrapper__label">Документация</span>
 									</label>
 								</div>
 								<div class="formBlock__col colFlex--2">
 									<label class="formBlock__fieldWrapper fieldWrapper">
+										<span class="fieldWrapper__label">Доставка</span>
 										<select class="fieldWrapper__select form-select" placeholder="Выберите тип доставки">
 											<option value="">Выберите тип доставки</option>
 											<option value="4">Перевозки</option>
@@ -347,7 +357,6 @@
 											<option value="3">Строительство</option>
 											<option value="5">B2B</option>
 										</select>
-										<span class="fieldWrapper__label">Доставка</span>
 									</label>
 								</div>
 							</div>
@@ -399,7 +408,7 @@
 
 		<div class="footerZakaz__contentIn contentIn footerZakazIn footerZakazIn--error">
 			<button type="submit" href="#" class="footerZakazIn__button linkButton linkButton--green" disabled="disabled">РАЗМЕСТИТЬ</button>
-			<div class="footerZakaz__cols colsFlex footerZakazCols">
+			<div class="footerZakaz__cols colsFlex footerZakazCols forDesktop">
 				<span class="icon">Заполните все пункты объявления, чтобы эта кнопка стала активной!</span>
 			</div>
 		</div>

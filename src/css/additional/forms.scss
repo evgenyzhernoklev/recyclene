@@ -147,6 +147,8 @@
   .formContentTitle {
     padding: 0;
     margin-top: 30px;
+    font-size: 18px;
+    line-height: 24px;
   }
 
 
@@ -243,6 +245,31 @@
   margin: 35px 0 13px;
   font: 14px/22px $circe-regular;
   color: $gray;
+}
+
+
+
+@media (max-width: 768px) {
+  .formContent--labelsTop {
+
+    &.formContent {
+      padding: 0 20px;
+    }
+
+    .formContentTitle {
+      margin: 21px 0 18px;
+    }
+
+    .formBlock {
+      margin-top: 0;
+      padding-top: 0;
+    }
+  }
+
+  .formBlock__col {
+    margin-bottom: 4px;
+    padding: 0;
+  }
 }
 
 
@@ -500,6 +527,20 @@
   right: 18px;
   top: 16px;
   cursor: pointer;
+}
+
+
+
+@media (max-width: 768px) {
+  .fieldWrapper__calendarIcon {
+    top: 45px;
+  }
+
+  .fieldWrapper--date {
+    &:before {
+      top: 28px;
+    }
+  }
 }
 
 

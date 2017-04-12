@@ -54,3 +54,26 @@
     background-position: 0 1px;
   }
 }
+
+
+
+@media (max-width: 768px) {
+  .footerZakaz {
+    height: 50px;
+    padding: 0;
+  }
+
+  .footerZakazIn {
+    padding: 0
+  }
+
+  .footerZakazCols {
+
+  }
+
+  .footerZakazIn__button {
+    float: none;
+    width: 100%;
+    border-radius: 0;
+  }
+}
