@@ -10,19 +10,28 @@
 	<header class="header">
 		<div class="header__contentIn contentIn">
 			<a href="#" class="header__iconLogo icon icon--logoHeader"></a>
+			<span class="contentIn__titleHeader forMobile">Переработчик</span>
 			<nav class="header__menuWrapper menuRegWrapper">
 				<ul class="menuRegWrapper__menu menuReg">
 					<li class="menuReg__item menuRegItem"><a class="menuRegItem__link menuRegItem__link--exit" href="#">Выход</a></li>
 				</ul>
 			</nav>
-			<p class="header__pageName">Регистрация переработчика</p>
+			<p class="header__pageName forDesktop">Регистрация переработчика</p>
 		</div>
 	</header>
 
+	<div class="menuToggle menuToggle--green">
+		<div class="menuToggle__hamburger hamburger">
+		  <span class="hamburger__line"></span>
+		  <span class="hamburger__line"></span>
+		  <span class="hamburger__line"></span>
+		</div>
+	</div>
+
 	<div class="contentWrapper sectionForms">
 		<div class="sectionForms__contentIn contentIn">
-			<h1 class="contentIn__title titleMain"><span class="titleMain__info">Компания</span> ТрансСпецСвязь</h1>
-			<h2 class="contentIn__subtitle subtitleMain">Заполните дополнительную информацию о компании, это нужно для заключения сделок.</h2>
+			<h1 class="contentIn__title titleMain forDesktop"><span class="titleMain__info">Компания</span> ТрансСпецСвязь</h1>
+			<h2 class="contentIn__subtitle subtitleMain forDesktop">Заполните дополнительную информацию о компании, это нужно для заключения сделок.</h2>
 
 			<div class="contentIn__formWrapper formWrapper">
 				<form class="formWrapper__form form">
@@ -36,33 +45,33 @@
 						<p class="formContent__title formContentTitle">Адрес компании</p>
 						<div class="formContent__block formBlock">
 							<label class="formBlock__fieldWrapper fieldWrapper">
-								<input class="fieldWrapper__input" type="text" name="" placeholder="" />
 								<span class="fieldWrapper__label">Регион</span>
+								<input class="fieldWrapper__input" type="text" name="" placeholder="" />
 							</label>
 						</div>
 						<div class="formContent__block formBlock">
 							<label class="formBlock__fieldWrapper fieldWrapper">
-								<input class="fieldWrapper__input" type="text" name="" placeholder="" />
 								<span class="fieldWrapper__label">Город</span>
+								<input class="fieldWrapper__input" type="text" name="" placeholder="" />
 							</label>
 						</div>
 						<div class="formContent__block formBlock">
 							<label class="formBlock__fieldWrapper fieldWrapper">
-								<input class="fieldWrapper__input" type="text" name="" placeholder="" />
 								<span class="fieldWrapper__label">Улица</span>
+								<input class="fieldWrapper__input" type="text" name="" placeholder="" />
 							</label>
 						</div>
 						<div class="formContent__block formBlock formBlock--cols">
 							<div class="formBlock__col formBlockCol">
 								<label class="formBlock__fieldWrapper fieldWrapper">
-									<input class="fieldWrapper__input" type="text" name="" placeholder="" />
 									<span class="fieldWrapper__label">Дом</span>
+									<input class="fieldWrapper__input" type="text" name="" placeholder="" />
 								</label>
 							</div>
 							<div class="formBlock__col formBlockCol">
 								<label class="formBlock__fieldWrapper fieldWrapper">
-									<input class="fieldWrapper__input" type="text" name="" placeholder="" />
 									<span class="fieldWrapper__label">Корпус</span>
+									<input class="fieldWrapper__input" type="text" name="" placeholder="" />
 								</label>
 							</div>
 						</div>
@@ -71,18 +80,19 @@
 						<p class="formContent__title formContentTitle">Дополнительно</p>
 						<div class="formContent__block formBlock">
 							<label class="formBlock__fieldWrapper fieldWrapper">
-								<input class="fieldWrapper__input" type="text" name="" placeholder="" />
 								<span class="fieldWrapper__label">Общий email</span>
-							</label>
-						</div>
-						<div class="formContent__block formBlock">
-							<label class="formBlock__fieldWrapper fieldWrapper">
 								<input class="fieldWrapper__input" type="text" name="" placeholder="" />
-								<span class="fieldWrapper__label">Номер ИНН</span>
 							</label>
 						</div>
 						<div class="formContent__block formBlock">
 							<label class="formBlock__fieldWrapper fieldWrapper">
+								<span class="fieldWrapper__label">Номер ИНН</span>
+								<input class="fieldWrapper__input" type="text" name="" placeholder="" />
+							</label>
+						</div>
+						<div class="formContent__block formBlock">
+							<label class="formBlock__fieldWrapper fieldWrapper">
+								<span class="fieldWrapper__label">Сфера деятельности</span>
 								<select class="fieldWrapper__select form-select" placeholder="Выберите сферу деятельности">
 									<option value="">Выберите сферу деятельности</option>
 									<option value="4">Перевозки</option>
@@ -90,14 +100,13 @@
 									<option value="3">Строительство</option>
 									<option value="5">B2B</option>
 								</select>
-								<span class="fieldWrapper__label">Сфера деятельности</span>
 							</label>
 						</div>
 						<div class="formContent__block formBlock formBlock--amount">
 							<label class="formBlock__fieldWrapper fieldWrapper">
 								<p class="fieldWrapper__info">Перерабатывается<br/>за месяц</p>
-								<input class="fieldWrapper__input" type="text" name="" placeholder="" />
 								<span class="fieldWrapper__label">Объем сырья</span>
+								<input class="fieldWrapper__input" type="text" name="" placeholder="" />
 							</label>
 						</div>
 
