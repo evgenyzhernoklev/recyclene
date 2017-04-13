@@ -38,3 +38,25 @@
     margin-bottom: 15px;
   }
 }
+
+
+
+@media (max-width: 768px) {
+  .profileWrapper {
+    margin: 0 -20px;
+    padding: 0 20px 20px;
+  }
+
+
+
+  // content
+  .profileContent {
+    .formContent {
+      padding: 0;
+    }
+
+    .formBlock__linkButton {
+      margin-top: 5px;
+    }
+  }
+}

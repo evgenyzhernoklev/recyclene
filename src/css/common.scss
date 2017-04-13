@@ -65,6 +65,10 @@ button {
 
 
 @media (max-width: 768px) {
+  .contentWrapper {
+    padding-top: 70px;
+  }
+
   .forDesktop {
     display: none;
   }
