@@ -10,6 +10,7 @@
 	<header class="header">
 		<div class="header__contentIn contentIn">
 			<a href="#" class="header__iconLogo header__iconLogo--closer icon icon--logoHeader"></a>
+			<span class="contentIn__titleHeader forMobile">Мой профиль</span>
 			<nav class="header__menuWrapper menuWrapper">
 				<ul class="menuWrapper__menu menu menu--profile">
 					<li class="menu__item menuItem">
@@ -24,8 +25,16 @@
 		</div>
 	</header>
 
+	<div class="menuToggle menuToggle--green">
+		<div class="menuToggle__hamburger hamburger">
+		  <span class="hamburger__line"></span>
+		  <span class="hamburger__line"></span>
+		  <span class="hamburger__line"></span>
+		</div>
+	</div>
+
 	<div class="contentWrapper tabs-wrapper">
-		<div class="contentWrapper__sectionTitle sectionTitle sectionTitle--noBorder sectionTitle--tabs">
+		<div class="contentWrapper__sectionTitle sectionTitle sectionTitle--noBorder sectionTitle--tabs forDesktop">
 			<div class="sectionTitle__contentIn contentIn">
 				<h1 class="contentIn__title titlePage titlePage--small">Компания ТрансСпецСвязь</h1>
 			</div>
@@ -69,26 +78,26 @@
 								<p class="formContentTitle formContent__title">Компания и представитель</p>
 								<div class="formContent__block formBlock">
 									<label class="formBlock__fieldWrapper fieldWrapper">
-										<input class="fieldWrapper__input" type="text" name="" placeholder="" value="ТрансСпецСвязь" />
 										<span class="fieldWrapper__label">Название компании</span>
+										<input class="fieldWrapper__input" type="text" name="" placeholder="" value="ТрансСпецСвязь" />
 									</label>
 								</div>
 								<div class="formContent__block formBlock">
 									<label class="formBlock__fieldWrapper fieldWrapper">
-										<input class="fieldWrapper__input" type="text" name="" placeholder="" value="Александр Македонский" />
 										<span class="fieldWrapper__label">Ваше имя</span>
+										<input class="fieldWrapper__input" type="text" name="" placeholder="" value="Александр Македонский" />
 									</label>
 								</div>
 								<div class="formContent__block formBlock">
 									<label class="formBlock__fieldWrapper fieldWrapper">
-										<input class="fieldWrapper__input" type="text" name="" placeholder="" value="ardintsev@gmail.com" />
 										<span class="fieldWrapper__label">Ваш e-mail</span>
+										<input class="fieldWrapper__input" type="text" name="" placeholder="" value="ardintsev@gmail.com" />
 									</label>
 								</div>
 								<div class="formContent__block formBlock">
 									<label class="formBlock__fieldWrapper fieldWrapper">
-										<input class="fieldWrapper__input" type="text" name="" placeholder="" value="+7 (999) 123-23-23" />
 										<span class="fieldWrapper__label">Ваш телефон</span>
+										<input class="fieldWrapper__input" type="text" name="" placeholder="" value="+7 (999) 123-23-23" />
 									</label>
 								</div>
 								<div class="formContent__block formBlock formBlock--links">
@@ -103,33 +112,33 @@
 								<p class="formContentTitle formContent__title formContentTitle">Адрес компании<span class="formContentTitle__saved">Пароль сохранен</span></p>
 								<div class="formContent__block formBlock">
 									<label class="formBlock__fieldWrapper fieldWrapper">
-										<input class="fieldWrapper__input" type="text" name="" placeholder="" value="Москва и область" />
 										<span class="fieldWrapper__label">Регион</span>
+										<input class="fieldWrapper__input" type="text" name="" placeholder="" value="Москва и область" />
 									</label>
 								</div>
 								<div class="formContent__block formBlock">
 									<label class="formBlock__fieldWrapper fieldWrapper">
-										<input class="fieldWrapper__input" type="text" name="" placeholder="" value="Москва" />
 										<span class="fieldWrapper__label">Город</span>
+										<input class="fieldWrapper__input" type="text" name="" placeholder="" value="Москва" />
 									</label>
 								</div>
 								<div class="formContent__block formBlock">
 									<label class="formBlock__fieldWrapper fieldWrapper">
-										<input class="fieldWrapper__input" type="text" name="" placeholder="" value="Академика Королева" />
 										<span class="fieldWrapper__label">Улица</span>
+										<input class="fieldWrapper__input" type="text" name="" placeholder="" value="Академика Королева" />
 									</label>
 								</div>
 								<div class="formContent__block formBlock formBlock--cols">
 									<div class="formBlock__col formBlockCol">
 										<label class="formBlock__fieldWrapper fieldWrapper">
-											<input class="fieldWrapper__input" type="text" name="" placeholder="" value="12" />
 											<span class="fieldWrapper__label">Дом</span>
+											<input class="fieldWrapper__input" type="text" name="" placeholder="" value="12" />
 										</label>
 									</div>
 									<div class="formBlock__col formBlockCol">
 										<label class="formBlock__fieldWrapper fieldWrapper">
-											<input class="fieldWrapper__input" type="text" name="" placeholder="" />
 											<span class="fieldWrapper__label">Корпус</span>
+											<input class="fieldWrapper__input" type="text" name="" placeholder="" />
 										</label>
 									</div>
 								</div>
@@ -144,18 +153,19 @@
 								<p class="formContentTitle formContent__title">Дополнительно</p>
 								<div class="formContent__block formBlock">
 									<label class="formBlock__fieldWrapper fieldWrapper">
-										<input class="fieldWrapper__input" type="text" name="" placeholder="" value="info@info.ru" />
 										<span class="fieldWrapper__label">Общий email</span>
+										<input class="fieldWrapper__input" type="text" name="" placeholder="" value="info@info.ru" />
 									</label>
 								</div>
 								<div class="formContent__block formBlock">
 									<label class="formBlock__fieldWrapper fieldWrapper">
-										<input class="fieldWrapper__input" type="text" name="" placeholder="" value="1234567890" />
 										<span class="fieldWrapper__label">Номер ИНН</span>
+										<input class="fieldWrapper__input" type="text" name="" placeholder="" value="1234567890" />
 									</label>
 								</div>
 								<div class="formContent__block formBlock">
 									<label class="formBlock__fieldWrapper fieldWrapper">
+										<span class="fieldWrapper__label">Сфера деятельности</span>
 										<select class="fieldWrapper__select form-select" placeholder="Выберите сферу деятельности">
 											<option value="">Выберите сферу деятельности</option>
 											<option value="4" selected>Перевозки</option>
@@ -163,7 +173,6 @@
 											<option value="3">Строительство</option>
 											<option value="5">B2B</option>
 										</select>
-										<span class="fieldWrapper__label">Сфера деятельности</span>
 									</label>
 								</div>
 								<div class="formContent__block formBlock formBlock--links">
@@ -179,33 +188,33 @@
 								<p class="formContentTitle formContent__title">Адрес склада</p>
 								<div class="formContent__block formBlock">
 									<label class="formBlock__fieldWrapper fieldWrapper">
-										<input class="fieldWrapper__input" type="text" name="" placeholder="" />
 										<span class="fieldWrapper__label">Регион</span>
+										<input class="fieldWrapper__input" type="text" name="" placeholder="" />
 									</label>
 								</div>
 								<div class="formContent__block formBlock">
 									<label class="formBlock__fieldWrapper fieldWrapper">
-										<input class="fieldWrapper__input" type="text" name="" placeholder="" />
 										<span class="fieldWrapper__label">Город</span>
+										<input class="fieldWrapper__input" type="text" name="" placeholder="" />
 									</label>
 								</div>
 								<div class="formContent__block formBlock">
 									<label class="formBlock__fieldWrapper fieldWrapper">
-										<input class="fieldWrapper__input" type="text" name="" placeholder="" />
 										<span class="fieldWrapper__label">Улица</span>
+										<input class="fieldWrapper__input" type="text" name="" placeholder="" />
 									</label>
 								</div>
 								<div class="formContent__block formBlock formBlock--cols">
 									<div class="formBlock__col formBlockCol">
 										<label class="formBlock__fieldWrapper fieldWrapper">
-											<input class="fieldWrapper__input" type="text" name="" placeholder="" />
 											<span class="fieldWrapper__label">Дом</span>
+											<input class="fieldWrapper__input" type="text" name="" placeholder="" />
 										</label>
 									</div>
 									<div class="formBlock__col formBlockCol">
 										<label class="formBlock__fieldWrapper fieldWrapper">
-											<input class="fieldWrapper__input" type="text" name="" placeholder="" />
 											<span class="fieldWrapper__label">Корпус</span>
+											<input class="fieldWrapper__input" type="text" name="" placeholder="" />
 										</label>
 									</div>
 								</div>
@@ -222,20 +231,20 @@
 								<p class="formContent__title formContentTitle">Смена пароля<span class="formContentTitle__saved">Пароль сохранен</span></p>
 								<div class="formContent__block formBlock">
 									<label class="formBlock__fieldWrapper fieldWrapper">
-										<input class="fieldWrapper__input" type="password" name="" placeholder="" />
 										<span class="fieldWrapper__label">Текущий пароль</span>
+										<input class="fieldWrapper__input" type="password" name="" placeholder="" />
 									</label>
 								</div>
 								<div class="formContent__block formBlock">
 									<label class="formBlock__fieldWrapper fieldWrapper">
-										<input class="fieldWrapper__input" type="password" name="" placeholder="" />
 										<span class="fieldWrapper__label">Новый пароль</span>
+										<input class="fieldWrapper__input" type="password" name="" placeholder="" />
 									</label>
 								</div>
 								<div class="formContent__block formBlock">
 									<label class="formBlock__fieldWrapper fieldWrapper">
-										<input class="fieldWrapper__input" type="password" name="" placeholder="" />
 										<span class="fieldWrapper__label">Подтверждение</span>
+										<input class="fieldWrapper__input" type="password" name="" placeholder="" />
 									</label>
 								</div>
 								<div class="formContent__block formBlock formBlock--links">

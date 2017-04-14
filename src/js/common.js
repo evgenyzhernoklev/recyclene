@@ -286,9 +286,9 @@ $(document).ready(function() {
       }
 
       $menuItems.removeClass('is-active');
-      $menuItemCurrent.addClass('is-active');
-
-      $menuItemCurrent.insertBefore($menuItems.eq(0));
+      $menuItemCurrent
+        .addClass('is-active')
+        .insertBefore($menuItems.eq(0));
     });
 
 
