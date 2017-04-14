@@ -75,6 +75,14 @@
 
 
 @media (max-width: 768px) {
+  .sectionZakaz {
+    padding: 10px 0 20px;
+
+    .addStorehouse {
+      margin: 25px 20px 50px;
+    }
+  }
+
   .zakazStep {
     margin: 17px 0 25px;
   }
@@ -89,7 +97,7 @@
   }
 
   .zakazStepTitle {
-    margin: 0 20px;
+    margin: 0 20px 20px;
     font-size: 22px;
   }
 
@@ -166,6 +174,28 @@
     margin: 15px 20px;
     padding: 0;
   }
+
+  .zakazAdded__iconWrapper {
+    position: static;
+
+    .icon--pensil {
+      @include icon(pensil_green, 15px, 15px);
+      right: 41px;
+    }
+
+    .icon--basket {
+      @include icon(basket_red, 11px, 14px);
+      right: 11px;
+    }
+
+    .icon {
+      position: absolute;
+      background-color: transparent;
+      width: 20px;
+      height: 20px;
+      top: 25px;
+    }
+  }
 }
 
 
@@ -217,10 +247,33 @@
   .zakazAddedAbout {
     width: 100%;
     float: none;
+    padding: 20px 75px 17px 20px;
+    border-bottom: 1px solid #ECECEC;
   }
 
   .zakazAddedInfo {
-    width: 100%;
+    display: block;
+    width: auto;
+    margin: 0 20px;
+    padding: 16px 0 14px;
     float: none;
+    @include clearfix();
+    border-right: 0;
+    border-bottom: 1px solid #ECECEC;
+  }
+
+  .zakazAddedInfo__title {
+    float: right;
+    width: 50%;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: right;
+  }
+
+  .zakazAddedInfo__subtitle {
+    float: left;
+    width: 50%;
+    font-size: 14px;
+    line-height: 21px;
   }
 }

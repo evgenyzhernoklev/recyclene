@@ -276,6 +276,10 @@
 @media (max-width: 768px) {
   .formContent--labelsTop {
 
+    .formContent__sep {
+      margin: 20px -20px 22px;
+    }
+
     &.formContent {
       padding: 0 20px;
     }
@@ -288,11 +292,63 @@
       margin-top: 0;
       padding-top: 0;
     }
+
+    .formBlock--colsCheckbox {
+      margin-bottom: 0;
+    }
+
+    .formBlock__linkButton {
+      width: 100%;
+      margin: 0 0 20px;
+
+      &:nth-child(2) {
+        margin: 0 0 20px;
+      }
+
+      &.linkButton--right {
+        margin: 0;
+        float: none;
+      }
+    }
+
+
+
+    .fieldWrapper--checkbox {
+      margin: 0 0 21px;
+    }
+
+    .fieldWrapper__info {
+      margin-bottom: 15px;
+    }
   }
 
   .formBlock__col {
     margin-bottom: 4px;
     padding: 0;
+
+    &.colFlex--4 {
+      flex-basis: 50%;
+      padding-right: 10px;
+
+      &:last-child {
+        padding-left: 10px;
+      }
+    }
+  }
+
+
+
+  // zakaz checkboxes
+  .formBlock--colsCheckbox {
+    .formBlock__col.colFlex--4 {
+      flex-basis: 100%;
+      padding: 0;
+    }
+  }
+
+  .formContentTitleCheckbox {
+    margin: 20px 0 21px;
+    font: 18px/24px $circe-light;
   }
 }
 
