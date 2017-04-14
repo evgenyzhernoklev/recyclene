@@ -154,7 +154,7 @@ body {
   .storehouseCounter {
     width: 100%;
     float: none;
-    padding: 0 15px 10px;
+    padding: 0 75px 10px 15px;
     text-align: left;
   }
 
@@ -178,9 +178,18 @@ body {
   .storehouse__edit {
     background-color: transparent;
     @include icon(pensil_green, 15px, 15px);
-    width: 40px;
-    height: 40px;
-    top: 1px;
-    right: 1px;
+    width: 20px;
+    height: 20px;
+    top: 11px;
+    right: 41px;
+  }
+
+  .storehouse__delete {
+    background-color: transparent;
+    @include icon(basket_red, 11px, 14px);
+    width: 20px;
+    height: 20px;
+    top: 11px;
+    right: 11px;
   }
 }
