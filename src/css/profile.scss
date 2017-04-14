@@ -47,6 +47,64 @@
   .profileWrapper {
     margin: 0 -20px;
     padding: 0 20px 20px;
+
+    .menu {
+      position: relative;
+      height: 60px;
+      margin: 0 -20px;
+      padding: 0;
+      background-color: #899CA8;
+      overflow: hidden;
+      transition: height .5s ease-in-out;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 27px;
+        right: 20px;
+        border: 6px solid transparent;
+        border-top: 6px solid $white;
+        transform: rotate(0deg);
+        transition: transform $transition-normal, top $transition-normal;
+      }
+
+      &.is-active {
+        height: 180px;
+
+        &:after {
+          top: 21px;
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    .menuItem {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      display: block;
+      height: 60px;
+      transition: top $transition-normal;
+
+      &:nth-child(2) {
+        top: 60px;
+      }
+
+      &:nth-child(3) {
+        top: 120px;
+      }
+    }
+
+    .menuItemLink {
+      display: block;
+      margin: 0;
+      padding: 0 20px;
+      color: $white;
+      line-height: 60px;
+      border-bottom: 1px solid #ADBCC6;
+      background-color: #899CA8;
+    }
   }
 
 

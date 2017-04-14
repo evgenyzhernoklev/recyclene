@@ -267,6 +267,31 @@ $(document).ready(function() {
     });
 
 
+
+    // menu profile
+    $('.menuItemLink').on('click', function() {
+      if ($window.width() > 768) {
+        return;
+      }
+
+      var $menu = $(this).closest('.menu'),
+          $menuItems = $menu.find('.menuItem'),
+          $menuItemCurrent = $(this).closest('.menuItem'),
+          $menuLinks = $menuItems.find('.menuItemLink');
+
+      $menu.toggleClass('is-active');
+
+      if ($menuItemCurrent.hasClass('is-active')) {
+        return;
+      }
+
+      $menuItems.removeClass('is-active');
+      $menuItemCurrent.addClass('is-active');
+
+      $menuItemCurrent.insertBefore($menuItems.eq(0));
+    });
+
+
     /*************** js for landing ***************/
     if ( $('.sliderSells').length ) {
       /*************** menu ***************/
