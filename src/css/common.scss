@@ -201,6 +201,7 @@ button {
 .emptyInfo {
   display: table-cell;
   height: 100%;
+  padding: 80px 0;
   text-align: center;
   vertical-align: middle;
 }
@@ -239,13 +240,31 @@ button {
 
 
 
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 480px) {
+  .emptyInfoWrapper {
+    padding: 0;
+  }
+
+  .emptyInfo__button {
+    width: 100%;
+  }
+}
+
+
+
 // notifications
 .notification {
   position: fixed;
   z-index: 98;
-  top: 0;
+  top: -98px;
   left: 0;
   right: 0;
+  overflow: auto;
+  max-height: 98px;
   background: #899CA8;
   transition: top .5s ease;
 
@@ -260,4 +279,12 @@ button {
   font: 14px/19px $circe-regular;
   color: $white;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .notification {
+    &.is-active {
+      top: 70px;
+    }
+  }
 }
