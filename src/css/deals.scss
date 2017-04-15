@@ -17,9 +17,23 @@
 
 
 
+@media (max-width: 768px) {
+  .deal {
+    padding: 30px 20px 18px;
+  }
+
+  .titlePage__helper {
+    display: none;
+  }
+}
+
+
+
 // price block
 .dealPrice {
-  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
   width: 225px;
   padding: 24px 30px 27px;
   text-align: center;
@@ -90,6 +104,29 @@
 
 
 
+@media (max-width: 768px) {
+  .dealPrice {
+    position: static;
+    width: auto;
+    margin: 0 -20px;
+    padding: 22px 20px 10px;
+
+    .linkButton {
+      position: static;
+      width: auto;
+      display: block;
+      margin: 0 auto 12px;
+      padding: 0 20px;
+    }
+  }
+
+  .dealQuantityWrapper__button {
+    display: none;
+  }
+}
+
+
+
 // quantity block
 .dealQuantityWrapper {
   position: relative;
@@ -128,10 +165,32 @@
 
 
 
+@media (max-width: 768px) {
+  .dealQuantityWrapper {
+    float: none;
+    width: 100%;
+    @include clearfix();
+  }
+
+  .dealQuantityInfo {
+    float: left;
+    width: 50%;
+    border-bottom: 0;
+    border-right: 1px solid #EBEBEB;
+
+    &:last-child {
+      border-right: 0;
+    }
+  }
+}
+
+
+
 // deal info
 .dealInfo {
   position: relative;
-  margin: 0 282px 0 125px;
+  margin: 0 0 0 125px;
+  padding-right: 282px;
 }
 
 .dealInfo__who {
@@ -168,6 +227,26 @@
   right: 50px;
 }
 
+
+
+@media (max-width: 768px) {
+  .dealInfo {
+    margin: 0;
+    padding: 0;
+  }
+
+  .dealInfo__who {
+    position: static;
+  }
+
+  .dealInfoTitle--withRating {
+    // display: none;
+  }
+}
+
+
+
+// deal about
 .dealInfoAbout {
   padding: 18px 0 17px;
   border-bottom: 1px solid #EBEBEB;
@@ -208,5 +287,19 @@
   &.is-active {
     color: $black;
     border-color: $green;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .dealInfoAbout__title {
+    float: none;
+    width: 100%;
+    margin-bottom: 3px;
+  }
+
+  .dealInfoAboutText {
+    padding: 0;
   }
 }
