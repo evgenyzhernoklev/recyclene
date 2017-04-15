@@ -31,15 +31,17 @@
   color: $black;
 }
 
-@media (max-width: 1280px) {
-  .header__iconLogo--closer {
-    left: 0px;
-  }
-}
 
-@media (max-width: 1024px) {
+
+@media (max-width: 1480px) {
   .header__iconLogo--closer {
     left: 20px;
+  }
+
+  .header {
+    .headerLoginedInfo {
+      right: 10px;
+    }
   }
 }
 
@@ -212,6 +214,14 @@
   color: $white;
   background: #E72081;
   border-radius: 100px;
+}
+
+
+
+@media (max-width: 960px) {
+  .menuItemLink {
+    margin: 0 10px;
+  }
 }
 
 
