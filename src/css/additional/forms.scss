@@ -736,6 +736,7 @@
 }
 
 .formBlock--addImage {
+  position: relative;
 
   &.formBlock {
     margin-top: 0;
@@ -791,6 +792,75 @@
   z-index: 2;
   width: 100%;
   display: none;
+}
+
+
+
+// show more photos
+.formContentMoreImages {
+  height: 58px;
+  margin: 20px 0 0;
+  padding: 0 20px;
+  font: 12px/56px $circe-bold-extra;
+  color: #4F636F;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px dashed #D5D5D5;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.formContentMoreImages__info {
+  position: relative;
+  display: inline-block;
+  padding-left: 30px;
+
+  &:before {
+    content: '+';
+    display: inline-block;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    font-size: 30px;
+    font-family: $circe-regular;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  // add photo
+  .formContentTitle--addImage {
+
+
+    &.formContentTitle {
+
+    }
+  }
+
+  .formBlock--addImage {
+    max-width: 300px;
+    max-height: 120px;
+    padding-bottom: 70px;
+    overflow: hidden;
+    transition: max-height $transition-normal;
+
+    &.formBlock {
+      margin: 25px auto 0;
+      justify-content: center;
+    }
+
+    &.is-active {
+      max-height: 420px;
+    }
+
+    .formBlock__col {
+      flex-basis: 50%;
+      margin: 0 0 20px;
+      padding: 0 10px;
+    }
+
+  }
 }
 
 

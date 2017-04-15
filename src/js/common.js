@@ -49,6 +49,12 @@ $(document).ready(function() {
       $container.removeClass('with-image');
     });
 
+    $('.add-more-images').on('click', function(e) {
+      e.preventDefault();
+      $(this).hide();
+      $('.container-images').addClass('is-active');
+    });
+
 
 
     // avatar
