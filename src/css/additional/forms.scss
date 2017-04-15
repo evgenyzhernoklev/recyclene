@@ -273,6 +273,24 @@
 
 
 
+@media (max-width: 960px) {
+  .formContent--labelsTop {
+
+    .fieldWrapper--checkbox {
+      margin: 0 0 21px;
+    }
+
+    .formBlock--colsCheckbox {
+      .colFlex--4 {
+        flex-basis: 50%;
+        // padding: 0;
+      }
+    }
+  }
+}
+
+
+
 @media (max-width: 768px) {
   .formContent--labelsTop {
 
@@ -312,10 +330,6 @@
     }
 
 
-
-    .fieldWrapper--checkbox {
-      margin: 0 0 21px;
-    }
 
     .fieldWrapper__info {
       margin-bottom: 15px;
@@ -657,6 +671,10 @@
 
 
 // date
+.formBlock--date {
+
+}
+
 .fieldWrapper--date {
   &:before {
     content: 'До';
@@ -682,7 +700,21 @@
 
 
 
+@media (max-width: 960px) {
+  .formBlock--date {
+    .colFlex--2 {
+      flex-basis: 100%;
+      padding-right: 0;
+    }
+  }
+}
+
+
 @media (max-width: 768px) {
+  .formBlock--date {
+
+  }
+
   .fieldWrapper__calendarIcon {
     top: 45px;
   }
