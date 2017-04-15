@@ -151,7 +151,23 @@
 .menuItem {
   display: inline-block;
   height: 100%;
+
+  &.forMobile {
+    display: none;
+  }
 }
+
+.menuItem--logout {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+
+  .menuItemLink {
+    color: rgba(255,255,255, 0.5);
+  }
+}
+
 
 .menuItemLink {
   position: relative;
@@ -187,12 +203,77 @@
   }
 }
 
+.menuItemLink__notiQuantity {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 0 10px 0 8px;
+  height: 30px;
+  font: 13px/32px $circe-bold-extra;
+  color: $white;
+  background: #E72081;
+  border-radius: 100px;
+}
+
 
 
 @media (max-width: 768px) {
   .menuWrapper {
-    display: none;
+    display: table;
     position: fixed;
+    z-index: 999;
+    top: 0;
+    bottom: 0;
+    left: -320px;
+    width: 320px;
+    padding: 0;
+    background-color: #899CA8;
+    transition: left $transition-normal;
+
+    &.is-active {
+      left: 0;
+    }
+  }
+
+  .menu {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .menuItem {
+    display: block;
+    height: auto;
+    margin-bottom: 39px;
+    padding: 0 40px;
+    text-align: left;
+
+    &.forMobile {
+      display: block;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .menuItemLink {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: 20px/28px $circe-regular;
+    color: $white;
+
+    &.is-active {
+      color: $white;
+    }
+  }
+
+  .menuItemLink--ads {
+    padding: 0;
+
+    &:before {
+      display: none;
+    }
   }
 }
 
@@ -205,6 +286,16 @@
   right: -120px;
   top: 22px;
 }
+
+
+
+@media (max-width: 768px) {
+  .headerLoginedInfo {
+    display: none;
+  }
+}
+
+
 
 // notifications
 .notificationsWrapper {
