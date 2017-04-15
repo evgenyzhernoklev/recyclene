@@ -170,6 +170,20 @@
   }
 }
 
+.menuItem--avatar {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+}
+
+.menuItem__avatar {
+  border-radius: 50%;
+  max-width: 70px;
+  max-height: 70px;
+}
+
+
 
 .menuItemLink {
   position: relative;
@@ -233,8 +247,8 @@
     z-index: 999;
     top: 0;
     bottom: 0;
-    left: -320px;
-    width: 320px;
+    left: -100%;
+    width: 100%;
     padding: 0;
     background-color: #899CA8;
     transition: left $transition-normal;
@@ -246,6 +260,7 @@
 
   .menu {
     display: table-cell;
+    padding: 135px 0 85px;
     vertical-align: middle;
   }
 

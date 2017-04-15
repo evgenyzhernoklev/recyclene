@@ -6,6 +6,10 @@ body {
   background-color: $white-light;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+
+  &.mobile-menu-opened {
+    overflow: hidden;
+  }
 }
 
 a,
